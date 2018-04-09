@@ -1,0 +1,1113 @@
+select "phone" if -1w is "telephone" with log-likelihood : 3.496508 
+select "product" if +1w is "of" with log-likelihood : 3.349904 
+select "phone" if words at offsets -2 and -1, is "on the" with log-likelihood : 3.091042 
+select "product" if words at offsets -1 and +1, is "a of" with log-likelihood : 2.995732 
+select "phone" if -1w is "access" with log-likelihood : 2.772589 
+select "product" if -1w is "a" with log-likelihood : 2.397895 
+select "phone" if words at offsets -2 and -1, is "of the" with log-likelihood : 2.397895 
+select "phone" if words at offsets -1 and +1, is "the was" with log-likelihood : 2.397895 
+select "product" if -1w is "car" with log-likelihood : 2.302585 
+select "product" if words at offsets -1 and +1, is "new of" with log-likelihood : 2.302585 
+select "product" if -1w is "ps/2" with log-likelihood : 1.945910 
+select "product" if -1w is "computer" with log-likelihood : 1.945910 
+select "product" if words at offsets -2 and -1, is "a new" with log-likelihood : 1.945910 
+select "phone" if words at offsets +1 and +2, is "was dead" with log-likelihood : 1.945910 
+select "phone" if +1w is "was" with log-likelihood : 1.871802 
+select "phone" if words at offsets -1 and +1, is "telephone and" with log-likelihood : 1.791759 
+select "phone" if words at offsets -1 and +1, is "the ," with log-likelihood : 1.791759 
+select "phone" if words at offsets -1 and +1, is "the ." with log-likelihood : 1.791759 
+select "phone" if -1w is "the" with log-likelihood : 1.773067 
+select "product" if -1w is "new" with log-likelihood : 1.609438 
+select "product" if -1w is "product" with log-likelihood : 1.609438 
+select "phone" if -1w is "direct" with log-likelihood : 1.609438 
+select "product" if words at offsets -2 and -1, is "introduced a" with log-likelihood : 1.609438 
+select "phone" if words at offsets -1 and +1, is "access ." with log-likelihood : 1.609438 
+select "phone" if words at offsets -1 and +1, is "telephone ," with log-likelihood : 1.609438 
+select "phone" if words at offsets -1 and +1, is "telephone ." with log-likelihood : 1.609438 
+select "phone" if words at offsets -1 and +1, is "direct to" with log-likelihood : 1.609438 
+select "phone" if words at offsets +1 and +2, is "to the" with log-likelihood : 1.609438 
+select "product" if words at offsets +1 and +2, is "of personal" with log-likelihood : 1.609438 
+select "phone" if +1w is "increased" with log-likelihood : 1.386294 
+select "phone" if +1w is "went" with log-likelihood : 1.386294 
+select "product" if +1w is ","" with log-likelihood : 1.386294 
+select "phone" if +1w is "growth" with log-likelihood : 1.386294 
+select "phone" if +1w is "grew" with log-likelihood : 1.386294 
+select "product" if +1w is "through" with log-likelihood : 1.386294 
+select "phone" if -1w is "trading" with log-likelihood : 1.386294 
+select "product" if -1w is "its" with log-likelihood : 1.386294 
+select "phone" if -1w is "gab" with log-likelihood : 1.386294 
+select "product" if -1w is "ibm" with log-likelihood : 1.386294 
+select "phone" if words at offsets -2 and -1, is ", the" with log-likelihood : 1.386294 
+select "phone" if words at offsets -2 and -1, is "private telephone" with log-likelihood : 1.386294 
+select "product" if words at offsets -2 and -1, is "new ibm" with log-likelihood : 1.386294 
+select "phone" if words at offsets -2 and -1, is "telephone access" with log-likelihood : 1.386294 
+select "phone" if words at offsets -2 and -1, is "new access" with log-likelihood : 1.386294 
+select "phone" if words at offsets -2 and -1, is "<s> the" with log-likelihood : 1.386294 
+select "phone" if words at offsets -2 and -1, is "new telephone" with log-likelihood : 1.386294 
+select "phone" if words at offsets -1 and +1, is "the went" with log-likelihood : 1.386294 
+select "phone" if words at offsets -1 and +1, is "telephone --" with log-likelihood : 1.386294 
+select "phone" if words at offsets -1 and +1, is "access ," with log-likelihood : 1.386294 
+select "phone" if words at offsets -1 and +1, is "access in" with log-likelihood : 1.386294 
+select "product" if words at offsets -1 and +1, is "ibm ." with log-likelihood : 1.386294 
+select "phone" if words at offsets +1 and +2, is "went dead" with log-likelihood : 1.386294 
+select "product" if words at offsets +1 and +2, is "of frozen" with log-likelihood : 1.386294 
+select "product" if +1w is "is" with log-likelihood : 1.098612 
+select "product" if +1w is "by" with log-likelihood : 1.098612 
+select "phone" if +1w is "open" with log-likelihood : 1.098612 
+select "product" if +1w is "has" with log-likelihood : 1.098612 
+select "product" if +1w is "could" with log-likelihood : 1.098612 
+select "product" if +1w is "as" with log-likelihood : 1.098612 
+select "phone" if +1w is "recently" with log-likelihood : 1.098612 
+select "phone" if +1w is "they" with log-likelihood : 1.098612 
+select "product" if -1w is "some" with log-likelihood : 1.098612 
+select "product" if -1w is "microprocessor" with log-likelihood : 1.098612 
+select "phone" if -1w is "party" with log-likelihood : 1.098612 
+select "product" if -1w is "current" with log-likelihood : 1.098612 
+select "product" if -1w is "old" with log-likelihood : 1.098612 
+select "product" if -1w is "food" with log-likelihood : 1.098612 
+select "product" if -1w is "vax" with log-likelihood : 1.098612 
+select "product" if -1w is "full" with log-likelihood : 1.098612 
+select "product" if -1w is "products" with log-likelihood : 1.098612 
+select "phone" if -1w is "customer" with log-likelihood : 1.098612 
+select "phone" if -1w is "tip" with log-likelihood : 1.098612 
+select "product" if -1w is "skin-care" with log-likelihood : 1.098612 
+select "phone" if -1w is "570,000" with log-likelihood : 1.098612 
+select "phone" if -1w is "subscriber" with log-likelihood : 1.098612 
+select "product" if -1w is "similar" with log-likelihood : 1.098612 
+select "product" if -1w is "marketing" with log-likelihood : 1.098612 
+select "phone" if -1w is "telephone-" with log-likelihood : 1.098612 
+select "phone" if -1w is "private" with log-likelihood : 1.098612 
+select "phone" if -1w is "outside" with log-likelihood : 1.098612 
+select "phone" if -1w is "information" with log-likelihood : 1.098612 
+select "phone" if -1w is "whose" with log-likelihood : 1.098612 
+select "product" if -1w is "company's" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "than 570,000" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "a direct" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "an outside" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "over telephone" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "off the" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "new customer" with log-likelihood : 1.098612 
+select "product" if words at offsets -2 and -1, is "a similar" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "toll-free telephone" with log-likelihood : 1.098612 
+select "product" if words at offsets -2 and -1, is "launch a" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "over the" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "thousand access" with log-likelihood : 1.098612 
+select "product" if words at offsets -2 and -1, is "its current" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "the telephone" with log-likelihood : 1.098612 
+select "product" if words at offsets -2 and -1, is "its ps/2" with log-likelihood : 1.098612 
+select "product" if words at offsets -2 and -1, is "ibm's ps/2" with log-likelihood : 1.098612 
+select "phone" if words at offsets -2 and -1, is "clogged telephone" with log-likelihood : 1.098612 
+select "product" if words at offsets -2 and -1, is "its new" with log-likelihood : 1.098612 
+select "product" if words at offsets -1 and +1, is "ps/2 of" with log-likelihood : 1.098612 
+select "product" if words at offsets -1 and +1, is "microprocessor ." with log-likelihood : 1.098612 
+select "product" if words at offsets -1 and +1, is "computer ," with log-likelihood : 1.098612 
+select "phone" if words at offsets -1 and +1, is "outside ," with log-likelihood : 1.098612 
+select "phone" if words at offsets -1 and +1, is "trading to" with log-likelihood : 1.098612 
+select "product" if words at offsets -1 and +1, is "product ," with log-likelihood : 1.098612 
+select "phone" if words at offsets -1 and +1, is "telephone that" with log-likelihood : 1.098612 
+select "product" if words at offsets -1 and +1, is "car ," with log-likelihood : 1.098612 
+select "product" if words at offsets -1 and +1, is "current of" with log-likelihood : 1.098612 
+select "phone" if words at offsets -1 and +1, is "570,000 ," with log-likelihood : 1.098612 
+select "phone" if words at offsets -1 and +1, is "access were" with log-likelihood : 1.098612 
+select "phone" if words at offsets -1 and +1, is "the to" with log-likelihood : 1.098612 
+select "product" if words at offsets -1 and +1, is "car ." with log-likelihood : 1.098612 
+select "phone" if words at offsets +1 and +2, is "increased 3.7%" with log-likelihood : 1.098612 
+select "phone" if words at offsets +1 and +2, is ", "" with log-likelihood : 1.098612 
+select "phone" if words at offsets +1 and +2, is "was still" with log-likelihood : 1.098612 
+select "phone" if words at offsets +1 and +2, is ", mainly" with log-likelihood : 1.098612 
+select "product" if words at offsets +1 and +2, is "has been" with log-likelihood : 1.098612 
+select "phone" if words at offsets +1 and +2, is "at the" with log-likelihood : 1.098612 
+select "phone" if words at offsets +1 and +2, is "were added" with log-likelihood : 1.098612 
+select "product" if words at offsets +1 and +2, is "of shoes" with log-likelihood : 1.098612 
+select "phone" if words at offsets +1 and +2, is ", a" with log-likelihood : 1.098612 
+select "product" if words at offsets +1 and +2, is ", to" with log-likelihood : 1.098612 
+select "product" if words at offsets +1 and +2, is "of computers" with log-likelihood : 1.098612 
+select "phone" if +1w is "to" with log-likelihood : 1.029619 
+select "phone" if +1w is "?" with log-likelihood : 0.693147 
+select "phone" if +1w is "!" with log-likelihood : 0.693147 
+select "phone" if +1w is "if" with log-likelihood : 0.693147 
+select "phone" if +1w is "charges" with log-likelihood : 0.693147 
+select "phone" if +1w is "jumped" with log-likelihood : 0.693147 
+select "phone" if +1w is "busy" with log-likelihood : 0.693147 
+select "phone" if +1w is "noise" with log-likelihood : 0.693147 
+select "product" if +1w is "won't" with log-likelihood : 0.693147 
+select "product" if +1w is "made" with log-likelihood : 0.693147 
+select "product" if +1w is "where" with log-likelihood : 0.693147 
+select "product" if +1w is "anymore,"" with log-likelihood : 0.693147 
+select "product" if +1w is "may" with log-likelihood : 0.693147 
+select "phone" if +1w is "a" with log-likelihood : 0.693147 
+select "product" if +1w is "ranging" with log-likelihood : 0.693147 
+select "product" if +1w is "rose" with log-likelihood : 0.693147 
+select "product" if +1w is "under" with log-likelihood : 0.693147 
+select "phone" if +1w is "like" with log-likelihood : 0.693147 
+select "phone" if +1w is "--" with log-likelihood : 0.693147 
+select "product" if +1w is "wouldn't" with log-likelihood : 0.693147 
+select "product" if +1w is "products"" with log-likelihood : 0.693147 
+select "product" if +1w is "had" with log-likelihood : 0.693147 
+select "phone" if +1w is "used" with log-likelihood : 0.693147 
+select "phone" if +1w is "adapters" with log-likelihood : 0.693147 
+select "product" if +1w is "showed" with log-likelihood : 0.693147 
+select "phone" if +1w is "let's" with log-likelihood : 0.693147 
+select "phone" if +1w is "were" with log-likelihood : 0.693147 
+select "phone" if +1w is "increase" with log-likelihood : 0.693147 
+select "phone" if +1w is "proprietors," with log-likelihood : 0.693147 
+select "phone" if +1w is "charges." with log-likelihood : 0.693147 
+select "product" if +1w is "there," with log-likelihood : 0.693147 
+select "product" if +1w is "."" with log-likelihood : 0.693147 
+select "product" if +1w is "pacing" with log-likelihood : 0.693147 
+select "phone" if +1w is "charge" with log-likelihood : 0.693147 
+select "phone" if +1w is "that" with log-likelihood : 0.693147 
+select "phone" if +1w is "appealing" with log-likelihood : 0.693147 
+select "product" if +1w is ";" with log-likelihood : 0.693147 
+select "product" if +1w is "this" with log-likelihood : 0.693147 
+select "product" if +1w is "included" with log-likelihood : 0.693147 
+select "product" if +1w is "but" with log-likelihood : 0.693147 
+select "phone" if +1w is "effect" with log-likelihood : 0.693147 
+select "phone" if +1w is "just" with log-likelihood : 0.693147 
+select "product" if +1w is "2" with log-likelihood : 0.693147 
+select "product" if +1w is "planned" with log-likelihood : 0.693147 
+select "phone" if +1w is "while" with log-likelihood : 0.693147 
+select "phone" if +1w is "during" with log-likelihood : 0.693147 
+select "phone" if +1w is "light" with log-likelihood : 0.693147 
+select "phone" if +1w is "or" with log-likelihood : 0.693147 
+select "product" if +1w is "from" with log-likelihood : 0.693147 
+select "phone" if +1w is "be" with log-likelihood : 0.693147 
+select "product" if +1w is "are" with log-likelihood : 0.693147 
+select "phone" if +1w is "once" with log-likelihood : 0.693147 
+select "phone" if +1w is "yesterday," with log-likelihood : 0.693147 
+select "phone" if +1w is "between" with log-likelihood : 0.693147 
+select "product" if +1w is "it" with log-likelihood : 0.693147 
+select "phone" if -1w is "this" with log-likelihood : 0.693147 
+select "phone" if -1w is "gab-" with log-likelihood : 0.693147 
+select "product" if -1w is "apparel" with log-likelihood : 0.693147 
+select "product" if -1w is "optometric" with log-likelihood : 0.693147 
+select "phone" if -1w is "and" with log-likelihood : 0.693147 
+select "product" if -1w is "previous" with log-likelihood : 0.693147 
+select "product" if -1w is "several" with log-likelihood : 0.693147 
+select "product" if -1w is "machinery" with log-likelihood : 0.693147 
+select "phone" if -1w is "extending" with log-likelihood : 0.693147 
+select "phone" if -1w is "another" with log-likelihood : 0.693147 
+select "product" if -1w is "corp.'s" with log-likelihood : 0.693147 
+select "product" if -1w is "three" with log-likelihood : 0.693147 
+select "product" if -1w is "jewelry" with log-likelihood : 0.693147 
+select "phone" if -1w is "1,800" with log-likelihood : 0.693147 
+select "product" if -1w is "clarion" with log-likelihood : 0.693147 
+select "phone" if -1w is "with" with log-likelihood : 0.693147 
+select "product" if -1w is "exclusive" with log-likelihood : 0.693147 
+select "product" if -1w is "lancome" with log-likelihood : 0.693147 
+select "product" if -1w is "carleton" with log-likelihood : 0.693147 
+select "phone" if -1w is "communications" with log-likelihood : 0.693147 
+select "product" if -1w is "consumer-products" with log-likelihood : 0.693147 
+select "product" if -1w is "latest" with log-likelihood : 0.693147 
+select "product" if -1w is "equipment" with log-likelihood : 0.693147 
+select "product" if -1w is "acquired" with log-likelihood : 0.693147 
+select "product" if -1w is "popular" with log-likelihood : 0.693147 
+select "product" if -1w is "pc" with log-likelihood : 0.693147 
+select "product" if -1w is "advertised" with log-likelihood : 0.693147 
+select "product" if -1w is "rail-intermodal" with log-likelihood : 0.693147 
+select "phone" if -1w is "business" with log-likelihood : 0.693147 
+select "phone" if -1w is "sex" with log-likelihood : 0.693147 
+select "product" if -1w is "huge" with log-likelihood : 0.693147 
+select "phone" if -1w is "emergency" with log-likelihood : 0.693147 
+select "product" if -1w is "macintosh" with log-likelihood : 0.693147 
+select "product" if -1w is "marx" with log-likelihood : 0.693147 
+select "product" if -1w is "in" with log-likelihood : 0.693147 
+select "phone" if -1w is "all" with log-likelihood : 0.693147 
+select "product" if -1w is "ziari" with log-likelihood : 0.693147 
+select "phone" if -1w is "24" with log-likelihood : 0.693147 
+select "product" if -1w is "smith" with log-likelihood : 0.693147 
+select "product" if -1w is "fox" with log-likelihood : 0.693147 
+select "product" if -1w is "at" with log-likelihood : 0.693147 
+select "product" if -1w is "transformers" with log-likelihood : 0.693147 
+select "product" if -1w is "1988-model" with log-likelihood : 0.693147 
+select "phone" if -1w is "radio" with log-likelihood : 0.693147 
+select "phone" if -1w is "complaint" with log-likelihood : 0.693147 
+select "product" if -1w is "pw4000" with log-likelihood : 0.693147 
+select "phone" if -1w is "subscriber-" with log-likelihood : 0.693147 
+select "phone" if -1w is ""gab"" with log-likelihood : 0.693147 
+select "phone" if -1w is "romance" with log-likelihood : 0.693147 
+select "product" if -1w is "these" with log-likelihood : 0.693147 
+select "product" if -1w is "lastest" with log-likelihood : 0.693147 
+select "phone" if -1w is "<s>" with log-likelihood : 0.693147 
+select "product" if -1w is "ground-coffee" with log-likelihood : 0.693147 
+select "product" if -1w is "gm-10" with log-likelihood : 0.693147 
+select "product" if -1w is "nail-polish" with log-likelihood : 0.693147 
+select "product" if -1w is "long-awaited" with log-likelihood : 0.693147 
+select "product" if -1w is "prix" with log-likelihood : 0.693147 
+select "product" if -1w is "tire" with log-likelihood : 0.693147 
+select "product" if -1w is "building-materials" with log-likelihood : 0.693147 
+select "product" if -1w is "luxury-car" with log-likelihood : 0.693147 
+select "product" if -1w is "health-club" with log-likelihood : 0.693147 
+select "phone" if -1w is "chat" with log-likelihood : 0.693147 
+select "product" if -1w is "diagnostics" with log-likelihood : 0.693147 
+select "product" if -1w is "chemicals" with log-likelihood : 0.693147 
+select "product" if -1w is "sewing" with log-likelihood : 0.693147 
+select "phone" if -1w is "toll-free" with log-likelihood : 0.693147 
+select "product" if -1w is "sun's" with log-likelihood : 0.693147 
+select "product" if -1w is "amiga" with log-likelihood : 0.693147 
+select "phone" if -1w is "crossed" with log-likelihood : 0.693147 
+select "phone" if -1w is "dead" with log-likelihood : 0.693147 
+select "product" if -1w is "older" with log-likelihood : 0.693147 
+select "product" if -1w is "complete" with log-likelihood : 0.693147 
+select "product" if -1w is "future" with log-likelihood : 0.693147 
+select "product" if -1w is "cracker" with log-likelihood : 0.693147 
+select "phone" if -1w is "that" with log-likelihood : 0.693147 
+select "product" if -1w is "zytel" with log-likelihood : 0.693147 
+select "product" if -1w is "camera" with log-likelihood : 0.693147 
+select "product" if -1w is "atlas" with log-likelihood : 0.693147 
+select "product" if -1w is "coleco's" with log-likelihood : 0.693147 
+select "product" if -1w is "$1.69" with log-likelihood : 0.693147 
+select "product" if -1w is "cereal" with log-likelihood : 0.693147 
+select "product" if -1w is "cougar" with log-likelihood : 0.693147 
+select "product" if -1w is "denton" with log-likelihood : 0.693147 
+select "phone" if -1w is "million" with log-likelihood : 0.693147 
+select "product" if -1w is "dreamboat" with log-likelihood : 0.693147 
+select "phone" if -1w is "50,000" with log-likelihood : 0.693147 
+select "phone" if -1w is "important" with log-likelihood : 0.693147 
+select "product" if -1w is "shoe" with log-likelihood : 0.693147 
+select "product" if -1w is "struggling" with log-likelihood : 0.693147 
+select "phone" if -1w is "party-" with log-likelihood : 0.693147 
+select "product" if -1w is "specialized" with log-likelihood : 0.693147 
+select "phone" if -1w is "dedicated" with log-likelihood : 0.693147 
+select "product" if -1w is ""older" with log-likelihood : 0.693147 
+select "phone" if -1w is "asynchronous" with log-likelihood : 0.693147 
+select "product" if -1w is "billion" with log-likelihood : 0.693147 
+select "product" if -1w is "non-food" with log-likelihood : 0.693147 
+select "product" if -1w is "lanterns" with log-likelihood : 0.693147 
+select "product" if -1w is "menswear" with log-likelihood : 0.693147 
+select "product" if -1w is "{product}" with log-likelihood : 0.693147 
+select "product" if -1w is "truck" with log-likelihood : 0.693147 
+select "product" if -1w is "spectrum" with log-likelihood : 0.693147 
+select "phone" if -1w is "private-" with log-likelihood : 0.693147 
+select "phone" if -1w is "442,000" with log-likelihood : 0.693147 
+select "product" if -1w is "drink" with log-likelihood : 0.693147 
+select "phone" if -1w is "clogged" with log-likelihood : 0.693147 
+select "product" if -1w is "r1" with log-likelihood : 0.693147 
+select "product" if -1w is "perfume" with log-likelihood : 0.693147 
+select "product" if -1w is "george" with log-likelihood : 0.693147 
+select "product" if -1w is "integrated" with log-likelihood : 0.693147 
+select "product" if -1w is "military" with log-likelihood : 0.693147 
+select "product" if -1w is "corsica" with log-likelihood : 0.693147 
+select "product" if -1w is "those" with log-likelihood : 0.693147 
+select "phone" if -1w is "ordinary" with log-likelihood : 0.693147 
+select "product" if -1w is "lexus" with log-likelihood : 0.693147 
+select "product" if -1w is "women's" with log-likelihood : 0.693147 
+select "product" if -1w is "office-equipment" with log-likelihood : 0.693147 
+select "product" if -1w is "broader" with log-likelihood : 0.693147 
+select "phone" if -1w is "one-on-one" with log-likelihood : 0.693147 
+select "product" if -1w is "kids" with log-likelihood : 0.693147 
+select "product" if -1w is "their" with log-likelihood : 0.693147 
+select "phone" if -1w is "3,600" with log-likelihood : 0.693147 
+select "product" if -1w is "such" with log-likelihood : 0.693147 
+select "phone" if -1w is "using" with log-likelihood : 0.693147 
+select "product" if -1w is "torpedo" with log-likelihood : 0.693147 
+select "product" if -1w is "jeep" with log-likelihood : 0.693147 
+select "phone" if -1w is "your" with log-likelihood : 0.693147 
+select "product" if -1w is "priced" with log-likelihood : 0.693147 
+select "product" if -1w is "filter" with log-likelihood : 0.693147 
+select "product" if -1w is "software" with log-likelihood : 0.693147 
+select "product" if -1w is "bit" with log-likelihood : 0.693147 
+select "phone" if -1w is "open" with log-likelihood : 0.693147 
+select "phone" if -1w is "exchange" with log-likelihood : 0.693147 
+select "phone" if -1w is "unsecured" with log-likelihood : 0.693147 
+select "phone" if -1w is """ with log-likelihood : 0.693147 
+select "product" if -1w is "furniture" with log-likelihood : 0.693147 
+select "product" if -1w is "credit" with log-likelihood : 0.693147 
+select "product" if -1w is "aerospace" with log-likelihood : 0.693147 
+select "product" if -1w is "3x" with log-likelihood : 0.693147 
+select "product" if -1w is "fragrance" with log-likelihood : 0.693147 
+select "phone" if -1w is "hospital" with log-likelihood : 0.693147 
+select "phone" if -1w is "bisexual" with log-likelihood : 0.693147 
+select "product" if -1w is "specialty-food" with log-likelihood : 0.693147 
+select "product" if -1w is "diaper" with log-likelihood : 0.693147 
+select "product" if -1w is "gm's" with log-likelihood : 0.693147 
+select "phone" if -1w is "x-rated" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "athletic shoe" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "personal computer" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "new luxury-car" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "while such" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is ""secure" telephone" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "including telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "an exclusive" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "ibm's lastest" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the new" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "but all" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "nabisco's cereal" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "lucrative military" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "american tire" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "through telephone" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "new x-rated" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "products, a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "highest-volume car" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "and telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "inc.'s ziari" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "of sun's" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "some private" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "dedicated private" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "business telephone" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "the party" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "telephone tip" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "16,000 new" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "900 telephone" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "their telephone" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "million access" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "direct trading" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the credit" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "digital's vax" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "the gab" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "dedicated telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "dropping the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its old" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "mostly "older" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "submarine-seeking torpedo" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "said access" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "nationally advertised" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "the subscriber-" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is ", and" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "chevrolet corsica" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "the party-" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "agricultural machinery" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "building the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "establish the" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "or asynchronous" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "business with" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "keep a" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "about 1,800" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "abex corp.'s" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "a chat" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "prairie skin-care" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the apparel" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "32 computer" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "of access" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "create a" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "four telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its microprocessor" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "a one-on-one" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "renting communications" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "<s> business" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its skin-care" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "sellers in" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the struggling" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "source's latest" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "for a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the optometric" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "foreign exchange" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "clogged the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "montana fragrance" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "mid-range computer" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "the hospital" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "says clogged" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "company's diagnostics" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "500,000 access" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "up the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "complete menswear" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "choice software" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "with a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "other marketing" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "and cougar" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "existing product" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "produce a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the company's" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the women's" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "another telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "hollywood's dreamboat" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "eye-care products" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "out a" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "provide: "gab"" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "ibm pc" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the three" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its zytel" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "poorest telephone-" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its sewing" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "edmonton, the" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "calif., gab" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "soft drink" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "adult diaper" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "phone whose" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "residents, whose" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "<s> a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "a specialized" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "a car" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "upscale car" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "current car" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "consumer products" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "of telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its vax" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "on another" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is ""largest telephone-" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "and marketing" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "15,700 access" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its full" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "sturdy 3x" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "frozen food" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the {product}" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "markets a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "of several" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "an open" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "on your" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its long-awaited" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "and transformers" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "apparel company's" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "produces a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "under the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "midrange product" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "patch kids" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "with the" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "about 3,600" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "for direct" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "the information" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "time, gm's" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "that extending" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "in subscriber" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "mirage car" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "tried a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its car" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "main computer" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "shedding some" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "basic chemicals" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "a toll-free" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the jeep" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "long-distance telephone" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "installed trading" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "ibm ps/2" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "residential telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "dr. denton" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "and clarion" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "their trading" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "and truck" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the gm-10" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "no "" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "a full" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "pay subscriber" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "certain atlas" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "for using" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "toll-free complaint" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "that those" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "open radio" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "a popular" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "see the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "corp.'s ps/2" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "keep this" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "pratt's pw4000" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "the tip" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "600 camera" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "some future" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "the other" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "by direct" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "to crossed" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "$5 billion" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "testing a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "brands' other" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the health-club" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "of his" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "manufacture a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its 1988-model" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "other gab-" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "about 442,000" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "of coleco's" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its office-equipment" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "popular car" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "and a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "most product" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "from his" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the previous" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "or dedicated" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "briefs: a" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "other consumer-products" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "initial filter" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "inc.'s macintosh" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "an unsecured" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "already huge" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "only 50,000" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "toll-call party" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "megaquest's bisexual" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "and romance" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "customer access" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "more telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the microprocessor" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "inc.'s lancome" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its aerospace" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "have a" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "and the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "to $1.69" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its amiga" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "as 24" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "<s> these" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "smaller specialty-food" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "entry-level fox" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "expand their" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "between car" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "three telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "reasonably priced" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "jaclyn smith" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "drilling bit" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "just at" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "many private-" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "& marx" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "by george" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "luxury lexus" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its computer" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the furniture" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "company's car" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "necessary telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "ii computer" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "most important" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "from older" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "lost the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "for the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "because its" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "consumer information" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "a dead" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "4.5% access" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "would his" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "and nail-polish" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "for some" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "oh lanterns" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "more complete" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "keep the" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "10 million" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "excavation equipment" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "of jewelry" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the acquired" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "running gab" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "all its" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the old" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "in sex" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "broaden its" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "acquired food" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "grand prix" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "much broader" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "and r1" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its ground-coffee" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "new perfume" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "read the" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "new product" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "york telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "and cracker" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its non-food" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "911 emergency" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the building-materials" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "over ordinary" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the spectrum" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "on that" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "the rail-intermodal" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "<@> <s>" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its carleton" with log-likelihood : 0.693147 
+select "product" if words at offsets -2 and -1, is "its integrated" with log-likelihood : 0.693147 
+select "phone" if words at offsets -2 and -1, is "dozen telephone" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "several ," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the and" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "all were" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "romance ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "computer won't" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "some and" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "transformers ;" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "car at" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone because" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "that if" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "tip that" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "business increased" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "gab- proprietors," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "sex and" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "vax ," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone in" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "atlas and" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the is" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "important !" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "vax has" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "hospital was" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "access grew" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "gab have" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "chat ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "access increased" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "bisexual recently" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "menswear ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "product but" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "long-awaited of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "those were" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "ground-coffee through" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "ps/2 are" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the from" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "software pacing" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "your ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "marketing and" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "consumer-products there," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "tire ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "communications to" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "a for" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "future ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "in ranging" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "other ?" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "the because" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "coleco's ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "lanterns of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "gab last" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "company's of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "food to" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "food ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is ""older products"" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the between" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "and adapters" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "popular of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "corsica ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "lastest of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "trading yesterday," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "kids could" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "integrated of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "gab once" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "3,600 at" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone at" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "filter for" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "building-materials ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "apparel ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "asynchronous ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone jumped" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "jeep ," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone- growth" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "private- and" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "ziari of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "carleton of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "party ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone used" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "ps/2 as" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "one-on-one like" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "the into" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "ps/2 last" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "skin-care last" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "whose were" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "1988-model this" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone to" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "jewelry from" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "442,000 in" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "subscriber charges." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "50,000 ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "million in" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "priced of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "luxury-car may" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the so" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the for" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone increased" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "information ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "car ,"" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "torpedo ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "chemicals from" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "exclusive of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "perfume ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "its 2" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "furniture could" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "dead ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "his of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "computer and" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "old --" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "some ."" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "marketing ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "three at" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the just" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone- increase" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "acquired ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "lancome are" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the let's" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "such will" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "$1.69 of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "a into" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "specialty-food ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is ""gab" that" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "previous ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone during" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "subscriber- charge" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "gm-10 is" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "products had" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "ordinary ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "its by" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "subscriber charges" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "military of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "open to" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "george is" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "customer ," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "access growth" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the light" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "drink ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "specialized of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "optometric were" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "older ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "using they" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "diaper in" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "latest ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "company's ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone growth" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone called" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "pw4000 ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "computer ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "computer is" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "full of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "cracker and" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "the it" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "macintosh rose" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone grew" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "rail-intermodal ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "cereal with" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "huge of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "sewing ," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "customer grew" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "full under" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "shoe to" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "other ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "r1 made" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "exchange ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "fragrance from" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "skin-care ," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "tip are" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "dedicated ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "non-food ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "these ," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "radio and" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "private ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "new to" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the with" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "product included" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "" noise" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "party a" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "ps/2 that" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "1,800 in" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "private and" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "amiga of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "credit ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "sun's ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "spectrum has" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "pc wouldn't" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "office-equipment ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "similar and" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "x-rated ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "billion of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "unsecured while" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "24 and" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "this open" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "old of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "emergency ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "at that" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "complaint ," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "a open" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "equipment are" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "party- effect" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "nail-polish ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the that" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "lexus in" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "its ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "dreamboat ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "information appealing" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "machinery ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "{product} ,"" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "smith in" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "the planned" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the at" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "camera ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "corp.'s of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "marx to" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "products so" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "cougar ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "prix is" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "toll-free for" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "3x ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "complete of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "whose was" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "his be" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "car anymore,"" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "crossed ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "with they" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "similar called" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "aerospace ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "the as" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "<s> will" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "bit is" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "truck through" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "broader ," with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone or" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "women's where" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "denton of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "extending to" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "his to" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "struggling was" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "health-club ," with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "gm's of" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the were" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "clogged recently" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "car through" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "their ,"" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "zytel of" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "clarion have" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "car by" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "another ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "advertised ." with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "diagnostics showed" with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "telephone into" with log-likelihood : 0.693147 
+select "product" if words at offsets -1 and +1, is "fox ." with log-likelihood : 0.693147 
+select "phone" if words at offsets -1 and +1, is "the busy" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of stylish" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "from imperial" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "that supplement" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "won't help" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "it had" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "is just" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "have a" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "through dec." with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "grew 2.5%" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and spread" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of computers." with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "were jammed" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of green" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "for its" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of more" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "a new" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "charges. </s>" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "let's call" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and public" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "to current" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and leaves" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "! </s>" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "are wall" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "is capable" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "light up." with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of clothing" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", played" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "in china," with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "increased 2.4%" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "," mr." with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and a" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of grotesque," with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "was scrapped." with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of older," with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "last year" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "because children" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "jumped 6.8%" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "are expected" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and one" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and conduct" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of mid-size" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "with its" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "anymore," laments" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "were allegedly" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of sunglasses." with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "." </s>" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", like" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "to about" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of software" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "charge by" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", while" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "or that" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "growth by" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "during the" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "this fall," with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "in central" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "to survive" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "just to" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "are well" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", cray's" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "that link" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "grew 3.5%" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and gab" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "last april," with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "was john" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of midpriced" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "rose 130%" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", which" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "were expected" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "was secure" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "to investment" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "," she" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "but declined" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "? "" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "could draw" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "as a" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "to his" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "to a" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of laptop" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "be tapped" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of trucks" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", with" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of beds" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of halloween" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "will be" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of frozen-cheese" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of sweaters" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "growth in" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "wouldn't still" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "growth since" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "effect could" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of minicomputers" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "charges and" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "were hurt" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", will" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "through costly" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "where fashionability" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "was busy" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "for the" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of mainframes" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "products" sold" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "open !" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "if he" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "may not" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", says" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "that might" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "appealing for" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "through a" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "to record" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "from the" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "there, including" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of limited" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of plush" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "that can't" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "grew by" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", moved" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "and perhaps" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of women's" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "-- that" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of japanese-made" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "have been" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "," said" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "adapters ," with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "to maybe" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", bally" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of mammography" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", he" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "at once" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "for three" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "and i" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of plastic" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "noise "" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "in service," with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", built" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of pdp" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "called healthy" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "they had" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "recently caused" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", first" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", according" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "yesterday, possibly" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "like the" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", "elizabeth" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of jeans" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of high-end" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", said" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "could fetch" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "-- voices" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of deluxe" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "recently got" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "in service." with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of mid-sized" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "to kraft" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "at chevrolet," with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "-- checking" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "included the" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of aircraft" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "once talked" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "in britain" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "in service" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "to their" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "from monteil," with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "showed an" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "will continue" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "that has" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and swore" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "2 machines" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "so i" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and 48" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", dialed" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "is still" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "increase ever,"" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "to tie" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", have" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "open for" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "that dozens" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "busy for" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", over" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", such" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and centrex" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of precision" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "made by" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "and properties," with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "from crystal" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "is aimed" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of coronary" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of cherubic" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "with the" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "; tonka" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of jockey" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of computers," with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of computer" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "and in" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "are likely" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "had sales" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "because noxell" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "for you" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of auto" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "is "substantially" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "and involving" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", sir" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of stock."" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "used in" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "is in" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of general" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "in 1985," with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "and its" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "by 2.5%" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", hormel" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "last month" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "to 15." with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "so it" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of nylon" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "pacing the" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "were out" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "between them" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "-- its" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "of millionaire's" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "ranging from" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "was that" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "under its" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "to order" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ", no" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "into a" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "called "soap" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "while mr." with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of oversize" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "they deem" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of men's" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "and to" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", fell" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "at more" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "as the" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is ". <p>" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "planned for" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of chevrolet" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "by offering" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "of "captain" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is "that it" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", they" with log-likelihood : 0.693147 
+select "phone" if words at offsets +1 and +2, is "proprietors, megaquest" with log-likelihood : 0.693147 
+select "product" if words at offsets +1 and +2, is ", particularly" with log-likelihood : 0.693147 
+select "phone" if +1w is "in" with log-likelihood : 0.587787 
+select "phone" if +1w is "and" with log-likelihood : 0.538997 
+select "product" if +1w is "into" with log-likelihood : 0.405465 
+select "product" if +1w is "last" with log-likelihood : 0.405465 
+select "product" if -1w is "his" with log-likelihood : 0.405465 
+select "product" if words at offsets +1 and +2, is "in the" with log-likelihood : 0.405465 
+select "phone" if words at offsets +1 and +2, is ", making" with log-likelihood : 0.405465 
+select "phone" if words at offsets +1 and +2, is ", the" with log-likelihood : 0.405465 
+select "phone" if words at offsets +1 and +2, is ", but" with log-likelihood : 0.405465 
+select "phone" if +1w is "at" with log-likelihood : 0.287682 
+select "product" if words at offsets +1 and +2, is ". </s>" with log-likelihood : 0.031749 
+select "product" if +1w is "because" with log-likelihood : 0.000000 
+select "product" if +1w is "called" with log-likelihood : 0.000000 
+select "product" if +1w is "," with log-likelihood : 0.000000 
+select "product" if +1w is "so" with log-likelihood : 0.000000 
+select "product" if +1w is "for" with log-likelihood : 0.000000 
+select "product" if +1w is "will" with log-likelihood : 0.000000 
+select "product" if +1w is "with" with log-likelihood : 0.000000 
+select "product" if +1w is "." with log-likelihood : 0.000000 
+select "product" if +1w is "have" with log-likelihood : 0.000000 
+select "product" if -1w is "other" with log-likelihood : 0.000000 
+select "product" if words at offsets -1 and +1, is "the in" with log-likelihood : 0.000000 
+select "product" if words at offsets +1 and +2, is "in a" with log-likelihood : 0.000000 
+select "product" if words at offsets +1 and +2, is ", and" with log-likelihood : 0.000000 
+select "product" if words at offsets +1 and +2, is ", is" with log-likelihood : 0.000000 
+select "product" if words at offsets +1 and +2, is "into the" with log-likelihood : 0.000000 

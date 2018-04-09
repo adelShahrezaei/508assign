@@ -1,0 +1,4 @@
+Script started on 2018-03-27 21:51:26-0400
+[1m[7m%[27m[1m[0m                                                                                                                                                                       ]2;adelshah@biolab-OptiPlex-790: ~/projects/uni/nlp/deslist]1;..i/nlp/deslist[0m[27m[24m[J[01;32m➜  [36mdeslist[00m [K[?1h=[?2004hscript decision-list-log.txt[28Dexit                        [24Dperl scorer.pl my-line-answers.txt line-key.txt[47Dexit                                           [43D[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2018-03-27 21:51:29-0400

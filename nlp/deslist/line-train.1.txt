@@ -1,0 +1,38 @@
+<corpus lang="en">
+<lexelt item="line-n">
+<instance id="line-n.art7} aphb 26300015:">
+<answer instance="line-n.art7} aphb 26300015:" senseid="phone"/>
+<context>
+ <s> Basically , this is because the noise is eliminated in the process of converting the signal into light pulses . </s> <s> The result is that noise generated at the sending end isn't transmitted , and there is no " <head>line</head> noise " as such . </s> 
+</context>
+</instance>
+<instance id="line-n.w7_079:9107:">
+<answer instance="line-n.w7_079:9107:" senseid="product"/>
+<context>
+ <s> Broadway Jeep/Eagle in Denver, Colo., for example, sells about 3,000 new Jeeps a year, but less than 300 cars. </s> <@> <s> "We don't really have much of a car <head>line</head> anymore," laments Steve Segal, the dealership's general manager. </s> 
+</context>
+</instance>
+<instance id="line-n.w8_137:14905:">
+<answer instance="line-n.w8_137:14905:" senseid="product"/>
+<context>
+ <s> Chanel also plans to run ads in The Wall Street Journal. </s> <@> </p> <@> <p> <@> <s> Consultants to the beauty-products business believe Estee Lauder Inc. and Cosmair Inc.'s Lancome <head>line</head> are likely to follow archrival Chanel's lead in testing new media. </s> 
+</context>
+</instance>
+<instance id="line-n.w8_060:3604:">
+<answer instance="line-n.w8_060:3604:" senseid="phone"/>
+<context>
+ <s> Atlanta-based BellSouth recently gave the party <head>line</head> a new function and renamed it Ring Master. </s> <s> Atlanta-based BellSouth recently gave the party line a new function and renamed it Ring Master. </s> <@> <s> The service allows a residential customer to have as many as three telephone numbers fed into the home through the existing single telephone line. </s> 
+</context>
+</instance>
+<instance id="line-n.w8_119:16927:">
+<context>
+ <p> <@> <s> Benihana National Corp., Miami, plans to close its unprofitable Big Splash-Seafood Emporium restaurant <head>line</head> as part of its drive to "get back to basics" and focus on Japanese cooking, Joel Schwartz, president, said in an interview. </s> 
+</context>
+</instance>
+<instance id="line-n.w8_041:15186:">
+<context>
+ <s> THE DIRECTIONS must be designed as carefully as the product itself, more companies are finding. </s> <@> </p> <@> <p> <@> <s> For instance, Prodigy Services Co., a joint venture of International Business Machines Corp. and Sears, Roebuck & Co., worked for three years to develop its system for shopping and retrieving information from a home computer over telephone <head>lines</head> . </s> 
+</context>
+</instance>
+</lexelt>
+</corpus>

@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+applyRules	tagger.pl	72;"	s
+createTests	decision-list.000.pl	124;"	s
+createTests	decision-list.1.pl	215;"	s
+createTests	decision-list.collocation.old.pl	124;"	s
+createTests	decision-list.pl	201;"	s
+getFeatures	decision-list.000.pl	77;"	s
+getFeatures	decision-list.1.pl	173;"	s
+getFeatures	decision-list.collocation.old.pl	77;"	s
+getFeatures	decision-list.pl	173;"	s
+maxLikelyHoodTag	tagger.pl	46;"	s
+parseTestFile	decision-list.1.pl	261;"	s
+parseTestFile	decision-list.pl	247;"	s
+parseText	decision-list.000.pl	56;"	s
+parseText	decision-list.1.pl	146;"	s
+parseText	decision-list.collocation.old.pl	56;"	s
+parseText	decision-list.pl	146;"	s
+printDecisionList	decision-list.1.pl	290;"	s
+printDecisionList	decision-list.pl	276;"	s
+readTrainFile	decision-list.000.pl	42;"	s
+readTrainFile	decision-list.1.pl	132;"	s
+readTrainFile	decision-list.collocation.old.pl	42;"	s
+readTrainFile	decision-list.pl	132;"	s
+runTestList	decision-list.1.pl	307;"	s
+runTestList	decision-list.pl	293;"	s

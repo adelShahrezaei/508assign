@@ -1,0 +1,6688 @@
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+0 0.5  0.5 
+$VAR1 = [
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'value' => 'telephone',
+            'accLog' => '3.49650756146648'
+          },
+          {
+            'accLog' => '3.3499040872746',
+            'value' => 'of',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'accLog' => '3.09104245335832',
+            'value' => 'on the',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'a of',
+            'accLog' => '2.89037175789616'
+          },
+          {
+            'value' => 'access',
+            'accLog' => '2.77258872223978',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'value' => 'of the',
+            'accLog' => '2.39789527279837',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '2.30258509299405',
+            'value' => 'a'
+          },
+          {
+            'value' => 'car',
+            'accLog' => '2.30258509299405',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'new of',
+            'accLog' => '2.30258509299405'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'PS/2',
+            'accLog' => '1.94591014905531'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '1.94591014905531',
+            'value' => 'computer'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '1.94591014905531',
+            'value' => 'a new'
+          },
+          {
+            'value' => 'The was',
+            'accLog' => '1.94591014905531',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'was dead',
+            'accLog' => '1.94591014905531',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '1.87180217690159',
+            'value' => 'was',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'the .',
+            'accLog' => '1.79175946922805'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '1.79175946922805',
+            'value' => 'telephone and'
+          },
+          {
+            'accLog' => '1.79175946922805',
+            'value' => 'the ,',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.74919985480926',
+            'value' => 'the',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'value' => 'product',
+            'accLog' => '1.6094379124341',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'value' => 'new',
+            'accLog' => '1.6094379124341',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'accLog' => '1.6094379124341',
+            'value' => 'direct',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.6094379124341',
+            'value' => 'introduced a',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '1.6094379124341',
+            'value' => 'direct to'
+          },
+          {
+            'accLog' => '1.6094379124341',
+            'value' => 'telephone .',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.6094379124341',
+            'value' => 'access .',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'value' => 'telephone ,',
+            'accLog' => '1.6094379124341',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '1.6094379124341',
+            'value' => 'the was'
+          },
+          {
+            'value' => 'to the',
+            'accLog' => '1.6094379124341',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'value' => 'of personal',
+            'accLog' => '1.6094379124341',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'value' => ',"',
+            'accLog' => '1.38629436111989'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'value' => 'grew',
+            'accLog' => '1.38629436111989'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'phone',
+            'value' => 'went',
+            'accLog' => '1.38629436111989'
+          },
+          {
+            'value' => 'increased',
+            'accLog' => '1.38629436111989',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'value' => 'growth',
+            'accLog' => '1.38629436111989'
+          },
+          {
+            'value' => 'through',
+            'accLog' => '1.38629436111989',
+            'feature' => 0,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '1.38629436111989',
+            'value' => 'gab'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'accLog' => '1.38629436111989',
+            'value' => 'The'
+          },
+          {
+            'value' => 'IBM',
+            'accLog' => '1.38629436111989',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'value' => 'trading',
+            'accLog' => '1.38629436111989',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'new IBM',
+            'accLog' => '1.38629436111989'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'new access',
+            'accLog' => '1.38629436111989'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '1.38629436111989',
+            'value' => 'telephone access'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => '<s> The',
+            'accLog' => '1.38629436111989'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => ', the',
+            'accLog' => '1.38629436111989'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'private telephone',
+            'accLog' => '1.38629436111989'
+          },
+          {
+            'value' => 'access in',
+            'accLog' => '1.38629436111989',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.38629436111989',
+            'value' => 'IBM .',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '1.38629436111989',
+            'value' => 'telephone --'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '1.38629436111989',
+            'value' => 'access ,'
+          },
+          {
+            'value' => 'of frozen',
+            'accLog' => '1.38629436111989',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '1.38629436111989',
+            'value' => 'went dead',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'as',
+            'accLog' => '1.09861228866811',
+            'feature' => 0,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'value' => 'they',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'value' => 'open',
+            'accLog' => '1.09861228866811',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'accLog' => '1.09861228866811',
+            'value' => 'by'
+          },
+          {
+            'value' => 'recently',
+            'accLog' => '1.09861228866811',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'feature' => 0,
+            'sense' => 'product',
+            'value' => 'is',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'has',
+            'feature' => 0,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'product',
+            'value' => 'could',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '1.09861228866811',
+            'value' => 'some'
+          },
+          {
+            'value' => 'products',
+            'accLog' => '1.09861228866811',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'current',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '1.09861228866811',
+            'value' => 'old'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'value' => 'telephone-',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'VAX',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'company\'s',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'party',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'A',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'value' => 'private',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'similar',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'microprocessor',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'customer',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'value' => 'subscriber',
+            'accLog' => '1.09861228866811',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'marketing',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'tip',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '1.09861228866811',
+            'value' => '570,000'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'information',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '1.09861228866811',
+            'value' => 'whose'
+          },
+          {
+            'value' => 'skin-care',
+            'accLog' => '1.09861228866811',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'its',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '1.09861228866811',
+            'value' => 'outside'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'food',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'value' => 'full',
+            'accLog' => '1.09861228866811',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '1.09861228866811',
+            'value' => 'its PS/2'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'over telephone',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'the telephone',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '1.09861228866811',
+            'value' => 'an outside'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'over the',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'IBM\'s PS/2',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '1.09861228866811',
+            'value' => 'than 570,000'
+          },
+          {
+            'value' => 'clogged telephone',
+            'accLog' => '1.09861228866811',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'value' => 'off the',
+            'accLog' => '1.09861228866811',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'its new',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'a direct',
+            'accLog' => '1.09861228866811',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'thousand access',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'launch a',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'a similar',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'new telephone',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'toll-free telephone',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'its current',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'current of',
+            'accLog' => '1.09861228866811',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'computer ,',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'microprocessor .',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '1.09861228866811',
+            'value' => 'car .'
+          },
+          {
+            'value' => 'outside ,',
+            'accLog' => '1.09861228866811',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'telephone that',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => '570,000 ,',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'the went',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'A of',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => 'trading to',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '1.09861228866811',
+            'value' => 'car ,'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => 'the to',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'product ,',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'PS/2 of',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'access were',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'increased 3.7%',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '1.09861228866811',
+            'value' => 'of shoes'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '1.09861228866811',
+            'value' => ', a'
+          },
+          {
+            'value' => 'were added',
+            'accLog' => '1.09861228866811',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'of computers',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'was still',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => ', to',
+            'accLog' => '1.09861228866811'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '1.09861228866811',
+            'value' => ', "'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => ', mainly',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'at the',
+            'accLog' => '1.09861228866811',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '1.09861228866811',
+            'value' => 'has been',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'accLog' => '1.02961941718116',
+            'value' => 'to'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'phone',
+            'value' => 'charge',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'accLog' => '0.693147180559945',
+            'value' => 'jumped'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'accLog' => '0.693147180559945',
+            'value' => 'yesterday,'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'accLog' => '0.693147180559945',
+            'value' => 'were'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'ranging'
+          },
+          {
+            'value' => 'between',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'charges.',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'that',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'feature' => 0,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'appealing'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'it',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'a',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'increase'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'rose',
+            'feature' => 0,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'let\'s',
+            'accLog' => '0.693147180559945',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'effect',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'value' => 'may',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'but',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'feature' => 0,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'be'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'charges'
+          },
+          {
+            'value' => ';',
+            'accLog' => '0.693147180559945',
+            'feature' => 0,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'value' => 'products"',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'included',
+            'accLog' => '0.693147180559945',
+            'feature' => 0,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'wouldn\'t',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'feature' => 0,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'once'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'phone',
+            'value' => 'adapters',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'had',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'value' => 'this',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'accLog' => '0.693147180559945',
+            'value' => '."'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'accLog' => '0.693147180559945',
+            'value' => 'from'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'product',
+            'value' => 'showed',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'while',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'will',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'value' => 'proprietors,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'pacing'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'value' => 'busy',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'accLog' => '0.693147180559945',
+            'value' => 'are'
+          },
+          {
+            'value' => 'made',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'value' => 'where',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'accLog' => '0.693147180559945',
+            'value' => 'anymore,"'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'value' => '!',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'value' => 'like',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'light',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'value' => 'just',
+            'accLog' => '0.693147180559945',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'value' => '--',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'feature' => 0,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => '?'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'during',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'if',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'used',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'there,',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'noise',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'or',
+            'sense' => 'phone',
+            'feature' => 0
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'won\'t',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'value' => 'under',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'feature' => 0,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'planned'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Amiga'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'older'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'PW4000',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'open',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'aerospace',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'value' => 'and',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'optometric',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'crossed'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'long-awaited',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'unsecured',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'billion',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'using',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'equipment',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'Hospital'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'dead',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'Fox'
+          },
+          {
+            'value' => 'party-',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Marx',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'non-food',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'health-club',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Denton',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'gab-',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'popular',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'fragrance',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'another'
+          },
+          {
+            'value' => 'PC',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'dreamboat',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Lexus',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'value' => '"older',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Kids'
+          },
+          {
+            'value' => '24',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'one-on-one',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'value' => 'Jeep',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'value' => 'that',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'Corsica',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'specialized',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'Sun\'s',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'ordinary',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'Smith'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '442,000',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'future'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'R1',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'value' => 'cracker',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => '3X'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'bit',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'emergency',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'rail-intermodal',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'their',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'value' => '1,800',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'radio',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'diagnostics'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'ground-coffee',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'lastest',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'camera'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'all',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'acquired'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'filter',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'office-equipment',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => '3,600',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'three'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'machinery',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'building-materials'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '$1.69',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'Clarion',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'torpedo',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'shoe'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'asynchronous',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'These'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Lancome',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'apparel',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'value' => 'Zytel',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Atlas'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '"gab"',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'several',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'luxury-car',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'military',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'truck'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'chat',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'clogged'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'tire'
+          },
+          {
+            'value' => 'exclusive',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'value' => 'private-',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'cereal',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'perfume',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'with',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'women\'s',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'specialty-food',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'diaper',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'bisexual',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'consumer-products'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'chemicals',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'romance'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'complete',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Carleton'
+          },
+          {
+            'value' => 'important',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'previous',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'jewelry'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'broader',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'drink',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => '{product}'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => '1988-model',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'those'
+          },
+          {
+            'value' => 'Ziari',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'GM\'s'
+          },
+          {
+            'value' => 'latest',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'advertised',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'sewing',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'Coleco\'s',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'sex',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'at',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'exchange'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'nail-polish',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'Lanterns',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'extending'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'subscriber-',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'huge',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'software',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'menswear'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'value' => 'communications',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'George',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'credit',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'X-rated',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'priced',
+            'feature' => 1,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'complaint',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'value' => 'Prix',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'Spectrum',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Corp.\'s',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'value' => 'Transformers',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'furniture',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'value' => 'Business',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'struggling'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'toll-free',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'dedicated'
+          },
+          {
+            'value' => 'million',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 1
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'value' => '50,000',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'Macintosh',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'such'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'in',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => '"',
+            'accLog' => '0.693147180559945',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'integrated'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'Cougar',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 1,
+            'accLog' => '0.693147180559945',
+            'value' => 'this'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'your',
+            'feature' => 1,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'GM-10',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'Digital\'s VAX'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'produces a',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'by direct'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'and R1',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'testing a'
+          },
+          {
+            'value' => 'lost the',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'already huge',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Abex Corp.\'s',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'in sex',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'out a',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of his',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'to crossed',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => '911 emergency'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => '$5 billion'
+          },
+          {
+            'value' => 'clogged the',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'acquired food',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'under the',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'the acquired',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'building the',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'its Zytel'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'upscale car'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'that those'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => '900 telephone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'luxury Lexus',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'apparel company\'s',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'new luxury-car'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'and a'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'just at',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'Megaquest\'s bisexual',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'about 1,800'
+          },
+          {
+            'value' => '16,000 new',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'with a',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '500,000 access',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'value' => '4.5% access',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of several',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'some future',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'other gab-',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'see the',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'to $1.69',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'company\'s car',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'and Clarion',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'and truck',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'Oh Lanterns',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'The information',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'lucrative military',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'dedicated telephone',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'another telephone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'expand their',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'the building-materials',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'tried a',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'drilling bit',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'dedicated private'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'an unsecured',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'from his',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'its aerospace'
+          },
+          {
+            'value' => 'the subscriber-',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'residents, whose'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'and Cougar',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'keep the',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'nationally advertised',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'four telephone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'IBM PS/2',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'their trading',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'business telephone',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'more telephone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'for some',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'The party-'
+          },
+          {
+            'value' => 'the company\'s',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'source\'s latest',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'the microprocessor'
+          },
+          {
+            'value' => 'Brands\' other',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'Edmonton, the'
+          },
+          {
+            'value' => 'New telephone',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'its skin-care'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'its 1988-model',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'a dead',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'The furniture',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Mirage car'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'the old',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => '600 camera',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'soft drink',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'Hollywood\'s dreamboat',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'its non-food',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'company\'s diagnostics'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'the tip'
+          },
+          {
+            'value' => 'its long-awaited',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'running gab',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'and romance'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => '<s> Business'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'of Coleco\'s'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'create a',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'only 50,000',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'a specialized',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'the three',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'the health-club'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'popular car',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Patch Kids'
+          },
+          {
+            'value' => 'Montana fragrance',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'certain Atlas'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'its Amiga',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'existing product',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'athletic shoe',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'most important',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'personal computer',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'as 24',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Chevrolet Corsica'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'for direct',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'BRIEFS: A',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'three telephone',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'million access',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'its sewing',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'current car',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'complete menswear',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'a popular',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'The rail-intermodal',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'between car',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'or dedicated',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'by George',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'mid-range computer',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Dr. Denton',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'toll-free complaint',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'residential telephone',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'its office-equipment'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'the new'
+          },
+          {
+            'value' => 'customer access',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'its microprocessor'
+          },
+          {
+            'value' => 'broaden its',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'necessary telephone',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'its Carleton',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'the Jeep',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'Calif., gab'
+          },
+          {
+            'value' => 'read the',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'pay subscriber'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'its integrated',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone tip'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'submarine-seeking torpedo',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'new customer'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'its VAX'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'up the',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'its old',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'entry-level Fox',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'in subscriber',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'The Spectrum',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'produce a',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', and',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'New customer'
+          },
+          {
+            'value' => 'sellers in',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => '10 million'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'the previous'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'other marketing',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'shedding some',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'with the'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'on that'
+          },
+          {
+            'value' => 'Inc.\'s Macintosh',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'Choice software',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'for the',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'and cracker',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'manufacture a',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'its computer'
+          },
+          {
+            'value' => 'on another',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'of Sun\'s'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'of telephone',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => '& Marx',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'phone whose'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'agricultural machinery',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'new perfume',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'no "',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Nabisco\'s cereal',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'the struggling',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'its ground-coffee',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'provide: "gab"',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'toll-call party',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'The credit'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'mostly "older',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'many private-',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'installed trading',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'sturdy 3X',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'the {product}'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'the party',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'including telephone',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'Inc.\'s Ziari',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'its full'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Grand Prix'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'all its',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'highest-volume car'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'new X-rated'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'business with',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'initial filter',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'some private',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'for a',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Inc.\'s Lancome',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'and marketing',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'and Transformers',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'a full',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'smaller specialty-food',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'Keep this'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'basic chemicals',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'the other'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'long-distance telephone',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'a one-on-one',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'more complete'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'and telephone'
+          },
+          {
+            'value' => 'York telephone',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'consumer products',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'about 3,600',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'the Hospital',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'the gab'
+          },
+          {
+            'value' => '"largest telephone-',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'about 442,000'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'an exclusive',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'dropping the',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'the apparel',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'Jaclyn Smith',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'time, GM\'s',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'The GM-10',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'II computer',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'IBM PC'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'their telephone',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Would his',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of jewelry',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'but all'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'products, a',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => '32 computer',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'much broader',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'While such'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Corp.\'s PS/2',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'new product',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'foreign exchange'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'and the'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'most product',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'establish the',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '"secure" telephone',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'have a',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'said access',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'excavation equipment',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'reasonably priced'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'keep a',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '15,700 access',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'an open'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'The optometric',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'open radio'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'dozen telephone',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'for using'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'other consumer-products',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'direct trading',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'main computer'
+          },
+          {
+            'value' => 'and nail-polish',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => '<s> A'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'consumer information',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'eye-care products',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'adult diaper',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'or asynchronous',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'renting communications',
+            'feature' => 2,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'says clogged',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'value' => 'markets a',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'that extending'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'the women\'s'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'its car',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'accLog' => '0.693147180559945',
+            'value' => 'frozen food'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'Pratt\'s PW4000',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'poorest telephone-',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'a chat',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'value' => 'of access',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'a toll-free',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'a car',
+            'accLog' => '0.693147180559945',
+            'feature' => 2,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'Prairie skin-care',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'value' => 'from older',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 2,
+            'value' => 'on your',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'midrange product',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'IBM\'s lastest'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '<s> These',
+            'sense' => 'product',
+            'feature' => 2
+          },
+          {
+            'value' => 'over ordinary',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 2
+          },
+          {
+            'feature' => 2,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'through telephone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 2,
+            'value' => 'American tire',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'office-equipment .',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'specialty-food .'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'truck through',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'telephone- increase',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '$1.69 of',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Macintosh rose'
+          },
+          {
+            'value' => 'car ,"',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'value' => 'the light',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'their ,"'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'fragrance from',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'such will'
+          },
+          {
+            'value' => 'tip are',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'value' => 'other ?',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'bit is',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'value' => 'Smith in',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone during'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'and adapters',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'value' => 'important !',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Prix is',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'older .'
+          },
+          {
+            'value' => 'product but',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'in ranging',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'value' => 'camera ,',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Zytel of',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'the into',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'toll-free for',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => 'telephone of',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'skin-care last'
+          },
+          {
+            'value' => 'nail-polish .',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'food to'
+          },
+          {
+            'value' => 'unsecured while',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'sewing ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'X-rated .',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'sex and'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'subscriber charges.'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'subscriber charges',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'the for'
+          },
+          {
+            'value' => 'one-on-one like',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'consumer-products there,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'PS/2 last',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'perfume ,',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Hospital was',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'acquired ,',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'the with'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone at',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'products had',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'The planned',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Marx to'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone grew'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'telephone increased',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'VAX has',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Amiga of',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'subscriber- charge',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'value' => '1988-model this',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'whose were',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'chat .'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => 'romance .',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'the from'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'future ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'popular of',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'car anymore,"',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'broader ,',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone- growth',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'value' => 'access increased',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'customer ,',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'lastest of',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'cereal with'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'optometric were',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Lexus in',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'computer is',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'gab- proprietors,',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'the as'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'previous .',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'the just',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'GM\'s of',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'your ,',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'diaper in',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'huge of',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'filter for',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'three at',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => '442,000 in',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Denton of',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Jeep ,',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'value' => 'PW4000 ,',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'radio and'
+          },
+          {
+            'value' => 'Clarion have',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'the let\'s'
+          },
+          {
+            'value' => 'latest .',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'Corsica .'
+          },
+          {
+            'value' => 'communications to',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'party- effect',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'chemicals from',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'with they'
+          },
+          {
+            'value' => 'R1 made',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'his to',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'credit ,'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'advertised .'
+          },
+          {
+            'value' => 'other .',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'asynchronous .',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'car at'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'at that',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'similar called',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'Spectrum has',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'the because'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'These ,',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'PS/2 as',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'Lanterns of'
+          },
+          {
+            'value' => 'full of',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'value' => 'telephone used',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Ziari of',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '24 and',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'a for'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => 'the that',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'dedicated .',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'Sun\'s ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => 'complaint ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Business increased',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'the it'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'another .'
+          },
+          {
+            'value' => 'long-awaited of',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'the so',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'GM-10 is'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'tire .',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'his be',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'priced of'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'car through',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'gab once'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'company\'s .',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'torpedo .',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'PS/2 are',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'old --'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'clogged recently'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'ground-coffee through'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'marketing and'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'a into'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'dead ,'
+          },
+          {
+            'value' => 'computer won\'t',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'private- and',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone in'
+          },
+          {
+            'value' => 'food .',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => '3,600 at'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'all were'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'building-materials ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => '1,800 in'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'several ,'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Fox .',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'old of',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'some and',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'machinery ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => 'party a',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'Carleton of',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'Corp.\'s of',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'The went'
+          },
+          {
+            'value' => 'telephone because',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'telephone to',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'Lancome are',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'access grew',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'shoe to',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'jewelry from',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'information appealing',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'rail-intermodal ,'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => '"gab" that',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'exclusive of'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone into',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'new to',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'gab have',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => '"older products"',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'value' => 'struggling was',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'the at'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'Cougar .'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'gab last',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'whose was',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'value' => 'non-food .',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'car by',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'dreamboat .',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'ordinary .'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'some ."'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'customer grew',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'computer and'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'Transformers ;',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'drink .',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'his of'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'Atlas and',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'emergency ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => '" noise'
+          },
+          {
+            'value' => 'military of',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'value' => 'women\'s where',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'value' => '{product} ,"',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone jumped',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'software pacing',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'a open',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'diagnostics showed',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'the is',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'apparel .'
+          },
+          {
+            'value' => 'open to',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'complete of',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'the between',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'value' => 'tip that',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'health-club ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'extending to',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'the were',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'luxury-car may',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'specialized of',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'integrated of',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'cracker and',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'value' => 'company\'s of',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'marketing ,',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'this open'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'that if'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'menswear .'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'products so',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'value' => 'similar and',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => '3X ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'private and',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'the and'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'equipment are'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'furniture could'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'those were'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'PS/2 that',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'computer .',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 3,
+            'accLog' => '0.693147180559945',
+            'value' => 'trading yesterday,'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'its .',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'full under',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'Coleco\'s ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'information ,',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'crossed .',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'Kids could',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone growth',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'million in',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'aerospace .',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '50,000 .',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'VAX ,',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'party .',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'billion of',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone or',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'private .',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 3
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'telephone called'
+          },
+          {
+            'value' => 'access growth',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'the busy'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'exchange .',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'PC wouldn\'t',
+            'feature' => 3,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'skin-care ,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'bisexual recently',
+            'accLog' => '0.693147180559945',
+            'feature' => 3,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'value' => 'George is',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'product',
+            'value' => 'its by',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 3,
+            'sense' => 'phone',
+            'value' => 'using they',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'product included',
+            'sense' => 'product',
+            'feature' => 3
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'of deluxe'
+          },
+          {
+            'value' => 'of clothing',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'wouldn\'t still',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'appealing for',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'of frozen-cheese'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of Halloween',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'and involving',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'of mid-sized',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'in service',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'for you',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'are expected'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'it had',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'they had',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => '-- checking'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', no',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', Cray\'s',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'may not'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'be tapped',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'of mammography'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of General',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'to tie'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'of plush',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'and 48'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => ', which'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'growth since',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'between them',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'and Centrex',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'from Monteil,',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'planned for',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', "Elizabeth',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'by 2.5%',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'that dozens'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'is in',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'to investment',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'was scrapped.',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'of laptop',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', first',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'value' => 'through costly',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'light up.'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'in service.'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'effect could',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'of stock."',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'value' => 'have been',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'of software',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'by offering',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => '," said',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'was John',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'busy for',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'were jammed',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'at once',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'of grotesque,'
+          },
+          {
+            'value' => 'like the',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of nylon',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'value' => ', according',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'in service,',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'charges. </s>'
+          },
+          {
+            'value' => 'that can\'t',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'and to',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'and a',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'and one',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'of Limited'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => ', built',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'are Wall'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'of stylish',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'to a',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'of PDP'
+          },
+          {
+            'value' => 'so I',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'value' => 'of "Captain',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'value' => 'let\'s call',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'so it',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'called Healthy',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'last month',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'this fall,'
+          },
+          {
+            'value' => 'and spread',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => ', played',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'is still',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'to their',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => ', fell',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', moved',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'showed an',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'is capable'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => '." </s>',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'adapters ,',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => '? "',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', says',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'was that',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => ', such'
+          },
+          {
+            'value' => 'products" sold',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'and its',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'are likely'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of precision',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'ranging from',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'called "Soap',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'with its'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => ', they'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'to order',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'was busy'
+          },
+          {
+            'value' => 'were hurt',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'of older,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'but declined',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'is "substantially',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'of midpriced'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'that supplement'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'to record',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', while',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'used in'
+          },
+          {
+            'value' => 'as the',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'of aircraft'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'they deem'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'to maybe',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'and public',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'and leaves',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'into a'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'and in'
+          },
+          {
+            'value' => 'noise "',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'last year',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of sweaters',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'of jeans'
+          },
+          {
+            'value' => 'or that',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'because Noxell',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'value' => 'pacing the',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'open !',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'of women\'s',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'because children',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'value' => 'grew 2.5%',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => ', over'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'for three',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'of Green'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'from Imperial',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => ', sir',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of Millionaire\'s',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of sunglasses.',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'and I',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'proprietors, Megaquest',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => ', have',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'of auto',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => '-- that'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', Bally',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'to current',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'from the',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'through Dec.',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'growth in',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'while Mr.',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'a new'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'to his',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'increased 2.4%',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => ', dialed'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'of jockey'
+          },
+          {
+            'value' => 'of Japanese-made',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => ', Hormel'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'under its',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'in central',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'to Kraft'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'in China,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'of oversize',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'during the',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'value' => 'if he',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'recently caused',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => 'is aimed',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'had sales',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'at Chevrolet,',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'have a',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => '," Mr.',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'value' => ', said',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'and properties,',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of minicomputers',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'grew by',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'of plastic'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of trucks',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'in Britain',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'where fashionability',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'that it',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => ', like',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'and perhaps'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'to about',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => '-- its',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => '! </s>',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'and conduct',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'to 15.',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'could draw'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'could fetch',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => ', with',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'of computers.',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'in 1985,',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'to survive'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'that link',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'yesterday, possibly'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'for its'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of cherubic',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => '-- voices',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'of coronary',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'from Crystal',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'anymore," laments',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'last April,',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'jumped 6.8%',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'are well',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'of more',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'made by'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'of high-end',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'of men\'s',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'that has'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => ', will',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => '. <p>',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'value' => ', he',
+            'accLog' => '0.693147180559945',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => '," she'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'were allegedly',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of mainframes',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'at more',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => '; Tonka',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'is just',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'charges and'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'of computers,',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => 'just to',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'open for',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'phone'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'charge by'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'through a',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => ', particularly'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'will continue'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'recently got',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'once talked'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'and gab',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'grew 3.5%',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'increase ever,"'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'growth by',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'value' => 'were out',
+            'accLog' => '0.693147180559945',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'as a',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'with the'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'rose 130%',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'value' => 'and swore',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'that might',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'of beds',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'accLog' => '0.693147180559945',
+            'value' => 'included the',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'value' => 'of mid-size',
+            'accLog' => '0.693147180559945',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'won\'t help',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'were expected'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.693147180559945',
+            'value' => 'was secure'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'value' => 'of Chevrolet',
+            'accLog' => '0.693147180559945'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.693147180559945',
+            'value' => 'for the'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'there, including'
+          },
+          {
+            'feature' => 4,
+            'sense' => 'product',
+            'accLog' => '0.693147180559945',
+            'value' => 'of computer'
+          },
+          {
+            'accLog' => '0.587786664902119',
+            'value' => 'in',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 0,
+            'value' => 'and',
+            'accLog' => '0.538996500732687'
+          },
+          {
+            'value' => 'into',
+            'accLog' => '0.405465108108164',
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'value' => 'last',
+            'accLog' => '0.405465108108164'
+          },
+          {
+            'feature' => 1,
+            'sense' => 'product',
+            'value' => 'his',
+            'accLog' => '0.405465108108164'
+          },
+          {
+            'value' => 'in the',
+            'accLog' => '0.405465108108164',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'feature' => 4,
+            'sense' => 'phone',
+            'accLog' => '0.405465108108164',
+            'value' => ', but'
+          },
+          {
+            'value' => ', the',
+            'accLog' => '0.405465108108164',
+            'sense' => 'phone',
+            'feature' => 4
+          },
+          {
+            'sense' => 'phone',
+            'feature' => 4,
+            'value' => ', making',
+            'accLog' => '0.405465108108164'
+          },
+          {
+            'accLog' => '0.287682072451781',
+            'value' => 'at',
+            'feature' => 0,
+            'sense' => 'phone'
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'accLog' => '0.0317486983145803',
+            'value' => '. </s>'
+          },
+          {
+            'value' => 'with',
+            'accLog' => 0,
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'accLog' => 0,
+            'value' => ','
+          },
+          {
+            'value' => 'because',
+            'accLog' => 0,
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'accLog' => 0,
+            'value' => '.'
+          },
+          {
+            'feature' => 0,
+            'sense' => 'product',
+            'accLog' => 0,
+            'value' => 'so'
+          },
+          {
+            'value' => 'called',
+            'accLog' => 0,
+            'sense' => 'product',
+            'feature' => 0
+          },
+          {
+            'sense' => 'product',
+            'feature' => 0,
+            'accLog' => 0,
+            'value' => 'for'
+          },
+          {
+            'value' => 'have',
+            'accLog' => 0,
+            'feature' => 0,
+            'sense' => 'product'
+          },
+          {
+            'accLog' => 0,
+            'value' => 'other',
+            'sense' => 'product',
+            'feature' => 1
+          },
+          {
+            'sense' => 'product',
+            'feature' => 3,
+            'accLog' => 0,
+            'value' => 'the in'
+          },
+          {
+            'accLog' => 0,
+            'value' => ', is',
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'accLog' => 0,
+            'value' => 'in a',
+            'feature' => 4,
+            'sense' => 'product'
+          },
+          {
+            'value' => ', and',
+            'accLog' => 0,
+            'sense' => 'product',
+            'feature' => 4
+          },
+          {
+            'sense' => 'product',
+            'feature' => 4,
+            'value' => 'into the',
+            'accLog' => 0
+          }
+        ];
