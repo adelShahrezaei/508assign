@@ -1,4 +1,537 @@
 
 
 
-=========================<USER QUESTION> when is easter?
+=========================<USER QUESTION> where is paris?
+<RAW WIKI> 
+
+
+
+
+{{Infobox French commune |name = Paris |commune status = Commune and department
+|image = |caption = Clockwise from top: skyline of Paris on the Seine with the
+Eiffel Tower, Notre-Dame de Paris, the Louvre and its large pyramid, and the Arc
+de Triomphe |image flag = Flag of Paris.svg |image flag size = x95px |image coat
+of arms = Grandes_Armes_de_Paris.svg |image coat of arms size = x95px |city
+motto = |coordinates = |mayor = Anne Hidalgo |party = PS |term = |subdivisions
+entry = Subdivisions |subdivisions = 20 arrondissements |total type = City |area
+km2 = 105.4 |area footnotes = [https://web.archive.org/web/20091229230237/http://www.statistiques-
+locales.insee.fr/Fiches/RS/DEP/75/COM/RS_COM75056.pdf INSEE local statistics],
+including Bois de Boulogne and Bois de Vincennes. |INSEE=75056 |population date
+= 2015 |population footnotes = |population = 2,206,488 |population ranking = 1st
+in France |urban area km2 = 2845 |urban area date = |urban pop = 10601122 |metro
+area km2 = 17174.4 |metro area date = |metro area pop = 12,405,426 |metro area
+pop date = |population_demonym= Parisian (fr) |postal code= 75001–75020, 75116
+|website = [https://www.paris.fr/ www.paris.fr] }}
+
+'Paris' () is the capital and most populous city in France, with an administrative-
+limits area of and an official population of 2,206,488 (2015)."Paris perd ses
+habitants, la faute à la démographie et aux… meublés touristiques pour la
+Ville." Le Parisien, 28 December 2017 The city is a commune and department, and
+the heart of the Île-de-France region (colloquially known as the 'Paris
+Region'), whose 2016 population of 12,142,802 represented roughly 18 percent of
+the population of France. Since the 17th century, Paris has been one of Europe's
+major centres of finance, commerce, fashion, science, and the arts. The Paris
+Region had a GDP of €681 billion (US$850 billion) in 2016, accounting for 31
+percent of the GDP of France. According to official estimates, in 2013-14 the
+Paris Region had the third-highest GDP in the world and the largest regional GDP
+in the EU.
+
+The City of Paris's administrative limits form an East-West oval centred on
+the island at its historical heart, the Île de la Cité; this island is near
+the top of an arc of the river Seine that divides the city into southern Rive
+Gauche (Left Bank) and northern Rive Droite regions. Paris is the core of a
+built-up area that extends well beyond its limits: commonly referred to as the
+agglomération Parisienne, and statistically as a [[unité urbaine]] (a measure
+of urban area), the Paris agglomeration's 2013 population of 10,601,122 made
+it the largest urban area in the European Union. City-influenced commuter
+activity reaches well beyond even this in a statistical ''aire urbaine'' de
+Paris (a measure of metropolitan area), that had a 2013 population of
+12,405,426, a number one-fifth the population of France, the largest
+metropolitan area in the Eurozone.
+
+The city is a major rail, highway, and air-transport hub served by two
+international airports: Paris-Charles de Gaulle (the second busiest airport in
+Europe after London Heathrow Airport with 63.8 million passengers in 2014) and
+Paris-Orly. Opened in 1900, the city's subway system, the Paris Métro, serves
+5.23 million passengers daily, and is the second busiest metro system in Europe
+after Moscow Metro. Paris's Gare du Nord is one of the ten busiest railway
+stations in the world, with 262 million passengers in 2015.
+
+Paris is especially known for its museums and architectural landmarks: the
+Louvre was the most visited art museum in the world in 2016, with 7.4 million
+visitors.The Art Newspaper Visitor Figures 2016, 29 March 2016 The Musée d'Orsay
+and Musée de l'Orangerie are noted for their collections of French Impressionist
+art, and the Pompidou Centre Musée National d'Art Moderne has the largest
+collection of modern and contemporary art in Europe. The historical district
+along the Seine in the city centre is classified as a UNESCO Heritage Site.
+Popular landmarks in the centre of the city include the Cathedral of Notre Dame
+de Paris and The Gothic royal chapel of Sainte-Chapelle, both on the Île de la
+Cité; the Eiffel Tower, constructed for the Paris Universal Exposition of 1889;
+the Grand Palais and Petit Palais, built for the Paris Universal Exposition of
+1900; the Arc de Triomphe on the Champs-Élysées, and the Basilica of Sacré-Coeur
+on the hill of Montmartre. Paris received 23 million visitors in 2017,[https://www.lesechos.fr/industrie-services/tourisme-
+transport/0301026686629-vers-une-frequentation-touristique-record-a-paris-en-
+2017-2138559.php Vers une fréquentation touristique record à Paris en 2017] on
+[[Les Échos (France)|Les Echos]] making it the world's top tourist destination.
+
+The association football club Paris Saint-Germain and the rugby union club
+Stade Français are based in Paris. The 80,000-seat Stade de France, built for
+the 1998 FIFA World Cup, is located just north of Paris in the neighbouring
+commune of Saint-Denis. Paris hosts the annual French Open Grand Slam tennis
+tournament on the red clay of Roland Garros. Paris hosted the Olympic Games in
+1900, 1924 and will host the 2024 Summer Olympics. The 1938 and 1998 FIFA World
+Cups, the 2007 Rugby World Cup, and the 1960, 1984, and 2016 UEFA European
+Championships were also held in the city, and every July, the Tour de France
+bicycle race finishes there.
+
+<QUERY> $VAR1 = {
+          'subject' => 'paris',
+          'verb' => 'is',
+          'q' => qr/(?i).*?_location_?.*? = (\w* (?:, \w*)?)/i,
+          'add' => 'in'
+        };
+
+<QUERY> $VAR1 = {
+          'q' => qr/(?i)location ((?:in ).*(?:, \w*)?)/i,
+          'verb' => 'is',
+          'subject' => 'paris'
+        };
+
+<QUERY> $VAR1 = {
+          'q' => qr/(?i) is.*?((?:in |located in |placed in  )\w*(?:, \w*)?)[.,!?]/i,
+          'subject' => 'paris',
+          'verb' => 'is'
+        };
+
+<ANSWER> in France
+
+
+
+=========================<USER QUESTION> where is Eiffel Tower?
+<RAW WIKI> 
+
+
+
+
+{{Infobox building
+| name = Eiffel Tower native_name = Tour Eiffel native_name_lang = fr image =
+| File:Tour Eiffel Wikimedia Commons (cropped).jpg caption = The Eiffel Tower
+| seen fromthe Champ de Mars highest_start = 1889 highest_end = 1930 location =
+| 7th arrondissement, Paris, France
+
+| map_type = Paris coordinates = start_date = 28 January 1887 completion_date =
+| 15 March 1889 opening = 31 March 1889 () building_type = Observation
+| towerBroadcasting tower architectural = tip = antenna_spire = roof = top_floor
+| = floor_count = 3 elevator_count = 8 cost = floor_area = architect = Stephen
+| Sauvestre structural_engineer = Maurice KoechlinÉmile Nouguier main_contractor
+| = Compagnie des Etablissements Eiffel developer = owner = City of Paris,
+| France management = (SETE) url = references = I.
+}} The 'Eiffel Tower' ( ; ) is a wrought iron lattice tower on the Champ de Mars
+in Paris, France. It is named after the engineer Gustave Eiffel, whose company
+designed and built the tower.
+
+Constructed from 1887–89 as the entrance to the 1889 World's Fair, it was
+initially criticized by some of France's leading artists and intellectuals for
+its design, but it has become a global cultural icon of France and one of the
+most recognisable structures in the world. The Eiffel Tower is the most-visited
+paid monument in the world; 6.91&nbsp;million people ascended it in 2015.
+
+The tower is tall, about the same height as an 81- building, and the tallest
+structure in Paris. Its base is square, measuring on each side. During its
+construction, the Eiffel Tower surpassed the Washington Monument to become the
+tallest man-made structure in the world, a title it held for 41 years until the
+Chrysler Building in New York City was finished in 1930. Due to the addition of
+a broadcasting aerial at the top of the tower in 1957, it is now taller than the
+Chrysler Building by . Excluding transmitters, the Eiffel Tower is the second
+tallest structure in France after the Millau Viaduct.
+
+The tower has three levels for visitors, with restaurants on the first and
+second levels. The top level's upper platform is above the ground – the highest
+observation deck accessible to the public in the European Union. Tickets can be
+purchased to ascend by stairs or lift (elevator) to the first and second levels.
+The climb from ground level to the first level is over 300 steps, as is the
+climb from the first level to the second. Although there is a staircase to the
+top level, it is usually accessible only by lift.
+
+<QUERY> $VAR1 = {
+          'verb' => 'is',
+          'subject' => 'Eiffel Tower',
+          'add' => 'in',
+          'q' => qr/(?i).*?_location_?.*? = (\w* (?:, \w*)?)/i
+        };
+
+<QUERY> $VAR1 = {
+          'q' => qr/(?i)location ((?:in ).*(?:, \w*)?)/i,
+          'verb' => 'is',
+          'subject' => 'Eiffel Tower'
+        };
+
+<QUERY> $VAR1 = {
+          'subject' => 'Eiffel Tower',
+          'verb' => 'is',
+          'q' => qr/(?i) is.*?((?:in |located in |placed in  )\w*(?:, \w*)?)[.,!?]/i
+        };
+
+<QUERY> $VAR1 = {
+          'q' => qr/(?i)is is(.*? (?:of )\w*(?:, \w*)?)[.,!?]/i,
+          'verb' => 'is',
+          'subject' => 'Eiffel Tower'
+        };
+
+<QUERY> $VAR1 = {
+          'subject' => 'Eiffel Tower',
+          'verb' => 'is',
+          'q' => qr/(?i)((?:in |located in |placed in  )\w*(?:, \w*)?)[.,!?]/i
+        };
+
+<ANSWER> in Paris, France
+
+
+
+=========================<USER QUESTION> where is tehran
+<RAW WIKI> 
+
+{{Infobox settlement
+ | name = official_name = · Greater Tehran native_name = }} native_name_lang =
+ | settlement_type = City image_skyline = {{Photomontage photo1a = Towers in
+ | Tehran City at night.jpg|px300Milad Tower seen from Qarb Town photo2a = Azadi
+ | tower 9.jpgThe Azadi Tower photo2b = Elahiyeh.gifShemiran photo3a = Bagh-e
+ | Ferdows Tajrish.jpgFerdows Garden photo3b = Ports Park in Tehran.jpgAb-o-
+ | Atash Park photo4a = Golestan Palace, Tehran, Iran (1249288212).jpgGolestan
+ | Palace photo4b = Tochal from Modarres Expressway.jpgMount Tochal seen from
+ | Modarres Expressway. photo5a = Chitgar Lake, Tehran.jpgChitgar Lake photo5b =
+ | Tabiat_bridge_by_Tasnim.jpgTabiat Bridge spacing = 2 size = 266 foot_montage
+ | = Clockwise from top: Milad Tower seen from Qarb Town, Shemiran, Ab-o-Atash
+ | Park, Mount Tochal seen from Modarres Expressway, Tabiat Bridge, Chitgar
+ | Lake, Golestan Palace, Ferdows Garden, and the Azadi Tower.
+                             }}
+ | image_caption = image_seal = Tehran Logo.png seal_alt = image_shield =
+ | shield_alt = nickname = motto = image_map = mapsize = map_caption = mapsize1
+ | = map_caption1 = pushpin_map = Iran#Asia pushpin_label_position =
+ | pushpin_mapsize =
+ |pushpin_relief = yes
+ | pushpin_map_caption = Location in Iran and Asia coordinates =
+ | subdivision_type = Country subdivision_name = subdivision_type1 = Province
+ | subdivision_type2 = County subdivision_type3 = District subdivision_type4 =
+ | subdivision_name1 = Tehran subdivision_name2 = TehranRayShemiranat
+ | subdivision_name3 = Central subdivision_name4 = established_title =
+ | established_date = 1778 leader_title = Mayor leader_name = Vacant
+ | leader_title2 = City Council leader_name2 = '{{small|Chairman}}' Mohsen
+ | Hashemi Rafsanjani area_footnotes =[http://www.daftlogic.com/downloads/kml/07102015-
+ | iocvfsaw.kml Tehran]. Daft Logic. area_magnitude = area_land_km2 =
+ | area_land_sq_mi = area_water_km2 = area_water_sq_mi = area_water_percent =
+ | area_urban_km2 = 730 area_urban_sq_mi = elevation_footnotes
+ | =[http://en.tehran.ir/Default.aspx?tabid=97 Tehran, Environment & Geography].
+ | Tehran.ir. elevation_m = 900 to 1830 elevation_ft = 2952 to 6003
+ | population_footnotes =Urban population: Data for Tehran County. ~97.5% of
+ | county population live in Tehran cityMetro population: Estimate on base of
+ | census data, includes central part of Tehran province and Karaj County and
+ | Fardis from Alborz province population_as_of = 2016 census
+ | population_density_km2 = 11800 population_urban = 8,846,782 population_metro
+ | = 15,000,000 population_est = population_est_as_of = population_blank1_title
+ | = Population Rank in Iran population_blank1 = 1st
+ | population_demonym=Tehrani&nbsp;(en) area_code = (+98) 021 blank_name =
+ | Climate blank_info = BSk website = [http://en.tehran.ir/ www.tehran.ir]
+ | footnotes = timezone = IRST utc_offset = +03:30 timezone_DST = IRDT
+ | utc_offset_DST = +04:30
+ }}
+
+
+'Tehran' (; ) is the capital of Iran and Tehran Province. With a population of
+around 8.8 million in the city and 15 million in the larger metropolitan area of
+Greater Tehran, Tehran is the most populous city in Iran and Western Asia,See
+[[List of metropolitan areas in Asia]]. and has the second-largest metropolitan
+area in the Middle East. It is ranked 29th in the world by the population of its
+metropolitan area.
+
+In the Classical era, part of the territory of present-day Tehran was occupied
+by Rhages, a prominent Median city. It was subject to destruction through the
+medieval Arab, Turkic, and Mongol invasions. Its modern-day inheritor remains as
+an urban area absorbed into the metropolitan area of Greater Tehran.
+
+Tehran was first chosen as the capital of Iran by Agha Mohammad Khan of the
+Qajar dynasty in 1796, in order to remain within close reach of Iran's
+territories in the Caucasus, before being separated from Iran as a result of the
+Russo-Iranian Wars, and to avoid the vying factions of the previously ruling
+Iranian dynasties. The capital has been moved several times throughout the
+history, and Tehran is the 32nd national capital of Iran. Large scale demolition
+and rebuilding began in the 1920s, and Tehran has been a destination for mass
+migrations from all over Iran since the 20th century.
+
+Tehran is home to many historical collections, including the royal complexes of
+Golestan, Sa'dabad, and Niavaran, where the two last dynasties of the former
+Imperial State of Iran were seated. Tehran's most famous landmarks include the
+Azadi Tower, a memorial built under the reign of Mohammad Reza Shah of the
+Pahlavi dynasty in 1971 to mark the 2,500th year of the foundation of the
+Imperial State of Iran, and the Milad Tower, the world's sixth-tallest self-
+supporting tower which was completed in 2007. The Tabiat Bridge, a newly-built
+landmark, was completed in 2014.
+
+The majority of the population of Tehran are Persian-speaking people, and
+roughly 99% of the population understand and speak Persian, but there are large
+populations of other ethno-linguistic groups who live in Tehran and speak
+Persian as a second language.
+
+Tehran is served by the international airports of Mehrabad and Khomeini, a
+central railway station, the rapid transit system of Tehran Metro, a bus rapid
+transit system, trolleybuses, and a large network of highways.
+
+There have been plans to relocate Iran's capital from Tehran to another area,
+due mainly to air pollution and the city's exposure to earthquakes. To date, no
+definitive plans have been approved. A 2016 survey of 230 cities by consultant
+Mercer ranked Tehran 203rd for quality of life. According to the Global
+Destinations Cities Index in 2016, Tehran is among the top ten fastest growing
+destinations.
+
+<QUERY> $VAR1 = {
+          'q' => qr/(?i).*?_location_?.*? = (\w* (?:, \w*)?)/i,
+          'add' => 'in',
+          'subject' => 'tehran',
+          'verb' => 'is'
+        };
+
+<QUERY> $VAR1 = {
+          'verb' => 'is',
+          'subject' => 'tehran',
+          'q' => qr/(?i)location ((?:in ).*(?:, \w*)?)/i
+        };
+
+<ANSWER> in Iran and Asia coordinates =
+
+
+
+=========================<USER QUESTION> where is new york city
+<RAW WIKI> 
+
+
+
+
+
+{{Infobox settlement
+| name = New York City official_name = City of New York settlement_type =
+| Megacity named_for = James, Duke of York image_skyline = NYC Montage 2014 4 -
+| Jleon.jpg imagesize = 305px image_caption = Clockwise, from top: Midtown
+| Manhattan, Times Square, the Unisphere in Queens, the Brooklyn Bridge, Lower
+| Manhattan with One World Trade Center, Central Park, the headquarters of the
+| United Nations, and the Statue of Liberty image_flag = Flag of New York
+| City.svg image_seal = Seal_of_New_York_City_BW.svg image_blank_emblem = NYC
+| Logo Wolff Olins.svg blank_emblem_type = Wordmark nickname = See [[Nicknames
+| of New York City]] image_map = Map of New York Highlighting New York City.svg
+| map_caption = Location within the U.S. state of New York pushpin_map = USA#New
+| York pushpin_label_position = left pushpin_label = New York City
+| pushpin_map_caption = Location in the contiguous United States and New York
+| coordinates = coor_pinpoint = coordinates_footnotes = subdivision_type =
+| Country subdivision_name = }} subdivision_type2 = State subdivision_name2 =
+| subdivision_type3 = Counties / (Boroughs) subdivision_name3 = Bronx, Kings
+| (Brooklyn), New York (Manhattan), Queens, Richmond (Staten Island)
+----
+| subdivision_type4 = Historic colonies subdivision_name4 = New Netherland
+| Province of New York established_title = Settled established_date = 1624
+| established_title1 = Consolidated established_date1 = 1898 established_title2
+| = government_footnotes =
+
+| government_type = Mayor–Council governing_body = New York City Council
+| leader_title = Mayor leader_name = Bill de Blasio (D) total_type = Total
+| unit_pref = Imperial area_footnotes = area_total_sq_mi = 468.484
+| area_land_sq_mi = 302.643 area_water_sq_mi = 165.841 area_metro_sq_mi = 13318
+| elevation_footnotes = elevation_m = 10 elevation_ft = 33 population_rank =
+| 1st, U.S. population_density_sq_mi = population_as_of = 2010 population_total
+| = 8175133 population_footnotes =
+| [https://factfinder.census.gov/faces/nav/jsf/pages/community_facts.xhtml
+| Community Facts for New York city, New York], United States Census Bureau.
+| Accessed May 26, 2017. population_est = 8622698 pop_est_as_of = 2017
+| pop_est_footnotes = population_blank1_title = MSA (2017) population_blank1 =
+| 20,320,876 (1st) population_blank2_title = CSA (2016) population_blank2 =
+| 23,689,255 (1st) population_demonym = New Yorker timezone1 = Eastern (EST)
+| utc_offset1 = −5 timezone1_DST = EDT utc_offset1_DST = −4 postal_code_type =
+| ZIP Codes postal_code = 100xx–104xx, 11004–05, 111xx–114xx, 116xx area_code =
+| 212/646/332, 718/347/929, 917 blank_name = FIPS code blank_info = 36-51000
+| blank1_name = GNIS feature ID blank1_info = 975772 blank_name_sec2 = Largest
+| borough by area blank_info_sec2 = Queens – blank1_name_sec2 = Largest borough
+| by population blank1_info_sec2 = Brooklyn (2,636,735 – 2015 est) website =
+| [http://www.nyc.gov/ NYC.gov] population_density_km2 = auto
+}}
+
+
+
+The 'City of New York', often called 'New York City' or simply 'New York', is
+the most populous city in the United States. With an estimated 2017 population
+of 8,622,698 distributed over a land area of about
+,[https://www.census.gov/quickfacts/table/PST045216/3651000 Quick Facts for New
+York city, New York], United States Census Bureau. Accessed February 9,
+2017.[http://www.nyc.gov/html/dep/html/stormwater/index.shtml Stormwater] , New
+York City Department of Environmental Protection. Accessed February 9, 2017.
+"These impervious surfaces cover approximately 72% of New York City’s 305 square
+miles in land area and generate a significant amount of stormwater." New York
+City is also the most densely populated major city in the United States. Located
+at the southern tip of the state of New York, the city is the center of the New
+York metropolitan area, the largest metropolitan area in the world by urban
+landmass and one of the world's most populous megacities, with an estimated
+20.3&nbsp;million people in its 2017 Metropolitan Statistical Area and
+23.7&nbsp;million residents in its Combined Statistical Area. A global power
+city, New York City has been described as the cultural, financial, and media
+capital of the world, and exerts a significant impact upon commerce,
+entertainment, research, technology, education, politics, tourism, and sports.
+The city's fast pace defines the term [[wikt:New York minute|New York minute]].
+Home to the headquarters of the United Nations,[http://visit.un.org/content/plan-your-
+visit Plan your visit] , United Nations. Accessed February 9, 2017. "The
+Headquarters of the United Nations is located in New York City, along the East
+River. When you pass through the gates of the United Nations visitors’ entrance,
+you enter an international territory. This 18-acre site does not belong to just
+one country, but to all countries that have joined the Organization; currently,
+the United Nations has 193 Member States." New York is an important center for
+international diplomacy.
+
+Situated on one of the world's largest natural harbors, New York City consists
+of five boroughs, each of which is a separate county of the State of New York.
+The five boroughs – Brooklyn, Queens, Manhattan, The Bronx, and Staten Island –
+were consolidated into a single city in 1898. The city and its metropolitan area
+constitute the premier gateway for legal immigration to the United States. As
+many as 800 languages are spoken in New York, making it the most linguistically
+diverse city in the world. New York City is home to more than 3.2 million
+residents born outside the United States, the largest foreign-born population of
+any city in the world. In 2013, the tri-state New York Metropolitan Statistical
+Area (MSA) produced a gross metropolitan product (GMP) of nearly
+US$1.4&nbsp;trillion. If greater New York City were a sovereign state, it would
+have the 12th highest GDP in the world.
+
+New York City traces its origins to a trading post founded by colonists from the
+Dutch Republic in 1624 on Lower Manhattan; the post was named New Amsterdam in
+1626. The city and its surroundings came under English control in 1664 and were
+renamed New York after King Charles II of England granted the lands to his
+brother, the Duke of York. New York served as the capital of the United States
+from 1785 until 1790. It has been the country's largest city since 1790. The
+Statue of Liberty greeted millions of immigrants as they came to the Americas by
+ship in the late 19th and early 20th centuries and is a world symbol of the
+United States and its ideals of liberty and peace. In the 21st century, New York
+has emerged as a global node of creativity and entrepreneurship, social
+tolerance, and environmental sustainability, and as a symbol of freedom and
+cultural diversity.
+
+Many districts and landmarks in New York City are well known, and the city
+received a record 62.8 million tourists in 2017, hosting three of the world's
+ten most visited tourist attractions in 2013. Several sources have ranked New
+York the most photographed city in the world. Times Square, iconic as the
+world's "heart" and its "Crossroads", is the brightly illuminated hub of the
+Broadway Theater District, one of the world's busiest pedestrian intersections,
+and a major center of the world's entertainment industry. The names of many of
+the city's bridges, skyscrapers,[http://skyscrapercenter.com/city/new-york-city
+Buildings in New York City] , Council on Tall Buildings and Urban Habitat.
+Accessed February 9, 2017. and parks are known around the world. Anchored by
+Wall Street in the Financial District of Lower Manhattan, New York City has been
+called both the most economically powerful city and the leading financial center
+of the world, and the city is home to the world's two largest stock exchanges by
+total market capitalization, the New York Stock Exchange and NASDAQ. Manhattan's
+real estate market is among the most expensive in the world. Manhattan's
+Chinatown incorporates the highest concentration of Chinese people in the
+Western Hemisphere, with multiple signature Chinatowns developing across the
+city. Providing continuous 24/7 service, the New York City Subway is one of the
+most extensive metro systems worldwide, with stations in operation. Over 120
+colleges and universities are located in New York City, including Columbia
+University, New York University, and Rockefeller University, which have been
+ranked among the top universities in the world.
+
+<QUERY> $VAR1 = {
+          'subject' => 'new york city',
+          'verb' => 'is',
+          'q' => qr/(?i).*?_location_?.*? = (\w* (?:, \w*)?)/i,
+          'add' => 'in'
+        };
+
+<QUERY> $VAR1 = {
+          'q' => qr/(?i)location ((?:in ).*(?:, \w*)?)/i,
+          'subject' => 'new york city',
+          'verb' => 'is'
+        };
+
+<ANSWER> in the contiguous United States and New York
+
+
+
+=========================<USER QUESTION> where is google?
+<RAW WIKI> 
+
+
+
+
+
+{{Infobox company
+| name = Google LLC logo = Google 2015 logo.svg logo_size = 250px logo_alt = The
+| letters of "Google" are each purely colored (from left to right) in blue, red,
+| yellow, blue, green, and red. logo_caption = Google's logo since 2015 image =
+| Googleplex-Patio-Aug-2014.JPG image_size = 250px image_caption = Google's
+| headquarters, the Googleplex, in August 2014 former_name = Google Inc.
+| (1998–2017) type = Subsidiary industry = {{Unbulleted list Internet Software
+| Computer hardware
+}}
+| founded = in Menlo Park, California, U.S. founders = {{Unbulleted list Larry
+| Page Sergey Brin
+}}
+| hq_location = Googleplex hq_location_city = Mountain View, California
+| hq_location_country = U.S. area_served = Worldwide key_people = {{Unbulleted
+| list Sundar Pichai Ruth Porat
+}}
+| products = List of Google products num_employees = 73,992 num_employees_year =
+| 2017 parent = Alphabet Inc. subsid = List of subsidiaries website = intl = yes
+}}
+
+'Google LLC' is an American multinational technology company that specializes in
+Internet-related services and products, which include online advertising
+technologies, search engine, cloud computing, software, and hardware. Google was
+founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at
+Stanford University, California. Together, they own about 14 percent of its
+shares and control 56 percent of the stockholder voting power through
+supervoting stock. They incorporated Google as a privately held company on
+September 4, 1998. An Initial public offering (IPO) took place on August 19,
+2004, and Google moved to its new headquarters in Mountain View, California,
+nicknamed the Googleplex. In August 2015, Google announced plans to reorganize
+its various interests as a conglomerate called Alphabet Inc. Google, Alphabet's
+leading subsidiary, will continue to be the umbrella company for Alphabet's
+Internet interests. Upon completion of the restructure, Sundar Pichai was
+appointed CEO of Google, replacing Larry Page, who became the CEO of Alphabet.
+
+The company's rapid growth since incorporation has triggered a chain of
+products, acquisitions, and partnerships beyond Google's core search engine
+(Google Search). It offers services designed for work and productivity (Google
+Docs, Sheets, and Slides), email (Gmail/Inbox), scheduling and time management
+(Google Calendar), cloud storage (Google Drive), social networking (Google+),
+instant messaging and video chat (Google Allo/Duo/Hangouts), language
+translation (Google Translate), mapping and turn-by-turn navigation (Google
+Maps/Waze/Earth/Street View), video sharing (YouTube), note-taking (Google
+Keep), and photo organizing and editing (Google Photos). The company leads the
+development of the Android mobile operating system, the Google Chrome web
+browser, and Chrome OS, a lightweight operating system based on the Chrome
+browser. Google has moved increasingly into hardware; from 2010 to 2015, it
+partnered with major electronics manufacturers in the production of its Nexus
+devices, and in October 2016, it released multiple hardware products (including
+the Google Pixel smartphone, Home smart speaker, Wifi mesh wireless router, and
+Daydream View virtual reality headset). The new hardware chief, Rick Osterloh,
+stated: "a lot of the innovation that we want to do now ends up requiring
+controlling the end-to-end user experience". Google has also experimented with
+becoming an Internet carrier. In February 2010, it announced Google Fiber, a fiber-
+optic infrastructure that was installed in Kansas City; in April 2015, it
+launched Project Fi in the United States, combining Wi-Fi and cellular networks
+from different providers; and in 2016, it announced the Google Station
+initiative to make public Wi-Fi available around the world, with initial
+deployment in India.
+
+Alexa, a company that monitors commercial web traffic, lists Google.com as the
+most visited website in the world. Several other Google services also figure
+in the top 100 most visited websites, including YouTube and Blogger. Google is
+the most valuable brand in the world as of 2017, but has received significant
+criticism involving issues such as privacy concerns, tax avoidance, antitrust,
+censorship, and search neutrality. Google's mission statement, from the
+outset, was "to organize the world's information and make it universally
+accessible and useful", and its unofficial slogan was "Don't be evil". In
+October 2015, the motto was replaced in the Alphabet corporate code of conduct
+by the phrase "Do the right thing", while the original one was retained in the
+code of conduct of Google.
+
+<QUERY> $VAR1 = {
+          'q' => qr/(?i).*?_location_?.*? = (\w* (?:, \w*)?)/i,
+          'add' => 'in',
+          'subject' => 'google',
+          'verb' => 'is'
+        };
+
+<ANSWER> Googleplex 
