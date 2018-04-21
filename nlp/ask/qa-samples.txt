@@ -2,16 +2,14 @@
 
 
 <USER QUESTION> who is barack obama?
-
 <COREECT ANSWER> barack obama is an American politician who served as the 44th President of the United States.
 <MY ANSWER> barack obama is an American politician who served as the 44th President of the United States from January 20, 2009 to January 20, 2017. (Correct)
+
 
 
 <USER QUESTION> who is donald trump?
 <COREECT ANSWER> donald trump is the 45th and current President of the United States, in office since January 20, 2017.
 <MY ANSWER> donald trump is the 45th and current President of the United States, in office since January 20, 2017.(Correct)
-
-
 
 <USER QUESTION> who is jimi hendrix?
 <COREECT ANSWER> jimi hendrix was an American rock guitarist, singer, and songwriter.
@@ -23,6 +21,9 @@
 <COREECT ANSWER> computer is a device that can be instructed to carry out sequences of arithmetic or logical operations automatically.
 <ANSWER> computer is a device that can be instructed to carry out sequences of arithmetic or logical operations automatically.(Correct)
 
+<USER QUESTION> What is lyrics?
+<COREECT ANSWER> lyrics is a homorhythmic (i.
+<MY ANSWER> Lyrics are words that make up a song usually consisting of verses and choruses.(Incorrect)
 
 
 <USER QUESTION> What is a rifle?
@@ -69,58 +70,55 @@
 
 <USER QUESTION> when is easter?
 <COREECT ANSWER> easter is on the third day of his burial after his crucifixion by the Romans at Calvary 30 AD.  
-<MY ANSWER> easter is on the third day of his burial after his crucifixion by the Romans at Calvary 30 AD. (Correct, There is no fixed date)
+<MY ANSWER> easter is on the third day of his burial after his crucifixion by the Romans at Calvary 30 AD. (Incorrect)
 
+<USER QUESTION> when is Independence Day (United States)?
+<COREECT ANSWER> Is a federal holiday in the United States commemorating the adoption of the Declaration of Independence on July 4, 1776 
+<MY ANSWER> Independence Day (United States) is on Independence Day. (Incorrect)
 
 
 <USER QUESTION> when is mothers day?
 <COREECT ANSWER> mothers day is celebrated on various days in many parts of the world.
-<ANSWER> mothers day is celebrated on various days in many parts of the world.
+<ANSWER> mothers day is celebrated on various days in many parts of the world. (Correct)
 
 
 
 <USER QUESTION> when is normandy landings?
-<COREECT ANSWER>
-<ANSWER> normandy landings is on Omaha Beach on the morning of 6 June 1944 date .
+<COREECT ANSWER> 6 June 1944 date 
+<ANSWER> normandy landings is on Omaha Beach on the morning of 6 June 1944 date . (Correct)
 
 
 
 <USER QUESTION> where is paris?
-<COREECT ANSWER>
-<ANSWER> paris is located just north of Paris in the neighbouring commune of Saint-Denis.
-
-
-
-<USER QUESTION> where is Eiffel Tower?
-
-<ANSWER> Eiffel Tower is in Paris.
+<COREECT ANSWER>  Paris is in France.
+<ANSWER> paris is located just north of Paris in the neighbouring commune of Saint-Denis.(Incorrect)
 
 
 
 <USER QUESTION> where is tehran
-
-<ANSWER> tehran is in Iran and.
+<COREECT ANSWER> tehran is in Iran.
+<ANSWER> tehran is in Iran and.(Incorrect)
 
 
 
 <USER QUESTION> where is new york city
-
-<ANSWER> Rocky Mountain National Park is located approximately northwest of Denver International Airport in north-central Colorado.
+<COREECT ANSWER> Rocky Mountain National Park is located approximately northwest of Denver International Airport in north-central Colorado.
+<ANSWER> Rocky Mountain National Park is located approximately northwest of Denver International Airport in north-central Colorado.(Correct)
 
 
 
 <USER QUESTION> Where is Great Pyramid of Giza?
-
-<ANSWER> Great Pyramid of Giza is in the Giza pyramid complex bordering what is now El Giza.
+<COREECT ANSWER> Great Pyramid of Giza is in Egypt  
+<ANSWER> Great Pyramid of Giza is in the Giza pyramid complex bordering what is now El Giza.(Incorrect)
 
 
 
 <USER QUESTION> Where is Museum of Modern Art?
-
-<ANSWER> Museum of Modern Art is located in Midtown Manhattan in New York City.
+<COREECT ANSWER> Museum of Modern Art is located in Midtown Manhattan in New York City.
+<ANSWER> Museum of Modern Art is located in Midtown Manhattan in New York City.(Correct)
 
 
 
 <USER QUESTION> Where is Coachella Valley?
-
-<ANSWER> Coachella Valley is in Southern California which extends for approximately in Riverside County southeast from the San Bernardino Mountains to the northern shore of the Salton Sea.
+<COREECT ANSWER> oachella Valley is in Southern California( which extends for approximately in Riverside County southeast from the San Bernardino Mountains to the northern shore of the Salton Sea.)
+<ANSWER> Coachella Valley is in Southern California which extends for approximately in Riverside County southeast from the San Bernardino Mountains to the northern shore of the Salton Sea.(Correct)

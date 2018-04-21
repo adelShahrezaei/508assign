@@ -49,3 +49,31 @@ Note that I will use these examples to formulate my own questions to evaluate yo
 You may use code as found in perldoc, Learning Perl, or Programming Perl as a part of your assignments, however, this must be documented in your source code. Using code from any other source is not permitted, except for CPAN modules to access Wikipedia and carry out general (non-NLP) functionality.
 
 Please upload your submission to blackboard.
+
+
+
+findAnswer("who is barack obama?");
+findAnswer("who is donald trump?");
+findAnswer("who is jimi hendrix?");
+
+findAnswer("What is a computer?");
+findAnswer("What is a rifle?");
+findAnswer("What is big bang?");
+findAnswer("What is the moon?");
+# findAnswer("who discovered proton?"); FAILED
+
+findAnswer("What is game theory?");
+findAnswer("when is christmas?");
+findAnswer("when did muhammad ali die?");
+findAnswer("when did hitler die?");
+findAnswer("when is easter?");
+findAnswer("when is mothers day?");
+findAnswer("when is normandy landings?");
+findAnswer("where is paris?");
+findAnswer("where is Eiffel Tower?");
+findAnswer("where is tehran");
+findAnswer("where is new york city");
+findAnswer("where is Rocky Mountain National Park?");
+findAnswer("Where is Great Pyramid of Giza?");
+findAnswer("Where is Museum of Modern Art?");
+findAnswer("Where is Coachella Valley?");

@@ -44,49 +44,26 @@ open (our $fh, '>' ,$logFileName) or die "Could not open file '$logFileName' $!"
 print "**This is a QA system by Adel Shahrzaei. It will try to answer questions that start with Who, What, When or Where.
 \nEnter \"exit\" to leave the program.\n \n=?> ";
 
-# while(<STDIN>){
 
-#     my $question = $_; 
+while(<STDIN>){
+
+    my $question = $_; 
     
-#     chomp;
-#     exit if $_ eq "exit";
+    chomp;
+    exit if $_ eq "exit";
 
-#     # $question = $_;
-#     print "=> ";
-#     findAnswer($question);
-#     print "=?> "
+    # $question = $_;
+    print "=> ";
+    findAnswer($question);
+    print "=?> "
    
 
    
 
-# }
+}
 
 
-findAnswer("who is barack obama?");
-findAnswer("who is donald trump?");
-findAnswer("who is jimi hendrix?");
 
-findAnswer("What is a computer?");
-findAnswer("What is a rifle?");
-findAnswer("What is big bang?");
-findAnswer("What is the moon?");
-# findAnswer("who discovered proton?"); FAILED
-
-findAnswer("What is game theory?");
-findAnswer("when is christmas?");
-findAnswer("when did muhammad ali die?");
-findAnswer("when did hitler die?");
-findAnswer("when is easter?");
-findAnswer("when is mothers day?");
-findAnswer("when is normandy landings?");
-findAnswer("where is paris?");
-findAnswer("where is Eiffel Tower?");
-findAnswer("where is tehran");
-findAnswer("where is new york city");
-findAnswer("where is Rocky Mountain National Park?");
-findAnswer("Where is Great Pyramid of Giza?");
-findAnswer("Where is Museum of Modern Art?");
-findAnswer("Where is Coachella Valley?");
 
 close $fh;
 # start the pipeline
@@ -350,11 +327,12 @@ sub queryWiki{
     my $wiki = WWW::Wikipedia->new(clean_html => 1 );
     my $result = $wiki->search($q{'subject'});
     
-    
-    if ( $result->text() ) { 
-      $wikiText = $result->text();
-      $wikiText =~ s/\R/ /g; 
-      return $wikiText;
+    if (defined $result){
+        if ( $result->text() ) { 
+        $wikiText = $result->text();
+        $wikiText =~ s/\R/ /g; 
+        return $wikiText;
+        }
     }
     
 }
