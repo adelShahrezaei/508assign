@@ -4,8 +4,8 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-findAnswer	qa-system.pl	67;"	s
-matchAnswer	qa-system.pl	404;"	s
-queryWiki	qa-system.pl	391;"	s
-rewriteQuery	qa-system.pl	103;"	s
-tokenize	qa-system.pl	420;"	s
+findAnswer	qa-system.pl	93;"	s
+matchAnswer	qa-system.pl	363;"	s
+queryWiki	qa-system.pl	347;"	s
+rewriteQuery	qa-system.pl	137;"	s
+tokenize	qa-system.pl	379;"	s

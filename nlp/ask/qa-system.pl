@@ -1,3 +1,21 @@
+#Mohammad Adel Shahrezaei
+# This program is a simple question and answer system that interact with the user through terminal
+# After capturing the question(e.g "Who was abraham lincoln?") as in put. we extract the possible subject of the question ("Abraham Lincoln")
+# this subject is used to query wikipedia and fetch the summary of the corresponding Wikipage. 
+# Multiple possible rewrites of the question possible answer patters were generated using regular expression and sentence structure
+# we used this rewrite to search through the wiki page and capture the answer, from this answer we generate a
+# ("abraham lincoln was an American statesman and lawyer who served as the 16th President...") and print it stdout.
+# question rewrite system uses type of the question ("who, what, when, where"),verb variations and auxiliary verbs to generate answer patterns.
+# for where and when questions wiki page's info box is also used. If the program can not find the answer it response  
+# Input questions have to be grammatically correct and contain a recognizable subject for example "where is my book" would not work. 
+# a log file is also generated for debugging proposes which contains : the users question, the searches executed, the raw results 
+# from Wikipedia, and the generated answer .
+
+# usage : perl qa-system.pl <mylogfile.txt>
+
+# type exit to quit
+
+
 use strict;
 use warnings;
 use Data::Dumper;
@@ -21,18 +39,22 @@ our %articlesH = map { $_ => 1 } @articles; # turn arrya into hash for existence
 our $logFileName = $ARGV[0];
 open (our $fh, '>' ,$logFileName) or die "Could not open file '$logFileName' $!";
 
-print Dumper(\%auxVerbs);
+
 # main loop
+print "**This is a QA system by Adel Shahrzaei. It will try to answer questions that start with Who, What, When or Where.
+\nEnter \"exit\" to leave the program.\n \n=?> ";
+
 # while(<STDIN>){
 
-#     my $question; 
+#     my $question = $_; 
     
 #     chomp;
-#     exit if $_ eq "quit";
+#     exit if $_ eq "exit";
 
 #     # $question = $_;
-#     $question = "When was George Washington born?" 
-
+#     print "=> ";
+#     findAnswer($question);
+#     print "=?> "
    
 
    
@@ -40,44 +62,45 @@ print Dumper(\%auxVerbs);
 # }
 
 
-# findAnswer("who is barack obama?");
-# findAnswer("who is donald trump?");
-# findAnswer("who is jimi hendrix?");
+findAnswer("who is barack obama?");
+findAnswer("who is donald trump?");
+findAnswer("who is jimi hendrix?");
 
-# findAnswer("What is a computer?");
-# findAnswer("What is a rifle?");
-# findAnswer("What is big bang?");
-# findAnswer("What is the moon?");
+findAnswer("What is a computer?");
+findAnswer("What is a rifle?");
+findAnswer("What is big bang?");
+findAnswer("What is the moon?");
 # findAnswer("who discovered proton?"); FAILED
 
-# findAnswer("What is game theory?");
-# findAnswer("when is christmas?");
-# findAnswer("when did muhammad ali die?");
-# findAnswer("when did john F. kennedy die?");
-# findAnswer("when is olympics?");
-# findAnswer("when is easter?");
+findAnswer("What is game theory?");
+findAnswer("when is christmas?");
+findAnswer("when did muhammad ali die?");
+findAnswer("when did hitler die?");
+findAnswer("when is easter?");
+findAnswer("when is mothers day?");
+findAnswer("when is normandy landings?");
 findAnswer("where is paris?");
 findAnswer("where is Eiffel Tower?");
 findAnswer("where is tehran");
 findAnswer("where is new york city");
-findAnswer("where is google?");
-# findAnswer("Where is sin city?");
+findAnswer("where is Rocky Mountain National Park?");
+findAnswer("Where is Great Pyramid of Giza?");
+findAnswer("Where is Museum of Modern Art?");
+findAnswer("Where is Coachella Valley?");
+
 close $fh;
 # start the pipeline
 sub findAnswer{
-    
+    my $answered = 0 ;#flag to see if we've found answer or not
     my $q = shift;
     print $fh "\n\n\n=========================<USER QUESTION> $q\n";
     my @tokens = tokenize($q);
     my @queries = rewriteQuery(@tokens);
     my $wikiText = "";
-    # my $qq = $queries[0];
-    # print %{@queries[0]}{'q'};
-    # my %qhash = %{$qq};
     
    
-    # my $wikiText = queryWiki(\$queries[0]);
-    # 
+    
+    
     foreach my $query (@queries){
 
        if ($wikiText eq ""){
@@ -92,12 +115,23 @@ sub findAnswer{
        print $fh "\n";       
     
        if (my $answer = matchAnswer(\%{$query},$wikiText)){
-           print $fh "<ANSWER> $answer\n";
-           print "$qhash{'subject'} $qhash{'verb'} $qhash{'add'} $answer.\n";
+           
+           if(exists($qhash{'add'})){
+            print "$qhash{'subject'} $qhash{'verb'} $qhash{'add'} $answer.\n"; 
+            print $fh "<ANSWER> $qhash{'subject'} $qhash{'verb'} $qhash{'add'} $answer.\n";   
+           }else{
+            print $fh "<ANSWER> $qhash{'subject'} $qhash{'verb'} $answer.\n";
+            print "$qhash{'subject'} $qhash{'verb'} $answer.\n";   
+           }
+           $answered = 1;
            last;
        }
+      
     }
-    # print (Dumper @tokens);
+    if($answered == 0){
+        print "I am sorry, I don't know the answer.\n";
+    }
+    
 }
 # rewrite the question 
 sub rewriteQuery{
@@ -109,21 +143,13 @@ sub rewriteQuery{
     my $article;
     my $subject;
     my @rewrites;
-    if (lc $type eq "who"){
-            # doesnt work for those names that are like winston churchill = >
+    if (lc $type eq "who"){ # for who questions e.g. "who was hitler?"
+            
             $verb = $tokens[1];
             $subject = join(" ",@tokens[2..$#tokens]);
             
                 
-                # my %q = ('q'=>qr/(?i)[']?$subject[']?[^.]* $verb ([^.]*)[.,!?]/ , 'subject'=>$subject, 'verb'=>$verb);
-                # push @rewrites, \%q;
-                # foreach my $var (@{$verbVariants{$verb}}){
-                #     my %q = ('q'=>qr/(?i)[']?$subject[']?[^.]* $var ([^.]*)[.,!?]/, 'subject'=>$subject, 'verb'=>$verb);
-                    
-                #     push @rewrites, \%q;
-                #     %q = ('q'=>qr/(?i)['].*?['][^.]* $var ([^.]*)[.,!?]/, 'subject'=>$subject, 'verb'=>$verb);
-                    
-                #     push @rewrites, \%q;
+                
                 my $q = { }; 
                 $q->{'q'} = qr/(?i) $verb ((?:a[n]? |the )[^.]*)[.,!?]/;
                 $q->{'subject'} = $subject;
@@ -157,15 +183,7 @@ sub rewriteQuery{
 
            
                 
-                # my %q = ('q'=>qr/(?i)[']?$subject[']?[^.]* $verb ([^.]*)[.,!?]/ , 'subject'=>$subject, 'verb'=>$verb);
-                # push @rewrites, \%q;
-                # foreach my $var (@{$verbVariants{$verb}}){
-                #     my %q = ('q'=>qr/(?i)[']?$subject[']?[^.]* $var ([^.]*)[.,!?]/, 'subject'=>$subject, 'verb'=>$verb);
-                    
-                #     push @rewrites, \%q;
-                #     %q = ('q'=>qr/(?i)['].*?['][^.]* $var ([^.]*)[.,!?]/, 'subject'=>$subject, 'verb'=>$verb);
-                    
-                #     push @rewrites, \%q;
+                
                 my %q = ('q'=>qr/(?i) $verb ((?:a[n]? |the |)[^.]*)[.,!?]/ , 'subject'=>$subject, 'verb'=>$verb);
                 push @rewrites, \%q;
                  if (exists $verbVariants{$verb}){
@@ -182,7 +200,7 @@ sub rewriteQuery{
                 }
 
     }
-     elsif (lc $type eq "when"){ # when question e.g. "when jimi hendrix was born?"
+    elsif (lc $type eq "when"){ # when question e.g. "when jimi hendrix was born?"
             #check for auxiliary verb
             
             if (exists($auxVerbs{$tokens[1]})){# there is an auxilary verb "when did mohammad ali died?"
@@ -195,30 +213,21 @@ sub rewriteQuery{
                 $subject = join(' ',@tokens[2..$#tokens]);
             }
              
-            # if (exists $articlesH{$tokens[2]}){ ## there is an article a. an, the
-            #     $article = $tokens[2];
-            #     $subject = join(" ",@tokens[3..$#tokens]);            
-            # }else{ #there is no article 
-            #     $subject = join(" ",@tokens[2..$#tokens]);
-            # }
-
-           
+            
                 
-                # my %q = ('q'=>qr/(?i)[']?$subject[']?[^.]* $verb ([^.]*)[.,!?]/ , 'subject'=>$subject, 'verb'=>$verb);
-                # push @rewrites, \%q;
-                # foreach my $var (@{$verbVariants{$verb}}){
-                #     my %q = ('q'=>qr/(?i)[']?$subject[']?[^.]* $var ([^.]*)[.,!?]/, 'subject'=>$subject, 'verb'=>$verb);
-                    
-                #     push @rewrites, \%q;
-                #     %q = ('q'=>qr/(?i)['].*?['][^.]* $var ([^.]*)[.,!?]/, 'subject'=>$subject, 'verb'=>$verb);
-                    
-                #     push @rewrites, \%q;
-              
                 my $q = { }; 
-                $q->{'q'} = qr/(?i) $verb ((?:before |after |on |during )[^.]*)[.,!?]/;
+                $q->{'q'} = qr/(?i)((?:celebrated (?:on )|taking place (?:on ))[^.,!?]*)/;
                 $q->{'subject'} = $subject;
                 $q->{'verb'} = $verb;
                 
+                push @rewrites, $q;
+
+                $q = { }; 
+                $q->{'q'} = qr/(?i) ((?:before |after |on |during )[^.!?=]*)/;
+                $q->{'subject'} = $subject;
+                $q->{'verb'} = $verb;
+ 
+
                 push @rewrites, $q;
            
                 $q = { }; 
@@ -238,10 +247,10 @@ sub rewriteQuery{
                 
                 push @rewrites, $q;
 
-
+                # check for verb variations 
                 if (exists $verbVariants{$verb}){
                     foreach my $var (@{$verbVariants{$verb}}){
-                        my $q = { }; 
+                        $q = { }; 
                         $q->{'q'} = qr/(?i) $var ((?:before |after |on |during )[^.]*)[.,!?]/;
                         $q->{'subject'} = $subject;
                         $q->{'verb'} = $var;
@@ -262,12 +271,13 @@ sub rewriteQuery{
                 
                 }
                 
-                print Dumper(\@rewrites);
+                
                 
 
                 
 
-    }elsif (lc $type eq "where"){ # when question e.g. "where is paris?"
+    }
+    elsif (lc $type eq "where"){ # when question e.g. "where is paris?"
             #check for auxiliary verb
             
             if (exists($auxVerbs{$tokens[1]})){# there is an auxilary verb "when did mohammad ali died?"
@@ -280,56 +290,10 @@ sub rewriteQuery{
                 $subject = join(' ',@tokens[2..$#tokens]);
             }
              
-            # if (exists $articlesH{$tokens[2]}){ ## there is an article a. an, the
-            #     $article = $tokens[2];
-            #     $subject = join(" ",@tokens[3..$#tokens]);            
-            # }else{ #there is no article 
-            #     $subject = join(" ",@tokens[2..$#tokens]);
-            # }
-
-           
-                
-                # my %q = ('q'=>qr/(?i)[']?$subject[']?[^.]* $verb ([^.]*)[.,!?]/ , 'subject'=>$subject, 'verb'=>$verb);
-                # push @rewrites, \%q;
-                # foreach my $var (@{$verbVariants{$verb}}){
-                #     my %q = ('q'=>qr/(?i)[']?$subject[']?[^.]* $var ([^.]*)[.,!?]/, 'subject'=>$subject, 'verb'=>$verb);
-                    
-                #     push @rewrites, \%q;
-                #     %q = ('q'=>qr/(?i)['].*?['][^.]* $var ([^.]*)[.,!?]/, 'subject'=>$subject, 'verb'=>$verb);
-                    
-                #     push @rewrites, \%q;
+          
 
                 my $q = { }; 
-                $q->{'q'} = qr/(?i).*?_location_?.*? = (\w* (?:, \w*)?)/;
-                $q->{'subject'} = $subject;
-                $q->{'verb'} = $verb;
-                $q->{'add'} = "in"; # add to the answer!
-                push @rewrites, $q;
-
-                my $q = { }; 
-                $q->{'q'} = qr/(?i)location ((?:in ).*(?:, \w*)?)/;
-                $q->{'subject'} = $subject;
-                $q->{'verb'} = $verb;
-                
-                push @rewrites, $q;
-                my $q = { }; 
-                $q->{'q'} = qr/(?i) $verb.*?((?:in |located in |placed in  )\w*(?:, \w*)?)[.,!?]/;
-                $q->{'subject'} = $subject;
-                $q->{'verb'} = $verb;
-                
-                push @rewrites, $q;
-
-                
-
-                my $q = { }; 
-                $q->{'q'} = qr/(?i)is $verb(.*? (?:of )\w*(?:, \w*)?)[.,!?]/;
-                $q->{'subject'} = $subject;
-                $q->{'verb'} = $verb;
-                
-                push @rewrites, $q;
-
-                my $q = { }; 
-                $q->{'q'} = qr/(?i)((?:in |located in |placed in  )\w*(?:, \w*)?)[.,!?]/;
+                $q->{'q'} = qr/(?i)((?:located (?:in |at )?|placed (?:in )?)[^.,!?]*)/;
                 $q->{'subject'} = $subject;
                 $q->{'verb'} = $verb;
                 
@@ -344,79 +308,74 @@ sub rewriteQuery{
                 
 
                 push @rewrites, $q;
-
-                # $q = { }; 
-                # $q->{'q'} = qr/(?i)((?:before |after |on |during )(?:january |february |march |april 
-                # |may |june |july |august |september |november |december )(?:[0-9]{1,2})?(?:, [0-9]{4})?)/;
-                # $q->{'subject'} = $subject;
-                # $q->{'verb'} = $verb;
                 
+                $q = { }; 
+                $q->{'q'} = qr/(?i).*?_location_?.*? = ((?:in )\w*(:?\s\w*)?(?:, \w*)?)/;
+                $q->{'subject'} = $subject;
+                $q->{'verb'} = $verb;
+                $q->{'add'} = "in"; # add to the answer!
+                push @rewrites, $q;
+
+                $q = { }; 
+                $q->{'q'} = qr/(?i)location ((?:in )\w*(:?\s\w*)?(?:, \w*)?)/;
+                $q->{'subject'} = $subject;
+                $q->{'verb'} = $verb;
                 
-                # push @rewrites, $q;
-
-
-                # if (exists $verbVariants{$verb}){
-                #     foreach my $var (@{$verbVariants{$verb}}){
-                #         my $q = { }; 
-                #         $q->{'q'} = qr/(?i) $var ((?:before |after |on |during )[^.]*)[.,!?]/;
-                #         $q->{'subject'} = $subject;
-                #         $q->{'verb'} = $var;
-
-                #         push @rewrites, $q;
-
-                #         $q = { }; 
-                #         $q->{'q'} = qr/(?i) date of the $subject $var ((?:before |after |on |during | )[^.]*)[.,!?]/;
-                #         $q->{'subject'} = $subject;
-                #         $q->{'verb'} = $var;
-
-
-                #         push @rewrites, $q;
-                        
-                        
-                #     }
-                    
-                
-                # }
-                
-                print Dumper(\@rewrites);
-                
+                push @rewrites, $q;
+               
 
                 
 
+                $q = { }; 
+                $q->{'q'} = qr/(?i)is $verb(.*? (?:of )\w*(?:, \w*)?)[.,!?]/;
+                $q->{'subject'} = $subject;
+                $q->{'verb'} = $verb;
+                
+                push @rewrites, $q;   
+                $q = { }; 
+                $q->{'q'} = qr/(?i) is.*?((?:in )[^.,!?]*)/; ##this is actually a fallback
+                $q->{'subject'} = $subject;
+                $q->{'verb'} = $verb;
+                
+                push @rewrites, $q;      
     }
     
     return @rewrites;
 }
 
+# fetch wiki page
 sub queryWiki{
     my %q = %{shift()};
-    
+    my $wikiText;
     my $wiki = WWW::Wikipedia->new(clean_html => 1 );
     my $result = $wiki->search($q{'subject'});
     
     
     if ( $result->text() ) { 
-      return $result->text();
+      $wikiText = $result->text();
+      $wikiText =~ s/\R/ /g; 
+      return $wikiText;
     }
     
 }
 
+# uses regex to match answer pattern with wiki text take two parameter wikiText and Regex
 sub matchAnswer{
     my ($rewrite, $text) = @_;
     my %q= %{$rewrite}; # rewrite is a hash
     # process raw text from wikipedia
     my $answer = 0 ;
-    # $text= lc $text;
+    # $text= chomp $text;
     # my $qq = $q{'subject'};
     
     my $re = $q{'q'};
+    # print $re;
     ($answer) = $text =~ m/$re/gm; 
 
     return  $answer;
 
 }
 # tokenize the question return tokens as a list of string  
-# TODO use stop list 
 sub tokenize{
 
     my $q = shift; 
