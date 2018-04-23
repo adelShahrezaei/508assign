@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    
+  <div class="jumbotron">
+    <h1>Sign In</h1>
+    <form class="form-signin" method="POST" action="/dosignin">
+      <div class="form-group">
+      <label for="inputName" class="sr-only">Username</label>
+      <input type="username" name="inputUsername" id="inputUsername" class="form-control" placeholder="Username " required autofocus>
+      </div><div class="form-group">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+      </div>
+      <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+    </form>
+  </div>  
+
+{% endblock %}

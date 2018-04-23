@@ -1,0 +1,244 @@
+{% extends "layout.html" %} {% block content %}
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="container-fluid well span6">
+            <div class="row-fluid">
+                <div class="span2">
+                    <img src="https://secure.gravatar.com/avatar/de9b11d0f9c0569ba917393ed5e5b3ab?s=140&r=g&d=mm" class="img-circle">
+                </div>
+
+                <div class="span8">
+                    <h3>{{user['screen_name']}}</h3>
+                    <h6>Email: {{user['email']}}</h6>
+                    <h6>Location: {{user['address']}}</h6>
+                    <h6>Points: {{user['points']}}</h6>
+
+                </div>
+
+                <div class="span2">
+                    <div class="btn-group">
+                        <a class="btn dropdown-toggle btn-info" data-toggle="dropdown" href="#">
+                            Action
+                            <span class="icon-cog icon-white"></span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span class="icon-wrench"></span> Modify</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-trash"></span> Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                
+                
+                <div class="row">
+    
+                    <h3 class="col-md-12 d-block">My Books</h3>
+                    
+                    <div class="col-md-12 mb-3 d-block">
+                        sort by :
+                        <a href="?sort=name">Name</a> |
+                        <a href="?sort=authors">Author</a> |
+                        <a href="?sort=topics">Topics</a> |
+                        <a href="?sort=amazon_price">amazon price</a> |
+                        <a href="?sort=publisher_name">publisher</a> |
+                        <a href="?sort=avail">Availability</a> |
+                    </div>
+                    <div class="col-md-4 mb-3 d-block">
+                        <form method="GET" action="/admin">
+                            <div class="input-group">
+                                    <input name=filter type="text" class="form-control" placeholder="Filter">
+                                    <div class="input-group-append">
+                                      <button type="submit" class="btn btn-secondary">Filter</button>
+                                    </div>
+                            </div>
+                        </form>
+                        </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ISBN</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Authors</th>
+                                <th scope="col">Topics</th>
+                                <th scope="col">Amazon Price</th>
+                                <th scope="col">Publisher</th>
+                                <th scope="col">Availability</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for book in user_books %}
+                            <tr>
+                                <th scope="row">{{book['ISBN']}}</th>
+                                <td>{{book['name']}}</td>
+                                <td>{{book['authors']}}</td>
+                                <td>{{book['topics']}}</td>
+                                <td>{{book['amazon_price']}}</td>
+                                <td>{{book['publisher_name']}}</td>
+                                <td>{{book['avail']}}</td>
+                                <td><a href="?action=delete&id={{book['bookID']}}">Delete</a></td>
+                                <td><a href="?action=update&id={{book['bookID']}}">Update</a></td>
+                            </tr>
+                            {% else %}
+                            <tr>
+                                <!-- no book -->
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="valOk" class="row viewerror clearfix hidden">
+                    <div class="alert alert-success">
+                        {% with messages = get_flashed_messages() %} {% if messages %}
+                        <ul class=flashes>
+                            {% for message in messages %}
+                            <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %} {% endwith %}
+                    </div>
+                </div>
+                {% if update=='update' %}
+                
+                <form action="/update_user_book" method="POST" id="formentry" class="form-horizontal">
+                    <div class="col-md-12">
+
+                        <div class="form-group brdbot">
+                            <h3>Update Book</h3>
+                            <div class="controls col-sm-9">
+
+                                <p id="field8" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p>
+                                <span id="errId7" class="error"></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field18">ISBN</label>
+                            <div class="controls col-sm-9">
+                                <select multiple name=ISBN class="form-control" id="exampleFormControlSelect2">
+                                    {% for title in titles %}
+                                    <option value="{{title['ISBN']}}" {% if book['ISBN']==title['ISBN'] %} selected =selected {% endif %} >{{title['ISBN']}}</option>
+                                    {% else %}
+                                    <option value="Option 1">---Add Title---</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field10">Name</label>
+                            <div class="controls col-sm-9">
+
+                                <input id="field10" type="text" class="form-control k-textbox" data-role="text" name="name" value="{{book['Name']}}" data-parsley-errors-container="#errId9">
+                                <span id="errId9" class="error"></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field11">Availability</label>
+                            <div class="controls col-sm-9">
+
+                                <select name=avail class="form-control" id="exampleFormControlSelect2">
+                                    <option value="1">Available</option>
+                                    <option value="0">Not Available</option>
+                                    <option value="2">Comming Soon</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+
+
+
+                            <button type="submit" class="btn btn-primary">update</button>
+                        </div>
+                    </div>
+                    <input type="hidden" value="{{book['bookID']}}" name="bookID">
+                </form>
+
+                {% endif %}
+                <form action="/create_user_book" method="POST" id="formentry" class="form-horizontal">
+                    <div class="col-md-12">
+
+                        <div class="form-group brdbot">
+                            <h3>Add Book</h3>
+                            <div class="controls col-sm-9">
+
+                                <p id="field8" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p>
+                                <span id="errId7" class="error"></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field18">ISBN</label>
+                            <div class="controls col-sm-9">
+                                <select multiple name=ISBN class="form-control" id="exampleFormControlSelect2">
+                                    {% for title in titles %}
+                                    <option value="{{title['ISBN']}}">{{title['ISBN']}}</option>
+                                    {% else %}
+                                    <option value="Option 1">---Add Title---</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field10">Name</label>
+                            <div class="controls col-sm-9">
+
+                                <input id="field10" type="text" class="form-control k-textbox" data-role="text" name="name" data-parsley-errors-container="#errId9">
+                                <span id="errId9" class="error"></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field11">Availability</label>
+                            <div class="controls col-sm-9">
+
+                                <select name=avail class="form-control" id="exampleFormControlSelect2">
+                                    <option value="1">Available</option>
+                                    <option value="0">Not Available</option>
+                                    <option value="2">Comming Soon</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+
+
+
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}

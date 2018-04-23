@@ -1,0 +1,363 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="row">
+    
+    <h3 class="col-md-12 d-block">Title List</h3>
+    
+    <div class="col-md-12 mb-3 d-block">
+        sort by :
+        <a href="?sort=name">Name</a> |
+        <a href="?sort=authors">Author</a> |
+        <a href="?sort=topics">Topics</a> |
+        <a href="?sort=amazon_price">amazon price</a> |
+        <a href="?sort=publisher_name">publisher</a> |
+        
+    </div>
+    <div class="col-md-4 mb-3 d-block">
+        <form method="GET" action="/admin">
+            <div class="input-group">
+                    <input name=filter type="text" class="form-control" placeholder="Filter">
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-secondary">Filter</button>
+                    </div>
+            </div>
+        </form>
+        </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ISBN</th>
+                <th scope="col">Name</th>
+                <th scope="col">Authors</th>
+                <th scope="col">Topics</th>
+                <th scope="col">Amazon Price</th>
+                <th scope="col">Publisher</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for title in titles %}
+            <tr>
+                <th scope="row">{{title['ISBN']}}</th>
+                <td>{{title['name']}}</td>
+                <td>{{title['authors']}}</td>
+                <td>{{title['topics']}}</td>
+                <td>{{title['amazon_price']}}</td>
+                <td>{{title['publisher_name']}}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <!-- no title -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="row">
+
+    <div id="valOk" class="row viewerror clearfix hidden">
+        <div class="alert alert-success">
+            {% with messages = get_flashed_messages() %} {% if messages %}
+            <ul class=flashes>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %} {% endwith %}
+        </div>
+    </div>
+
+    <div class="container-fluid shadow">
+        <div class="row">
+
+
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <form action="/create_author" id="formentry" method="POST" class="form-horizontal">
+                        <div class="form-group brdbot" style="display: block;">
+                            <h3>Create Author</h3>
+                            <div class="controls col-sm-9">
+
+                                <p id="field7" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p>
+                                <span id="errId1" class="error"></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="">Name</label>
+                            <div class="controls col-sm-9">
+
+                                <input id="" type="text" class="form-control k-textbox" data-role="text" name="name" data-parsley-errors-container="#errId2">
+                                <span id="errId2" class="error"></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field3">Bio</label>
+                            <div class="controls col-sm-9">
+
+
+
+                                <textarea name="bio" id="field1" rows="3" class="form-control k-textbox" data-role="textarea" data-parsley-errors-container="#errId1"
+                                    data-parsley-id="2934"></textarea>
+                                <span id="errId1" class="error">
+                                    <ul class="parsley-errors-list" id="parsley-id-2934"></ul>
+                                </span>
+
+
+
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field4">Birth</label>
+                                <div class="controls col-sm-9">
+
+                                    <span class="k-widget k-datetimepicker k-header form-control k-input" style="width: 100%;">
+                                        <span class="k-picker-wrap k-state-default">
+                                            <input id="field4" type="text" class="form-control k-input" data-role="datetime" role="textbox" aria-haspopup="true" aria-expanded="false"
+                                                aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null"
+                                                data-error-container="#errfield4" style="width: 100%;" name="birthday" data-parsley-errors-container="#errId4">
+                                            <span unselectable="on" class="k-select">
+                                                <span unselectable="on" class="k-icon k-i-calendar" role="button" aria-controls="field4_dateview">select</span>
+                                                <span unselectable="on" class="k-icon k-i-clock" role="button" aria-controls="field4_timeview">select</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span id="errId4" class="error"></span>
+                                    data grid javascript </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field5">Death</label>
+                                <div class="controls col-sm-9">
+
+                                    <span class="k-widget k-datetimepicker k-header form-control k-input" style="width: 100%;">
+                                        <span class="k-picker-wrap k-state-default">
+                                            <input id="field5" type="text" class="form-control k-input" data-role="datetime" role="textbox" aria-haspopup="true" aria-expanded="false"
+                                                aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null"
+                                                data-error-container="#errfield5" style="width: 100%;" name="death" data-parsley-errors-container="#errId5">
+                                            <span unselectable="on" class="k-select">
+                                                <span unselectable="on" class="k-icon k-i-calendar" role="button" aria-controls="field5_dateview">select</span>
+                                                <span unselectable="on" class="k-icon k-i-clock" role="button" aria-controls="field5_timeview">select</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span id="errId5" class="error"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field6">Image Url </label>
+                                <div class="controls col-sm-9">
+
+                                    <input id="field6" type="text" class="form-control k-textbox" data-role="text" name="image_url" data-parsley-errors-container="#errId6">
+                                    <span id="errId6" class="error"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+
+
+
+                                <button type="submit" class="btn btn-primary">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="col-md-12">
+                    <form action="/create_title" method="POST" id="formentry" class="form-horizontal">
+                        <div class="col-md-12">
+                            <div class="form-group brdbot">
+                                <h3>Add Title</h3>
+                                <div class="controls col-sm-9">
+
+                                    <p id="field8" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p>
+                                    <span id="errId7" class="error"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field9">ISBN</label>
+                                <div class="controls col-sm-9">
+
+                                    <input id="field9" type="text" class="form-control k-textbox" data-role="text" name="ISBN" data-parsley-errors-container="#errId8">
+                                    <span id="errId8" class="error"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field10">Name</label>
+                                <div class="controls col-sm-9">
+
+                                    <input id="field10" type="text" class="form-control k-textbox" data-role="text" name="name" data-parsley-errors-container="#errId9">
+                                    <span id="errId9" class="error"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field11">Edition</label>
+                                <div class="controls col-sm-9">
+
+                                    <input id="field11" type="text" class="form-control k-textbox" data-role="text" name="edition" data-parsley-errors-container="#errId10">
+                                    <span id="errId10" class="error"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field12">amazon price</label>
+                                <div class="controls col-sm-9">
+
+                                    <input id="field12" type="text" class="form-control k-textbox" data-role="text" name="amazon_price" data-parsley-errors-container="#errId11">
+                                    <span id="errId11" class="error"></span>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field111">Image Url</label>
+                                <div class="controls col-sm-9">
+
+                                    <input id="field111" type="text" class="form-control k-textbox" data-role="text" name="image_url" data-parsley-errors-container="#errId11">
+                                    <span id="errId11" class="error"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field18">Authors</label>
+                                <div class="controls col-sm-9">
+                                    <select name="authors" multiple class="form-control" id="exampleFormControlSelect2">
+                                        {% for author in authors %}
+                                        <option value="{{author['authorID']}}">{{author['name']}}</option>
+                                        {% else %}
+                                        <option value="Option 1">---Add author---</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field18">Topics</label>
+                                <div class="controls col-sm-9">
+                                    <select multiple name=topics class="form-control" id="exampleFormControlSelect2">
+                                        {% for topic in topics %}
+                                        <option value="{{topic['topicID']}}">{{topic['name']}}</option>
+                                        {% else %}
+                                        <option value="Option 1">---Add topic---</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+                            <dviv class="form-group">
+                                <label class="control-label control-label-left col-sm-3" for="field18">Publisher</label>
+                                <div class="controls col-sm-9">
+
+                                    <select id="field18" class="form-control" data-role="select" name="publisher_name" data-parsley-errors-container="#errId13">
+                                        {% for publisher in publishers %}
+                                        <option value="{{publisher['name']}}">{{publisher['name']}}</option>
+                                        {% else %}
+                                        <option value="Option 1">---Add publisher---</option>
+                                        {% endfor %}
+                                    </select>
+                                    <span id="errId13" class="error"></span>
+                                </div>
+
+                        </div>
+                        <div class="form-group">
+
+
+
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                </div>
+                </form>
+            </div>
+
+
+            <div class="col-md-12">
+                <form action="/create_publisher" method="POST" class="form-horizontal">
+                    <div class="form-group brdbot" style="display: block;">
+                        <h3>Add Publisher</h3>
+                        <div class="controls col-sm-9">
+
+                            <p id="field29" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p>
+                            <span id="errId14" class="error"></span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field30">Name</label>
+                            <div class="controls col-sm-9">
+
+                                <input id="field30" type="text" class="form-control k-textbox" data-role="text" name="name" data-parsley-errors-container="#errId15">
+                                <span id="errId15" class="error"></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field31">Address</label>
+                            <div class="controls col-sm-9">
+
+                                <input id="field31" type="text" class="form-control k-textbox" data-role="text" name="address" data-parsley-errors-container="#errId16">
+                                <span id="errId16" class="error"></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+
+
+
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12">
+                <form action="/create_topic" method="POST" class="form-horizontal">
+                    <div class="form-group brdbot" style="display: block;">
+                        <h3>Add Topic</h3>
+                        <div class="controls col-sm-9">
+
+                            <p id="field29" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p>
+                            <span id="errId14" class="error"></span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label control-label-left col-sm-3" for="field30">Topic</label>
+                            <div class="controls col-sm-9">
+
+                                <input id="field30" type="text" class="form-control k-textbox" data-role="text" name="name" data-parsley-errors-container="#errId15">
+                                <span id="errId15" class="error"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+
+
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+{% endblock %}
