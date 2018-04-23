@@ -101,7 +101,7 @@ def do_sign_in():
 
             # All Good, let's call MySQL
 
-            query = ("SELECT userID,username, password, type from users "
+            query = ("SELECT userID,username, password,type from users "
                      "where username = (%s) AND password = (%s)")
 
             cursor.execute(query, (_username, _password))
@@ -115,6 +115,7 @@ def do_sign_in():
                 session['username'] = str(data[0][1])
                 session['usertype'] = str(data[0][3])
                 session['userID'] = str(data[0][0])
+                
 
                 if flag:
                     return redirect(url_for('user_home'))
@@ -128,8 +129,15 @@ def do_sign_in():
     finally:
         cursor.close()
         conn.close()
-        if not flag:
-            return render_template("message.html", message=message)
+        print (str(data[0][3]))
+        if (flag==1):
+            
+            if (str(data[0][3])=='admin'):
+                return redirect('/admin')
+            else:   
+                return redirect('/userhome')
+        else:
+            return render_template('message.html', message = "Wrong user name or password")
 
 
 @app.route('/dosignup', methods=['POST'])
@@ -339,16 +347,22 @@ def create_title_fn(title, authors, topics):
 def create_author():
 
     ###TEST
-
+    birth = request.form.get('birthday', None)
+    death = request.form.get('death', None)
+    print (birth, death)
+    if (birth!=''):
+        birth = datetime.strptime(birth, '%d-%m-%Y')
+    
+    if (death!=''):
+        death = datetime.strptime(death, '%d-%m-%Y')
+    
     author = {
         'name':
         request.form.get('name', None),
         'bio':
         request.form.get('bio', None),
-        'birthday':
-        datetime.strptime(request.form.get('birthday', None), '%d-%m-%Y'),
-        'death':
-        datetime.strptime(request.form.get('death', None), '%d-%m-%Y'),
+        'birthday': birth,
+        'death': death,
         'image_url':
         request.form.get('image_url', None)
     }
@@ -577,3 +591,70 @@ def get_title_list(sort='name', filter=None):
     cursor.execute(query,{'filter':'%'+filter+'%'})
     print (cursor._executed) 
     return cursor.fetchall()
+
+def get_authors_count():
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+
+    query = (
+        "SELECT * FROM booktrade.view_authors_count;"
+        )
+    cursor.execute(query,{'filter':'%'+filter+'%'})
+    # print (cursor._executed) 
+    return cursor.fetchall()
+
+def get_topics_count():
+    pass
+
+def get_authors_count():
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+
+    query = (
+        "SELECT * FROM booktrade.view_topics_count;"
+        )
+    cursor.execute(query)
+    # print (cursor._executed)
+    conn.close() 
+    return cursor.fetchall()
+
+def get_books_for_title():
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    conn.close()
+    
+
+def get_whishlist(user):
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    conn.close()
+    
+
+def add_whishlist(user, title):
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    conn.close()
+    
+def get_most_recent_books(count):
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    conn.close()
+
+def get_highest_ranked_books(count):
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    conn.close()
+    pass
+
+def exchange_book(bookID, userID):
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    conn.close()
+    pass
+
+def get_author(authorID):
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    conn.close()
+    pass
+    
