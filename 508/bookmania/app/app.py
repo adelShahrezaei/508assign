@@ -16,7 +16,7 @@ config = {
 
 @app.route('/')
 def main():
-    return render_template('index.html')
+    return redirect('/signin')
 
 
 @app.route('/admin', methods=['GET'])
@@ -47,8 +47,9 @@ def user_home():
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
     userID = int(session.get('userID'))
+    print(userID)
     titles = get_title_list(sort='ISBN', filter='')
-    books = get_user_book_list('7',request.args.get('sort','name'),request.args.get('filter',''))
+    books = get_user_book_list(userID,request.args.get('sort','name'),request.args.get('filter',''))
     
     try:
 
@@ -150,13 +151,12 @@ def do_sign_up():
         # All Good, let's call MySQL
 
         cursor.callproc('sign_up', (_username, _password, _email, _address))
-        data = cursor.fetchall()
+        
 
-        if len(data) is 0:
-            conn.commit()
-            message = "User Successfully Created"
-        else:
-            message = 'error:' + str(data[0])
+    
+        conn.commit()
+        message = "User Successfully Created"
+    
     else:
         message = "<span>Enter the required fields</span>"
 
@@ -174,7 +174,7 @@ def do_sign_up():
 def create_user_book():
     print (request.form)
     ###TEST
-    session['userID'] = '7'
+    # session['userID'] = '7'
     userbook = {
         'userID': session.get('userID'),
         'addDate': datetime.now().date(),
@@ -261,7 +261,7 @@ def get_user_book_list(user ,sort='name', filter=None):
     cursor = conn.cursor(dictionary=True)
 
     query = (
-        "select books.bookID as bookID, totaltitles.ISBN as ISBN, totaltitles.name as name, totaltitles.authors as authors, totaltitles.topics as topics, totaltitles.publisher_name as publisher_name, avail.name as avail, totaltitles.amazon_price as amazon_price from books join "
+        "select books.userID as userID, books.bookID as bookID, totaltitles.ISBN as ISBN, totaltitles.name as name, totaltitles.authors as authors, totaltitles.topics as topics, totaltitles.publisher_name as publisher_name, avail.name as avail, totaltitles.amazon_price as amazon_price from books join "
         "(select t.*, ta.authors, tt2.topics  from titles t join "
         "(SELECT t.ISBN, group_concat(ath.name separator ', ') authors FROM titles t join author_title a on t.ISBN=a.ISBN "
         "join authors ath on a.authorID = ath.authorID "
@@ -272,10 +272,10 @@ def get_user_book_list(user ,sort='name', filter=None):
         "group by t.ISBN) tt2 on t.ISBN = tt2.ISBN ) as totaltitles "
         "on books.ISBN = totaltitles.ISBN "
         "join availability avail on books.Availability= avail.id "
-        "where totaltitles.name like %(filter)s or publisher_name like %(filter)s or authors like %(filter)s or topics like %(filter)s"
+        "where userID = %(userID)s AND (totaltitles.name like %(filter)s or publisher_name like %(filter)s or authors like %(filter)s or topics like %(filter)s)"
         "order by "+sort+" asc"
         )
-    cursor.execute(query,{'filter':'%'+filter+'%'})
+    cursor.execute(query,{'filter':'%'+filter+'%', 'userID':user})
     # print (cursor._executed) 
     return cursor.fetchall()
 
