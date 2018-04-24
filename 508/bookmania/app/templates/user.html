@@ -69,7 +69,7 @@
                         <a href="?sort=avail">Availability</a> |
                     </div>
                     <div class="col-md-4 mb-3 d-block">
-                        <form method="GET" action="/admin">
+                        <form method="GET" action="/user"">
                             <div class="input-group">
                                     <input name=filter type="text" class="form-control" placeholder="Filter">
                                     <div class="input-group-append">
@@ -161,6 +161,50 @@
                                             <a href="/userpage?userID={{book['userID']}}"></a>{{book['username']}}</td>
                                         <td>{{book['addDate']}}</td>
                                         <td>{{book['avail']}}</td>
+                                        
+                        
+                                    </tr>
+                                    {% else %}
+                                    <tr>
+                                        <!-- no title -->
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- wishlist -->
+                    <!-- exchange  list -->
+            <div class="row">
+
+                    <div class="col-md-12">
+                        <h3>Exchanges List</h3>
+                        <table class="table">
+                                <thead>
+                                    <tr>
+                        
+                                        
+                                        <th scope="col">Book Name</th>
+                                        <th scope="col">With</th>
+                                        <th scope="col">Date</th>
+                                        
+                                        
+                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    {% for exchange in exchanges %}
+
+                                    <tr>
+                        
+                                        
+                                        <td>{{exchange['name']}}</td>
+                                        <td><a href="/user?userID={{exchange['userID']}}">{{exchange['username']}}</a></td>
+                        
+                                        <td>{{exchange['date']}}</td>
+                                        
                                         
                         
                                     </tr>

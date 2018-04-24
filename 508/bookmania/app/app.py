@@ -75,7 +75,7 @@ def user_home():
         update = 1
         book = get_user_book(request.args.get('id'))
 
- 
+    
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
     userID = int(session.get('userID'))
@@ -84,37 +84,7 @@ def user_home():
     books = get_user_book_list(userID,request.args.get('sort','name'),request.args.get('filter',''))
     wishlist = get_whishlist(session.get('userID'))
     friends = get_friends(userID)
-    
-
-    # get user points
-    query = ("SELECT * from user_points_view where userID = %(userID)s")
-
-    cursor.execute(query, {'userID': userID})
-
-    user = cursor.fetchone()
-
-    # get user books
-    # get user wishlist
-    # get user trades
-    # print (user_books)
-    if (update == 0):
-        return render_template('userhome.html',wishlist=wishlist, session=session, friends=friends,titles=titles,user_books=books, user=user)
-    else : 
-        return render_template('userhome.html', update='update',wishlist=wishlist,friends=friends, book=book, session=session,titles=titles,user_books=books, user=user)
-
-@app.route('/user', methods=['GET'])
-def user():
-    userID = request.args.get('userID')
- 
-    conn = mysql.connect(**config)
-    cursor = conn.cursor(dictionary=True)
-    myID = int(session.get('userID'))
-    
-    friends = get_friends(userID)
-    books = get_user_book_list(userID,request.args.get('sort','name'),request.args.get('filter',''))
-    wishlist = get_whishlist(userID)
-
-
+    exchanges = get_exchanges(userID)
 
     # get user points
     query = ("SELECT * from user_points_view where userID = %(userID)s")
@@ -128,7 +98,38 @@ def user():
     # get user trades
     # print (user_books)
     conn.close()
-    return render_template('user.html',wishlist=wishlist, friends=friends, session=session,user_books=books, user=user)
+    if (update == 0):
+        return render_template('userhome.html',exchanges = exchanges,wishlist=wishlist, session=session, friends=friends,titles=titles,user_books=books, user=user)
+    else : 
+        return render_template('userhome.html',exchanges = exchanges, update='update',wishlist=wishlist,friends=friends, book=book, session=session,titles=titles,user_books=books, user=user)
+
+@app.route('/user', methods=['GET'])
+def user():
+    userID = request.args.get('userID')
+ 
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    myID = int(session.get('userID'))
+    
+    friends = get_friends(userID)
+    books = get_user_book_list(userID,request.args.get('sort','name'),request.args.get('filter',''))
+    wishlist = get_whishlist(userID)
+    exchanges = get_exchanges(userID)
+
+    
+    # get user points
+    query = ("SELECT * from user_points_view where userID = %(userID)s")
+
+    cursor.execute(query, {'userID': userID})
+
+    user = cursor.fetchone()
+
+    # get user books
+    # get user wishlist
+    # get user trades
+    # print (user_books)
+    conn.close()
+    return render_template('user.html',exchanges = exchanges, wishlist=wishlist, friends=friends, session=session,user_books=books, user=user)
     
 
     
@@ -652,11 +653,11 @@ def get_title_list(sort='name', filter=None):
         "join authors ath on a.authorID = ath.authorID "
         "group by t.ISBN) ta on ta.ISBN = t.ISBN "
         "left join "
-        "(SELECT t.ISBN, group_concat(tt.topicID separator ', ') topics FROM titles t join title_topic tt on t.ISBN=tt.ISBN "
+        "(SELECT t.ISBN, group_concat(tps.name separator ', ') topics FROM titles t join title_topic tt on t.ISBN=tt.ISBN "
         "join topics tps on tps.topicID = tt.topicID "
         "group by t.ISBN) tt2 on t.ISBN = tt2.ISBN "
         "where name like %(filter)s or publisher_name like %(filter)s or authors like %(filter)s or topics like %(filter)s"
-        "order by "+sort+" desc"
+        "order by "+sort+" asc"
         )
     cursor.execute(query,{'filter':'%'+filter+'%'})
     print (cursor._executed) 
@@ -709,7 +710,8 @@ def get_browse_book_list(sort='name', filter=None):
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
 
-
+    if sort == 'None':
+        sort = 'bname'
     query = ("SELECT * FROM booktrade.book_title_view "+filter+" order by "+sort+" asc ;")
 
     cursor.execute(query)
@@ -800,6 +802,21 @@ def get_points(userID):
     conn.close()
     return cursor.fetchone()
     
+def get_exchanges(userID):
+
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+
+    query = ("select users.username,e.userID2 as userID,  b.name, e.date from exchanges e "
+            "join users on e.userID2 = users.userID "
+            "join book_title_view b on b.bookID = e.bookID "
+            "where e.userID1 = %s") % (userID) 
+    cursor.execute(query)
+    
+    conn.close()
+    return cursor.fetchall()
+    
+
 @app.route('/exchange', methods=['get'])
 def exchange():
     
