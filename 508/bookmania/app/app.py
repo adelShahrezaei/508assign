@@ -1,6 +1,7 @@
 from flask import Flask, render_template, flash, request, session, redirect, url_for
 import mysql.connector as mysql
 from datetime import date, datetime, timedelta
+import time
 
 app = Flask(__name__)
 app.secret_key = 'thisisasecretkey'
@@ -38,7 +39,7 @@ def browse():
     if (query != None):
         filter = "where"
         
-        filter = filter+(" author_names like '%%%s%%' OR name like '%%%s%%' OR bname like '%%%s%%' OR topic_names like '%%%s%%'") % (query,query,query,query)
+        filter = filter+(" author_names like '%%%s%%' OR name like '%%%s%%' OR bname like '%%%s%%' OR topic_names like '%%%s%%' OR username like '%%%s%%'") % (query,query,query,query,query)
         
      
         
@@ -332,7 +333,7 @@ def get_user_book(bookID):
     conn.close()
     return cursor.fetchone()
 
-def get_user_book_list(user ,sort='name', filter=None):
+def get_user_book_list(user ,sort='name', filter=''):
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
 
@@ -789,36 +790,55 @@ def get_author(authorID):
     cursor = conn.cursor(dictionary=True)
     conn.close()
     pass
+def get_points(userID):
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+
+    query = ("select points from members where userID=%s ") % (userID)
+    cursor.execute(query)
+    
+    conn.close()
+    return cursor.fetchone()
     
 @app.route('/exchange', methods=['get'])
 def exchange():
     
+    points = get_points(session.get('userID'))
+
+
     
     books = get_user_book_list(user=session.get('userID'))
 
-    return render_template('exchange.html',books = books, bookID2 = request.args.get('bookID2'),userID2 = request.args.get('userID2') )
+    return render_template('exchange.html',books = books,points=points['points'], bookID2 = request.args.get('bookID2'),userID2 = request.args.get('userID2') )
 
-@app.route('do_exchange')
-def do_exchange(userID1,userID2,bookID1,bookID2):
-    userID1 = request.form.get('userID1')
+@app.route('/do_exchange', methods=['POST'])
+def do_exchange():
+    userID1 = session.get('userID')
     userID2 = request.form.get('userID2')
-    bookID1 = request.form.get('bookID1')
-    bookID2 = request.form.get('bookID2')
+    bookID = request.form.get('bookID2')
+    
 
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
-    query ("insert into exchange (userID1, userID2, bookID1, bookID2, date) values ('%s','%s','%s','%s','%s') ;") % (userID1,userID2,bookID1,bookID2, time.time())
-
-    
-
-    query = query + ("; update books set userID= '%s' where bookID = '%s'") % (userID1,bookID2)
-    
-
-    query = query + ("; update books set userID= '%s' where bookID = '%s'") % (userID2,bookID1)
-    
-    query = query + ("; update members set points= points+1 where userID IN ('%s', '%s')") % (userID2,userID2)
+    query = ("insert into exchanges (userID1, userID2, bookID, date) values ('%s','%s','%s','%s') ") % (userID1,userID2,bookID, time.strftime('%Y-%m-%d %H:%M:%S'))
     cursor.execute(query)
     conn.commit()    
-    conn.closed
+    
+
+    query = ("update books set userID=%s where bookID =%s") % (userID1,bookID)
+    cursor.execute(query)
+    conn.commit()       
+
+    # query = query + ("; update books set userID= '%s' where bookID = '%s'") % (userID2,bookID1)
+    
+    query = ("update members set points= points+1 where userID IN ('%s')") % (userID2)
+    cursor.execute(query)
+    conn.commit()   
+    query = ("update members set points= points-1 where userID IN ('%s')") % (userID1)
+    cursor.execute(query)
+    conn.commit()   
+
+    conn.close()
+    
     flash("Book Exchanged!")
-    return 
+    return redirect('/userhome')

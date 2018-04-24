@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+    
+<div style="margin: 0 auto" class="col-sm-4 jumbotron center-block ">
+    {% if points != '0' %}
+    <h6>Exchange Confirmation</h6>
+    <form class="form-signin" method="POST" action="/do_exchange">
+      <p>You are spending 1 point of your {{points}} points!</p>
+      <input type="hidden" name="userID2" value="{{userID2}}"/>
+      <input type="hidden" name="bookID2" value="{{bookID2}}"/>
+      
+      <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Confirm Exchange</button>
+    </form>
+    {% else %}
+    <div class="alert alert-danger" role="alert">
+            you have 0 points! exchange some books to earn points!
+    </div>
+    {% endif %}
+  </div>
+{% endblock %}
