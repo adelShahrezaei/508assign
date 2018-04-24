@@ -9,7 +9,7 @@
                 </div>
 
                 <div class="span8">
-                    <h3>{{user['screen_name']}}</h3>
+                    <h3>{{user['username']}}</h3>
                     <h6>Email: {{user['email']}}</h6>
                     <h6>Location: {{user['address']}}</h6>
                     <h6>Points: {{user['points']}}</h6>
@@ -25,13 +25,10 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">
-                                    <span class="icon-wrench"></span> Modify</a>
+                                <a href="/addfriend?userID={{request.args.get('a')}}">
+                                    <span class="icon-wrench"></span> Add Friend</a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon-trash"></span> Delete</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -47,7 +44,7 @@
                 
                 <div class="row">
     
-                    <h3 class="col-md-12 d-block">My Books</h3>
+                    <h3 class="col-md-12 d-block">Books</h3>
                     
                     <div class="col-md-12 mb-3 d-block">
                         sort by :
@@ -180,121 +177,7 @@
                         {% endif %} {% endwith %}
                     </div>
                 </div>
-                {% if update=='update' %}
                 
-                <form action="/update_user_book" method="POST" id="formentry" class="form-horizontal">
-                    <div class="col-md-12">
-
-                        <div class="form-group brdbot">
-                            <h3>Update Book</h3>
-                            <div class="controls col-sm-9">
-
-                                <p id="field8" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p>
-                                <span id="errId7" class="error"></span>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label control-label-left col-sm-3" for="field18">ISBN</label>
-                            <div class="controls col-sm-9">
-                                <select multiple name=ISBN class="form-control" id="exampleFormControlSelect2">
-                                    {% for title in titles %}
-                                    <option value="{{title['ISBN']}}" {% if book['ISBN']==title['ISBN'] %} selected =selected {% endif %} >{{title['ISBN']}}({{title['name']}})</option>
-                                    {% else %}
-                                    <option value="Option 1">---Add Title---</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label control-label-left col-sm-3" for="field10">Name</label>
-                            <div class="controls col-sm-9">
-
-                                <input id="field10" type="text" class="form-control k-textbox" data-role="text" name="name" value="{{book['Name']}}" data-parsley-errors-container="#errId9">
-                                <span id="errId9" class="error"></span>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label control-label-left col-sm-3" for="field11">Availability</label>
-                            <div class="controls col-sm-9">
-
-                                <select name=avail class="form-control" id="exampleFormControlSelect2">
-                                    <option value="1">Available</option>
-                                    <option value="0">Not Available</option>
-                                    <option value="2">Comming Soon</option>
-                                </select>
-
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-
-
-
-                            <button type="submit" class="btn btn-primary">update</button>
-                        </div>
-                    </div>
-                    <input type="hidden" value="{{book['bookID']}}" name="bookID">
-                </form>
-
-                {% endif %}
-                <form action="/create_user_book" method="POST" id="formentry" class="form-horizontal">
-                    <div class="col-md-12">
-
-                        <div class="form-group brdbot">
-                            <h3>Add Book</h3>
-                            <div class="controls col-sm-9">
-
-                                <p id="field8" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p>
-                                <span id="errId7" class="error"></span>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label control-label-left col-sm-3" for="field18">ISBN</label>
-                            <div class="controls col-sm-9">
-                                <select multiple name=ISBN class="form-control" id="exampleFormControlSelect2">
-                                    {% for title in titles %}
-                                    <option value="{{title['ISBN']}}">{{title['ISBN']}}({{title['name']}})</option>
-                                    {% else %}
-                                    <option value="Option 1">---Add Title---</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label control-label-left col-sm-3" for="field10">Name</label>
-                            <div class="controls col-sm-9">
-
-                                <input id="field10" type="text" class="form-control k-textbox" data-role="text" name="name" data-parsley-errors-container="#errId9">
-                                <span id="errId9" class="error"></span>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label control-label-left col-sm-3" for="field11">Availability</label>
-                            <div class="controls col-sm-9">
-
-                                <select name=avail class="form-control" id="exampleFormControlSelect2">
-                                    <option value="1">Available</option>
-                                    <option value="0">Not Available</option>
-                                    <option value="2">Comming Soon</option>
-                                </select>
-
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-
-
-
-                            <button type="submit" class="btn btn-primary">Add</button>
-                        </div>
-                    </div>
-                </form>
             </div>
 
 
