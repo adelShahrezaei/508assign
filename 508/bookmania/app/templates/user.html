@@ -25,7 +25,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="/addfriend?userID={{request.args.get('a')}}">
+                                <a href="/addfriend?userID={{request.args.get('userID')}}">
                                     <span class="icon-wrench"></span> Add Friend</a>
                             </li>
                             
@@ -34,6 +34,19 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+        <h5>Friends</h5>
+        <ul>
+            {% for friend in friends %}
+            <li>
+                <a href="/user?userID={{friend['userID']}}">{{friend['name']}}</a>
+            </li>
+            
+            {% else %}
+            
+            {% endfor %}
+        </ul>
+    </div>
     </div>
     <div class="col-md-10">
 
@@ -75,7 +88,7 @@
                                 <th scope="col">Amazon Price</th>
                                 <th scope="col">Publisher</th>
                                 <th scope="col">Availability</th>
-                                <th scope="col"></th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -88,8 +101,7 @@
                                 <td>{{book['amazon_price']}}</td>
                                 <td>{{book['publisher_name']}}</td>
                                 <td>{{book['avail']}}</td>
-                                <td><a href="?action=delete&id={{book['bookID']}}">Delete</a></td>
-                                <td><a href="?action=update&id={{book['bookID']}}">Update</a></td>
+                                
                             </tr>
                             {% else %}
                             <tr>

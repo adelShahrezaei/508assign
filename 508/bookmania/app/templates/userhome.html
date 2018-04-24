@@ -9,7 +9,7 @@
                 </div>
 
                 <div class="span8">
-                    <h3>{{user['screen_name']}}</h3>
+                    <h3>{{user['username']}}</h3>
                     <h6>Email: {{user['email']}}</h6>
                     <h6>Location: {{user['address']}}</h6>
                     <h6>Points: {{user['points']}}</h6>
@@ -37,6 +37,20 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+                <div class="col-md-12"><h5>Friends</h5>
+                <ul>
+                    {% for friend in friends %}
+                    <li>
+                        <a href="/user?userID={{friend['userID']}}">{{friend['username']}}</a>
+                    </li>
+                    
+                    {% else %}
+                    
+                    {% endfor %}
+                </ul>
+            </div>
+            </div>
     </div>
     <div class="col-md-10">
 

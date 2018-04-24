@@ -39,7 +39,7 @@ def browse():
         filter = "where"
         
         filter = filter+(" author_names like '%%%s%%' OR name like '%%%s%%' OR bname like '%%%s%%' OR topic_names like '%%%s%%'") % (query,query,query,query)
-        print ("dslakjdddddddddddddddddd",filter)
+        
      
         
 
@@ -82,29 +82,59 @@ def user_home():
     titles = get_title_list(sort='ISBN', filter='')
     books = get_user_book_list(userID,request.args.get('sort','name'),request.args.get('filter',''))
     wishlist = get_whishlist(session.get('userID'))
+    friends = get_friends(userID)
+    
 
-    try:
+    # get user points
+    query = ("SELECT * from user_points_view where userID = %(userID)s")
 
-        # get user points
-        query = ("SELECT * from user_points_view where userID = %(userID)s")
+    cursor.execute(query, {'userID': userID})
 
-        cursor.execute(query, {'userID': userID})
+    user = cursor.fetchone()
 
-        user = cursor.fetchone()
+    # get user books
+    # get user wishlist
+    # get user trades
+    # print (user_books)
+    if (update == 0):
+        return render_template('userhome.html',wishlist=wishlist, session=session, friends=friends,titles=titles,user_books=books, user=user)
+    else : 
+        return render_template('userhome.html', update='update',wishlist=wishlist,friends=friends, book=book, session=session,titles=titles,user_books=books, user=user)
 
-        # get user books
-        # get user wishlist
-        # get user trades
-        # print (user_books)
-        if (update == 0):
-            return render_template('userhome.html',wishlist=wishlist, session=session,titles=titles,user_books=books, user=user)
-        else : 
-            return render_template('userhome.html', update='update',wishlist=wishlist, book=book, session=session,titles=titles,user_books=books, user=user)
-    except Exception as e:
-        
-        message = 'error:' + str(e)
-   
+@app.route('/user', methods=['GET'])
+def user():
+    userID = request.args.get('userID')
+ 
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    myID = int(session.get('userID'))
+    
+    friends = get_friends(userID)
+    books = get_user_book_list(userID,request.args.get('sort','name'),request.args.get('filter',''))
+    wishlist = get_whishlist(userID)
 
+
+
+    # get user points
+    query = ("SELECT * from user_points_view where userID = %(userID)s")
+
+    cursor.execute(query, {'userID': userID})
+
+    user = cursor.fetchone()
+
+    # get user books
+    # get user wishlist
+    # get user trades
+    # print (user_books)
+    conn.close()
+    return render_template('user.html',wishlist=wishlist, friends=friends, session=session,user_books=books, user=user)
+    
+
+    
+    
+
+
+  
 @app.route('/signup')
 def signup():
     return render_template('signup.html')
@@ -707,6 +737,25 @@ def get_whishlist(user):
 
     return cursor.fetchall()
 
+@app.route('/addfriend', methods=['get'])
+def add_friend():
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    query = ("insert into friends (userID1,userID2) values ('%s', '%s') ;") % (session.get('userID'), request.args.get('userID'))
+    cursor.execute(query)
+    conn.commit()
+    flash("Firend Added")
+    conn.close()
+    return redirect(request.referrer)
+def get_friends(userID):
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    query =  ("SELECT users.*, userID1 FROM booktrade.friends join users on userID2= users.userID where friends.userID1='%s'") % (userID)
+    cursor.execute(query)
+    conn.close()
+
+    return cursor.fetchall()
+
 @app.route('/addtowish', methods=['get'])
 def add_whishlist():
     conn = mysql.connect(**config)
@@ -741,3 +790,35 @@ def get_author(authorID):
     conn.close()
     pass
     
+@app.route('/exchange', methods=['get'])
+def exchange():
+    
+    
+    books = get_user_book_list(user=session.get('userID'))
+
+    return render_template('exchange.html',books = books, bookID2 = request.args.get('bookID2'),userID2 = request.args.get('userID2') )
+
+@app.route('do_exchange')
+def do_exchange(userID1,userID2,bookID1,bookID2):
+    userID1 = request.form.get('userID1')
+    userID2 = request.form.get('userID2')
+    bookID1 = request.form.get('bookID1')
+    bookID2 = request.form.get('bookID2')
+
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+    query ("insert into exchange (userID1, userID2, bookID1, bookID2, date) values ('%s','%s','%s','%s','%s') ;") % (userID1,userID2,bookID1,bookID2, time.time())
+
+    
+
+    query = query + ("; update books set userID= '%s' where bookID = '%s'") % (userID1,bookID2)
+    
+
+    query = query + ("; update books set userID= '%s' where bookID = '%s'") % (userID2,bookID1)
+    
+    query = query + ("; update members set points= points+1 where userID IN ('%s', '%s')") % (userID2,userID2)
+    cursor.execute(query)
+    conn.commit()    
+    conn.closed
+    flash("Book Exchanged!")
+    return 
