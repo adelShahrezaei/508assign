@@ -175,7 +175,7 @@ def do_sign_in():
 
             cursor.execute(query, (_username, _password))
             data = cursor.fetchall()
-
+            print (len(data))
             if len(data) is 0:
                 conn.commit()
                 message = "Wrong username or password!"
@@ -198,7 +198,7 @@ def do_sign_in():
     finally:
         cursor.close()
         conn.close()
-        print (str(data[0][3]))
+        
         if (flag==1):
             
             if (str(data[0][3])=='admin'):
