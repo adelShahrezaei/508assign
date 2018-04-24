@@ -18,6 +18,37 @@ config = {
 def main():
     return redirect('/signin')
 
+@app.route('/browse', methods=['GET'])
+def browse():
+    # publishers = get_publishers()
+    topics = get_book_topics_count()
+    authors = get_book_authors_count()
+    userID = session.get('userID')
+    authFilter = request.args.get('authorID',None)
+    topicFilter = request.args.get('topicID',None)
+    query = request.args.get('query',None)
+    filter = ''
+    if (authFilter!=None or topicFilter !=None):
+        filter = "where"
+        if (authFilter !=None):
+            filter = filter+" author_names like '%"+authFilter+"%' "
+        
+        if (topicFilter !=None):
+            filter = filter+" topic_names like '%"+topicFilter+"%' "
+    if (query != None):
+        filter = "where"
+        
+        filter = filter+(" author_names like '%%%s%%' OR name like '%%%s%%' OR bname like '%%%s%%' OR topic_names like '%%%s%%'") % (query,query,query,query)
+        print ("dslakjdddddddddddddddddd",filter)
+     
+        
+
+    books = get_browse_book_list(request.args.get('sort','bname'),filter)
+
+    
+    return render_template(
+        'browse.html',books = books,  authors=authors, topics=topics)
+
 
 @app.route('/admin', methods=['GET'])
 def admin():
@@ -50,7 +81,8 @@ def user_home():
     print(userID)
     titles = get_title_list(sort='ISBN', filter='')
     books = get_user_book_list(userID,request.args.get('sort','name'),request.args.get('filter',''))
-    
+    wishlist = get_whishlist(session.get('userID'))
+
     try:
 
         # get user points
@@ -65,13 +97,13 @@ def user_home():
         # get user trades
         # print (user_books)
         if (update == 0):
-            return render_template('userhome.html', session=session,titles=titles,user_books=books, user=user)
+            return render_template('userhome.html',wishlist=wishlist, session=session,titles=titles,user_books=books, user=user)
         else : 
-            return render_template('userhome.html', update='update', book=book, session=session,titles=titles,user_books=books, user=user)
+            return render_template('userhome.html', update='update',wishlist=wishlist, book=book, session=session,titles=titles,user_books=books, user=user)
     except Exception as e:
         
         message = 'error:' + str(e)
-
+   
 
 @app.route('/signup')
 def signup():
@@ -82,6 +114,11 @@ def signup():
 def signin():
     return render_template('signin.html')
 
+
+@app.route('/signout')
+def signout():
+    session.clear()
+    return redirect('/signin')
 
 @app.route('/dosignin', methods=['POST'])
 def do_sign_in():
@@ -236,6 +273,7 @@ def delete_user_book(bookID):
     conn.close()
     flash("Book Deleted")
     return True
+
 
 @app.route('/update_user_book', methods=['POST'])
 def update_user_book():
@@ -511,28 +549,28 @@ def add_topic_fn(topicID, ISBN):
         conn.close()
 
 
-def get_user_books(userID):
-    conn = mysql.connect(**config)
-    cursor = conn.cursor(dictionary=True)
+# def get_user_books(userID):
+#     conn = mysql.connect(**config)
+#     cursor = conn.cursor(dictionary=True)
 
-    try:
+#     try:
 
-        # get user points
-        query = ("SELECT * from user_points_view where userID = %(userID)s")
+#         # get user points
+#         query = ("SELECT * from user_points_view where userID = %(userID)s")
 
-        cursor.execute(query, {'userID': userID})
+#         cursor.execute(query, {'userID': userID})
 
-        user = cursor.fetchone()
+#         user = cursor.fetchone()
 
-        # get user books
-        # get user wishlist
-        # get user trades
+#         # get user books
+#         # get user wishlist
+#         # get user trades
 
-        return render_template('userhome.html', session=session, user=user)
+#         return render_template('userhome.html', session=session, user=user)
 
-    except Exception as e:
-        print(cursor._last_executed)
-        message = 'error:' + str(e)
+#     except Exception as e:
+#         print(cursor._last_executed)
+#         message = 'error:' + str(e)
 
 
 def add_title_author(ISBN, authorID):
@@ -584,6 +622,7 @@ def get_title_list(sort='name', filter=None):
         "group by t.ISBN) ta on ta.ISBN = t.ISBN "
         "left join "
         "(SELECT t.ISBN, group_concat(tt.topicID separator ', ') topics FROM titles t join title_topic tt on t.ISBN=tt.ISBN "
+        "join topics tps on tps.topicID = tt.topicID "
         "group by t.ISBN) tt2 on t.ISBN = tt2.ISBN "
         "where name like %(filter)s or publisher_name like %(filter)s or authors like %(filter)s or topics like %(filter)s"
         "order by "+sort+" desc"
@@ -592,21 +631,38 @@ def get_title_list(sort='name', filter=None):
     print (cursor._executed) 
     return cursor.fetchall()
 
-def get_authors_count():
+def get_book_authors_count():
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
 
     query = (
-        "SELECT * FROM booktrade.view_authors_count;"
+        "SELECT count(*) as count, a.name as name, a.authorID as authorID " 
+        "FROM books join author_title at on at.ISBN = books.ISBN " 
+        "join authors a on a.authorID = at.authorID "
+        "group by a.name"
         )
-    cursor.execute(query,{'filter':'%'+filter+'%'})
+    cursor.execute(query)
     # print (cursor._executed) 
     return cursor.fetchall()
 
 def get_topics_count():
     pass
 
-def get_authors_count():
+def get_book_topics_count():
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+
+    query = (
+        "SELECT count(*) as count, a.name as name, a.topicID as topicID " 
+        "FROM books join title_topic at on at.ISBN = books.ISBN " 
+        "join topics a on a.topicID = at.topicID "
+        "group by a.name"
+        )
+    cursor.execute(query)
+    # print (cursor._executed) 
+    return cursor.fetchall()
+
+def get_topics_count():
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
 
@@ -618,22 +674,49 @@ def get_authors_count():
     conn.close() 
     return cursor.fetchall()
 
-def get_books_for_title():
+def get_browse_book_list(sort='name', filter=None):
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
+
+
+    query = ("SELECT * FROM booktrade.book_title_view "+filter+" order by "+sort+" asc ;")
+
+    cursor.execute(query)
+    print (cursor._executed) 
     conn.close()
+    return cursor.fetchall()
+
+def get_books_for_title(ISBN, filters):
+    conn = mysql.connect(**config)
+    cursor = conn.cursor(dictionary=True)
+
+
+    query = ("SELECT * FROM booktrade.books_title_agg where %(filters)s;")
+
+    cursor.execute(query, {'filters': filter})
+    conn.close()
+    return cursor.fetchall()
     
 
 def get_whishlist(user):
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
+    query =  ("SELECT b.* from wishlist w join book_title_view b on b.bookID=w.bookID where w.userID='%s'") % (user)
+    cursor.execute(query)
     conn.close()
-    
 
-def add_whishlist(user, title):
+    return cursor.fetchall()
+
+@app.route('/addtowish', methods=['get'])
+def add_whishlist():
     conn = mysql.connect(**config)
     cursor = conn.cursor(dictionary=True)
+    query = ("insert into wishlist (userID,bookID) values ('%s', '%s') ;") % (session.get('userID'), request.args.get('bookID'))
+    cursor.execute(query)
+    conn.commit()
+    flash("Added To Wishlist")
     conn.close()
+    return redirect(request.referrer)
     
 def get_most_recent_books(count):
     conn = mysql.connect(**config)

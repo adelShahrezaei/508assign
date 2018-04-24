@@ -101,10 +101,71 @@
                             {% endfor %}
                         </tbody>
                     </table>
+
                 </div>
 
             </div>
+            <!-- wish list -->
+            <div class="row">
 
+                    <div class="col-md-12">
+                        <h3>Wishlist</h3>
+                        <table class="table">
+                                <thead>
+                                    <tr>
+                        
+                                        <th></th>
+                                        <th scope="col">Book Name</th>
+                                        <th scope="col">Title Name</th>
+                                        <th scope="col">ISBN</th>
+                                        <th scope="col">Authors</th>
+                                        <th scope="col">Edition</th>
+                                        <th scope="col">Topics</th>
+                                        <th scope="col">Amazon Price</th>
+                                        <th scope="col">Publisher</th>
+                                        <th scope="col">Owner</th>
+                                        <th scope="col">Add Date</th>
+                                        <th scope="col">Availability</th>
+                                        <th></th>
+                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    {% for book in wishlist %}
+
+                                    <tr>
+                        
+                                        <td>
+                                            <img height="120" width="80" src="{{book['image_url']}}">
+                                        </td>
+                                        <td>{{book['bname']}}</td>
+                                        <td>{{book['name']}}</td>
+                        
+                                        <th>{{book['ISBN']}}</th>
+                                        <td>{{book['author_names']}}</td>
+                                        <td>{{book['edition']}}</td>
+                                        <td>{{book['topic_names']}}</td>
+                                        <td>{{book['amazon_price']}}</td>
+                                        <td>{{book['publisher_name']}}</td>
+                                        <td>
+                                            <a href="/userpage?userID={{book['userID']}}"></a>{{book['username']}}</td>
+                                        <td>{{book['addDate']}}</td>
+                                        <td>{{book['avail']}}</td>
+                                        
+                        
+                                    </tr>
+                                    {% else %}
+                                    <tr>
+                                        <!-- no title -->
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- wishlist -->
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -138,7 +199,7 @@
                             <div class="controls col-sm-9">
                                 <select multiple name=ISBN class="form-control" id="exampleFormControlSelect2">
                                     {% for title in titles %}
-                                    <option value="{{title['ISBN']}}" {% if book['ISBN']==title['ISBN'] %} selected =selected {% endif %} >{{title['ISBN']}}</option>
+                                    <option value="{{title['ISBN']}}" {% if book['ISBN']==title['ISBN'] %} selected =selected {% endif %} >{{title['ISBN']}}({{title['name']}})</option>
                                     {% else %}
                                     <option value="Option 1">---Add Title---</option>
                                     {% endfor %}
@@ -196,7 +257,7 @@
                             <div class="controls col-sm-9">
                                 <select multiple name=ISBN class="form-control" id="exampleFormControlSelect2">
                                     {% for title in titles %}
-                                    <option value="{{title['ISBN']}}">{{title['ISBN']}}</option>
+                                    <option value="{{title['ISBN']}}">{{title['ISBN']}}({{title['name']}})</option>
                                     {% else %}
                                     <option value="Option 1">---Add Title---</option>
                                     {% endfor %}

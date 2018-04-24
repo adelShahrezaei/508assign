@@ -1,0 +1,117 @@
+{% extends "layout.html" %} {% block content %}
+<div class="row">
+        <div id="valOk" class="row viewerror clearfix hidden">
+                <div class="alert alert-success">
+                    {% with messages = get_flashed_messages() %} {% if messages %}
+                    <ul class=flashes>
+                        {% for message in messages %}
+                        <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %} {% endwith %}
+                </div>
+            </div>
+    <h3 class="col-md-12 d-block">Browse Books</h3>
+
+    <div class="col-md-12 mb-3 d-block">
+        sort by :
+        <a href="?sort=name">Name</a> |
+        <a href="?sort=authors">Author</a> |
+        <a href="?sort=topics">Topics</a> |
+        <a href="?sort=amazon_price">amazon price</a> |
+        <a href="?sort=publisher_name">publisher</a> |
+
+    </div>
+    <div class="col-md-4 mb-3 d-block">
+        <form method="GET" action="/browse">
+            <div class="input-group">
+                <input name=query type="text" class="form-control" placeholder="query">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-secondary">Filter</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+    <div class="col-sm">
+            <h6>Authors</h6>
+        <ul>
+            {% for author in authors %}
+            <li>
+                <a href="/browse?authorID={{author['name']}}">{{author['name']}}({{author['count']}})</a>
+            </li>
+            
+            {% else %}
+            
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-sm">
+            <h6>Topics</h6>
+        <ul>
+            {% for topic in topics %}
+            <li>
+                <a href="/browse?topicID={{topic['name']}}">{{topic['name']}}({{topic['count']}})</a>
+            </li>
+            
+            {% else %}
+            
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th></th>
+                <th scope="col">Book Name</th>
+                <th scope="col">Title Name</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">Authors</th>
+                <th scope="col">Edition</th>
+                <th scope="col">Topics</th>
+                <th scope="col">Amazon Price</th>
+                <th scope="col">Publisher</th>
+                <th scope="col">Owner</th>
+                <th scope="col">Add Date</th>
+                <th scope="col">Availability</th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+
+                <td>
+                    <img height="120" width="80" src="{{book['image_url']}}">
+                </td>
+                <td>{{book['bname']}}</td>
+                <td>{{book['name']}}</td>
+
+                <th>{{book['ISBN']}}</th>
+                <td>{{book['author_names']}}</td>
+                <td>{{book['edition']}}</td>
+                <td>{{book['topic_names']}}</td>
+                <td>{{book['amazon_price']}}</td>
+                <td>{{book['publisher_name']}}</td>
+                <td>
+                    <a href="/userpage?userID={{book['userID']}}"></a>{{book['username']}}</td>
+                <td>{{book['addDate']}}</td>
+                <td>{{book['avail']}}</td>
+                <td><a href="/addtowish?bookID={{book['bookID']}}">Add to Wishlist</a></td>
+
+            </tr>
+            {% else %}
+            <tr>
+                <!-- no title -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
