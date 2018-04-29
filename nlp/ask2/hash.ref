@@ -1,0 +1,118 @@
+**This is a QA system by Adel Shahrzaei. It will try to answer questions that start with Who, What, When or Where.
+
+Enter "exit" to leave the program.
+ 
+=?> What is the population of the Bahamas?$VAR1 = {
+          'subjects' => [
+                          'Bahamas'
+                        ],
+          'synonyms' => [
+                          {
+                            'synonyms' => {
+                                            'universe' => 1,
+                                            'population' => 1
+                                          },
+                            'orginal' => 'population'
+                          }
+                        ],
+          'tokens' => [
+                        'What',
+                        'is',
+                        'the',
+                        'population',
+                        'of',
+                        'the',
+                        'Bahamas'
+                      ],
+          'type' => 'what',
+          'verb' => 'is'
+        };
+I am sorry, I don't know the answer.
+What did Vasco Da Gama discover?$VAR1 = {
+          'aux' => 'did',
+          'subjects' => [
+                          'Vasco Da Gama'
+                        ],
+          'synonyms' => [
+                          {
+                            'orginal' => 'discover',
+                            'synonyms' => {
+                                            'happen_upon' => 1,
+                                            'see' => 1,
+                                            'observe' => 1,
+                                            'learn' => 1,
+                                            'reveal' => 1,
+                                            'distinguish' => 1,
+                                            'expose' => 1,
+                                            'chance_upon' => 1,
+                                            'break5' => 1,
+                                            'disclose' => 1,
+                                            'identify' => 1,
+                                            'chance_on' => 1,
+                                            'find' => 1,
+                                            'let_out' => 1,
+                                            'pick_up' => 1,
+                                            'hear' => 1,
+                                            'come_upon' => 1,
+                                            'bring_out' => 1,
+                                            'get_word' => 1,
+                                            'get_a_line' => 1,
+                                            'key_out' => 1,
+                                            'key' => 1,
+                                            'come_across' => 1,
+                                            'strike2' => 1,
+                                            'light_upon' => 1,
+                                            'describe' => 1,
+                                            'let_on' => 1,
+                                            'give_away' => 1,
+                                            'name' => 1,
+                                            'get_wind' => 1,
+                                            'detect' => 1,
+                                            'divulge' => 1,
+                                            'unwrap' => 1,
+                                            'notice' => 1,
+                                            'find_out' => 1,
+                                            'fall_upon' => 1,
+                                            'attain' => 1,
+                                            'discover' => 1
+                                          }
+                          }
+                        ],
+          'tokens' => [
+                        'What',
+                        'did',
+                        'discover',
+                        'Vasco Da Gama'
+                      ],
+          'type' => 'what',
+          'verb' => 'discover'
+        };
+I am sorry, I don't know the answer.
+Who is Barack Obama?$VAR1 = {
+          'type' => 'who',
+          'verb' => 'is',
+          'synonyms' => [],
+          'tokens' => [
+                        'Who',
+                        'is',
+                        'Barack Obama'
+                      ],
+          'subjects' => [
+                          'Barack Obama'
+                        ]
+        };
+Barack Obama is an American politician who served as the 44th President of the United States from January 20, 2009 to January 20, 2017.
+Who is Desmond Tutu??$VAR1 = {
+          'type' => 'who',
+          'verb' => 'is',
+          'tokens' => [
+                        'Who',
+                        'is',
+                        'Desmond Tutu'
+                      ],
+          'synonyms' => [],
+          'subjects' => [
+                          'Desmond Tutu'
+                        ]
+        };
+Desmond Tutu is a South African Anglican cleric and theologian known for his work as an anti-apartheid and human rights activist.
