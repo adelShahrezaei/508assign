@@ -1,0 +1,225 @@
+
+<!-- saved from url=(0051)https://web.stanford.edu/class/linguist238/hw7.html -->
+<html><style type="text/css" id="night-mode-pro-style">html {background-color: #010101 !important; filter: invert(100%) !important}</style><link type="text/css" rel="stylesheet" id="night-mode-pro-link" href="chrome-extension://gbilbeoogenjmnabenfjfoockmpfnjoh/data/content_script/inject.css"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>LINGUIST 138/238 --  SYMBSYS 138. Autumn 2004. Homework 7</title>
+</head>
+<body bgcolor="#ffffff">
+
+<table width="100%">
+<tbody><tr>
+<td><img src="./LINGUIST 138_238 -- SYMBSYS 138. Autumn 2004. Homework 7_files/stanford.seal64.gif" alt="STANFORD"></td>
+
+<td width="100%"><font size="+2">LINGUIST 138/238 &nbsp; &nbsp; - &nbsp; &nbsp; SYMBSYS 138 &nbsp; - &nbsp; &nbsp; Autumn 2004
+<br>Homework 7</font></td></tr>
+
+</tbody></table>
+
+<table border="0" cellpadding="3" width="100%" bgcolor="#990000">
+<tbody><tr>
+<td><b><font color="#FFFFFF"><font size="+1">Due: Friday Dec 3 before 10:00am</font></font></b></td>
+</tr>
+</tbody></table>
+
+
+
+<p>Read this entire page before starting!!
+</p>
+<p>
+Reminder:  The due date for this homework is Friday Dec 3 before 10:00am</p>
+
+<ol>
+<p>
+This homework has two parts
+</p><p>
+</p><li> <b>Part 1: Error Analysis on the AskMSR system:</b>
+Go to beta.search.msn.com.  Choose 10 questions
+from the readings.  Type them into both this new microsoft question answering
+system and google.  Write up a short (1-2page) analysis of all the errors
+(for example, which kinds of questions could neither system answer; which kinds
+of questions did one work better on;  was there a type of question that
+could be answered from google just from the "summaries" that google returned
+without reading the pages, etc etc).
+<p>
+</p></li><li>
+<b>Part 2: Simplified Question-Answerer:</b>
+You are going to implement the AskMSR approach to web-based question-answering
+in a small way.  Although the assignment has many small functions you need
+to implement, it's easier than it looks, since each function is very simple, mainly requiring you to write a  few
+regular expression substitution patterns for each step.  
+<ol>
+
+<p>
+</p><li>
+In order to do this, you'll need to be able to run code that automatically
+searches Google.   We have given you code that does this for you!
+But only in Java and Perl. If you can't program in either of these languages,
+you can still just run the programs from the command line without modifying them.
+
+</li><li>
+<p>
+First, you'll need to get a Google key.  Go to <a href="http://api.google.com/">api.google.com</a>
+and sign up for a key. (It's under <b>Create a Google Account</b>).
+<b>PLEASE DO THIS BEFORE THANKSGIVING</b>.
+
+</p></li><li>
+<p>
+Now you need to make sure you can run the programs to search Google for you.  
+We've copied some relevant scripts for doing this in Java and in Perl onto the AFS directory
+for the class.  It looks like these will currently only work from the Elaine file server
+in Sweet Hall, so you'll need to  ssh into elaine.stanford.edu to run these.
+(Although if you have Soap or other web services running on other machines
+feel free to try it from those).
+We've given you sample scripts that take a Google query and return 10 documents.
+Both scripts require you to enter the KEY that you get from Google
+when you register at Google.  
+
+</p><p>
+For perl, you can use the program /afs/ir/class/linguist238/googly.pl,
+which we stole from the book Google Hacks.  You first modify it by
+putting your key here in this line:
+</p><pre>my $google_key='insert key here';
+</pre>
+
+You then run it as follows:
+
+<pre>/afs/ir/class/linguist238/googly.pl <query>
+</query></pre>
+
+<p>
+It will print out the top 10 results from Google for your query,
+together with their titles, and the "snippet", the short text that Google returns.
+Of course, you may want to to modify this code as you work on the homework.
+
+</p><p>
+For java, you can do the following from the command line (where KEY is your google key, and Foo is your query string):
+
+</p><pre>java -cp /afs/ir/class/linguist238/googleapi.jar com.google.soap.search.GoogleAPIDemo KEY search Foo
+</pre>
+
+<p>
+The sample java code  is in /afs/ir/class/linguist238/GoogleAPIDemo.java  
+More information on the Google java class is in /afs/ir/class/linguist238/googleapi.
+
+</p><p>
+</p></li><li>
+OK, once you've made sure that you can search Google, you are ready to do the homework.
+
+<p>
+Here's the steps for building a simplified AskMSR-style question answering.
+</p><ol>
+<li> <b>Query Reformulation:</b>
+<p>
+Given a question, rewrite the question in various ways to generate a number
+of search strings that are likely to match an answer.  For example,
+given:
+
+</p><pre>Where is the Louvre located?
+</pre>
+
+you might generate strings like the following:
+
+<pre>the Louvre is located
+the is Louvre located
+the Louvre located is
+</pre>
+
+by writing some simple rules.  For example, one rule might be:
+<pre>If the query begins with the word "where", remove that word
+and try moving the next word everywhere else in the query.
+</pre>
+You could even (but don't have to) have more complicated rules, such as 
+<pre>In addition, if the query begins with the word "where"
+and doesn't end in "located", add the word "located".
+(or if it does end in "located", replace "located" with "near" or "in)
+</pre>
+
+producing more strings like the following:
+<pre>the Louvre is in
+the Louvre is near
+</pre>
+
+
+<p>
+</p></li><li> <b>Search Google:</b>
+Now take the resulting queries and search google with them using your java or perl scripts
+(or modifications of them). You might need to use "+" to make sure it searches
+for the function words.  Of course, some of these
+queries might return nothing! (Like "the is Louvre located").
+That's ok, all you care about is the ones that work.
+
+<p>
+</p></li><li> <b>Text Normalization:</b>
+Take the "snippets" (page summaries) that Google returns for each query.
+You'll need to do some simple text normalization on them to get rid of the html
+font commands and whatnot, and also to move periods and commas and etc
+away from words.
+
+<p>
+</p></li><li> <b>N-gram mining:</b>
+Now take the text-normalized "snippets" (page summaries).
+From these snippets, compute unigrams, bigrams and trigrams,
+and compute a count for each of these of <b>how many snippets they occur in</b>.
+Only count the N-gram once per snippet.
+For example, if the bigram "San Francisco" occurs  in 4 snippet, twice in each,
+count it as 4, not 8.
+
+<p>
+</p></li><li> <b>N-gram filtering/reweighting:</b>
+You are going to filter the N-grams to rule out those that are not likely to be good answers
+to the query.  You will do this in two parts. First,
+you will write some "query-type-identification" rules.
+Your rules should look at the query
+and assign it a question type like <i>who-question</i>, <i>where-question</i>,
+<i>when-question</i>, <i>how-many-question</i>, or <i>what-question</i>.
+It's ok if these rules are very very simple, i.e. just checking if the first word is <i>where</i> or such.
+Next, given that you know the "query-type" of your question,
+you should write one or two rules for each query-type which filter out 
+unlikely N-grams,  or reweight them.  For example, if your query-type is "when-question",
+you might have a rule that says "increase the score of any N-gram that has a date
+in it", or "lower the score of any N-gram that doesn't have a number in it".
+Or for <i>who-questions</i>, you might increase the score of any N-gram that has
+a word starting with a capital letter...
+
+<p>
+</p></li><li> <b>N-gram Tiling:</b>
+This final step assembles longer answers from overlapping smaller
+answer fragments.  For example, "A B C" and "B C D" is tiled into "A B C D".
+Use a simple tiling algorithm like the one in AskMSR. 
+You can simplify it to only return a single answer (they returned a whole string of answers).
+A simplified description of their algorithm, following their explanation, is
+roughly as follows: start greedily from the
+best-scoring candidate, and check all subsequent candiates (up to a certain cutoff)
+to see if they can be tiled with the current candidate answer.  If so,
+the higher scoring candidate is replaced with the longer tiled n-gram, and the lower scoring
+candidate is removed.  The algorithm stops when no n-grams can be further tiled
+with the best-scoring candidate.  Then return the best-scoring candidate.
+
+<p>
+</p></li><li>
+<b>Evaluation:</b>
+Now that you have a question answering algorithm, run it on 5 questions, including
+the following 4, plus 1 more that you select
+(there are other sample questions from the TREC-9 competition <a href="http://www.georgetown.edu/faculty/wilsong/IR/trec9.html">here</a>.)
+<ol>
+<li>Where is Belize located?
+</li><li>Where is the Valley of the Kings?
+</li><li>Who is William Wordsworth?
+</li><li>When was Babe Ruth born?
+</li></ol>
+<p>
+</p></li><li>
+Evaluate how many of your questions returned the right answer (as a percentage out of 5).
+Use yourself as the "expert labeler" to decide what the write answer should have been.
+Discuss the performance of your system; for example, what kinds of knowledge would
+you have needed to do better on the questions that your system failed on?
+</li></ol>
+<p>
+</p></li><li>Turn in your answer to problem 1, your code, the results of your code running on the 5 questions,
+details of the steps of your algorithm on at least 1 of the questions, and
+your error analysis of your system's performance.
+</li></ol>
+
+
+
+
+</li></ol><div scrible-ignore="" id="skribel__annotation_ignore_chromeExtensionFlag" class="skribel__chromeExtension" style="display: none;"></div></body></html>

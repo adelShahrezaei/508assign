@@ -21,6 +21,7 @@ use warnings;
 use Data::Dumper;
 use WWW::Wikipedia;
 use WordNet::QueryData;
+use List::Permutor;
 
 
 use open ":std", ":encoding(UTF-8)";
@@ -72,18 +73,135 @@ print "**This is a QA system by Adel Shahrzaei. It will try to answer questions 
 # }
 
 
-
-
-# start the pipeline
 sub findAnswer{
     #init question
     undef %question ;
     $question{'subjects'} = ();
-
+    $question{'rewrites'} = (); 
+    $question{'wikitexts'}= ();
+    $question{'ngrams'}=();
     my $answered = 0 ;#flag to see if we've found answer or not
     my $q = shift;
     print $fh "\n\n\n=========================<USER QUESTION> $q\n";
     my @tokens = tokenize($q);
+    queryReformulation();
+
+    # my @queries = rewriteQuery(@tokens);
+    
+    
+  
+    
+    # query wikipedua for each possible subject
+    foreach my $subject (@{$question{'subjects'}}){
+
+       
+        my $wikiText = "";
+        queryWiki($subject);
+        # push @{$question{'wikitexts'}}, \$wikiText
+        #   print $fh "<RAW WIKI> $wikiText\n";
+    }
+    match();
+       
+    #    my %qhash = %{$query};
+    #    print $fh "<QUERY> ";
+    #    print $fh Dumper(\%{$query});
+    #    print $fh "\n";       
+    
+    #    if (my $answer = matchAnswer(\%{$query},$wikiText)){
+           
+    #        if(exists($qhash{'add'})){
+    #         print "$qhash{'subject'} $qhash{'verb'} $qhash{'add'} $answer.\n"; 
+    #         print $fh "<ANSWER> $qhash{'subject'} $qhash{'verb'} $qhash{'add'} $answer.\n";   
+    #        }else{
+    #         print $fh "<ANSWER> $qhash{'subject'} $qhash{'verb'} $answer.\n";
+    #         print "$qhash{'subject'} $qhash{'verb'} $answer.\n";   
+    #        }
+    #        $answered = 1;
+    #        last;
+    #    }
+      
+    # }
+    # if($answered == 0){
+    #     print "I am sorry, I don't know the answer.\n";
+    # }
+     print Dumper(\%question);
+}
+
+sub match{
+    
+    # test 
+    foreach my $rewrite (@{$question{'rewrites'}}){
+        foreach my $sentence (@{$question{'wikitexts'}}){
+            my $re = %{$rewrite}{'re'};
+            # print "$re ??????? $sentence \n";
+            if ( $sentence =~ /$re/gm ){
+                
+                # ((?:[^\s]*\s){0,3})
+                print "$re :::::: $sentence \n";
+                my $w  = %{$rewrite}{'w'};
+                ngrammine($sentence,$w);
+            }
+        }
+    }
+}
+
+sub ngramfilter{
+
+    
+
+
+    #filter can be added here for each question type
+
+}
+
+sub ngramtile{
+    # my $sortedgrams = sort { $a->{'w'} }
+}
+#extract n-grams
+sub ngrammine{
+    my  $w = $_[1];
+    my $sentence = $_[0];
+    my @words = split '\s', $sentence;
+    my %grams;
+    # remove stop words
+    @words = grep(!exists($stopwords{lc $_}), @words);
+    $grams{'w'} = $w;
+    #1-grams
+    $grams{'1'} = ();
+    for my $i (0..$#words-1){ 
+        push @{$grams{'1'}}, {'w'=>$w , 'gram'=>$words[$i]};
+    }
+    #2-grams
+    $grams{'2'} = ();
+    for my $i (0..$#words-1){
+        # print $i;
+        # print (join(" ", @words[1..5]));
+        push @{$grams{'2'}}, {'w'=>$w , 'gram'=>join(" ", @words[$i..$i+1])};
+    }
+    #3-grams
+    $grams{'3'} = ();
+    for my $i (0..$#words-2){
+        push @{$grams{'3'}}, {'w'=>$w, 'gram'=>join(" ", @words[$i..$i+2])};
+    }
+    # print (\%grams);
+    push @{$question{'ngrams'}}, \%grams;
+
+}
+
+
+
+# start the pipeline
+sub findAnswerOld{
+    #init question
+    undef %question ;
+    $question{'subjects'} = ();
+    $question{'rewrites'} = (); 
+    my $answered = 0 ;#flag to see if we've found answer or not
+    my $q = shift;
+    print $fh "\n\n\n=========================<USER QUESTION> $q\n";
+    my @tokens = tokenize($q);
+    queryReformulation();
+
     my @queries = rewriteQuery(@tokens);
     my $wikiText = "";
     
@@ -124,13 +242,60 @@ sub findAnswer{
 }
 # rewrite the question 
 sub queryReformulation(){
-    # use word net for query expansion
-
+    
+    # get all permutation of orginal words
+    
+    genPermutation(5,@{$question{'tokens'}});
+    
+    #without subject 
+    genPermutation(4,grep($_ ne @{$question{'subjects'}}[0], @{$question{'tokens'}}));
+    # get permutations without stop word (lower )
+    {
+    my %rewrite ;
+    $rewrite{'pattern'} = join (' ', grep(!exists($stopwords{lc $_}),@{$question{'tokens'}})) ;
+    $rewrite{'w'} = 2;
+    $rewrite{'pos'} = 'n';
+    my $pat = $rewrite{'pattern'};
+    $rewrite{'re'} = qr/$pat/;
+    push @{$question{'rewrites'}}, \%rewrite;
+    }
+    
+    # get back off
+    {
+    my %rewrite ;
+    $rewrite{'pattern'} = join ('(.*\s*)', grep(!exists($stopwords{lc $_}),@{$question{'tokens'}})) ;
+    $rewrite{'w'} = 1;
+    $rewrite{'pos'} = 'n';
+    my $pat = $rewrite{'pattern'};
+    $rewrite{'re'} = qr/$pat/;
+    push @{$question{'rewrites'}}, \%rewrite;
+    }
 
 }
 #generates all possible Permutation of given word list (w1,w2,w3,w4 & w2,w3,w1,w4)
 sub genPermutation{
-    my @words = @{shift()};
+    
+    my ($weight,@words,) = @_;
+    
+    my @res;
+    my $vpos ;#verb postion
+    for $vpos (0..$#words+1){
+        my %rewrite ;
+        my @cwords = @words;
+        print "$vpos\n";
+        
+        splice @cwords, $vpos, 0, $question{'verb'} ;
+        $rewrite{'pattern'} = join ' ',@cwords; 
+        $rewrite{'w'} = $weight;
+        $rewrite{'pos'} = 'r';
+
+        $rewrite{'re'} = qr/$rewrite{'pattern'}/;
+        if ($vpos == 0){
+            $rewrite{'pos'} = 'l';
+            $rewrite{'re'} = qr/$rewrite{'pattern'}/;
+        }
+        push @{$question{'rewrites'}}, \%rewrite;
+    } 
 
 
 }
@@ -344,16 +509,26 @@ sub rewriteQuery{
 
 # fetch wiki page
 sub queryWiki{
-    my %q = %{shift()};
+    my $q = shift;
     my $wikiText;
     my $wiki = WWW::Wikipedia->new(clean_html => 1 );
-    my $result = $wiki->search($q{'subject'});
+    my $result = $wiki->search($q);
     
     if (defined $result){
         if ( $result->text() ) { 
-        $wikiText = $result->text();
-        $wikiText =~ s/\R/ /g; 
-        return $wikiText;
+        
+        $wikiText = $result->fulltext_basic();
+        #remove info box we should save this later
+        # print $wikiText;
+        # cleanup 
+        $wikiText =~ s/\}\}&nbsp;\x{2013}/-/gs; 
+        $wikiText =~ s/<\/?.*?>//gs; 
+        # $wikiText =~ s/\{\{.+\}\}//gs; 
+        $wikiText =~ s/\R/ /g;
+        $wikiText =~ s/([\.?!]+)/$1\n/g; 
+        # print $wikiText;
+        my @wikis = split "\n",$wikiText;
+        push @{$question{'wikitexts'}}, @wikis ;
         }
     }
     
@@ -384,12 +559,14 @@ sub tokenize{
     # extract subject using orthographic information
 
     my @v = ($q =~ /((?<!^)[A-Z][^\s!?,]+)/g);
-
+    
     my $subject =  (join " ",@v);
     push @{$question{'subjects'}}, $subject;
     
-    $q = ($q =~ s/((?<!^)[A-Z][^\s!?,]+)//rg);
+    $q = ($q =~ s/((?<!^)[A-Z][^\s!?,]+)/<S>/rg);
+    $q = ($q =~ s/(<S>[\s!?.])+/<S> /rg);
     
+    print $q;
     
     my @tokens = ($q =~ /\s?([^,!?\s]+)/g);
     ## type is the first word (when, where, what, who)
@@ -400,6 +577,7 @@ sub tokenize{
         if (exists($auxVerbs{$tokens[1]})){ ##there is an aux verb
             $question{'aux'} = $tokens[1];
             $question{'verb'} = $tokens[$#tokens]; # can be improved
+            @tokens = grep($_ ne $question{'aux'}, @tokens );
         }else{
             
             $question{'verb'} = $tokens[1];
@@ -412,6 +590,7 @@ sub tokenize{
         if (exists($auxVerbs{$tokens[1]})){ ##there is an aux verb
             $question{'aux'} = $tokens[1];
             $question{'verb'} = $tokens[$#tokens]; # can be improved
+            @tokens = grep($_ ne $question{'aux'}, @tokens );
         }else{
             
             $question{'verb'} = $tokens[1];
@@ -420,6 +599,7 @@ sub tokenize{
         if (exists($auxVerbs{$tokens[1]})){ ##there is an aux verb
             $question{'aux'} = $tokens[1];
             $question{'verb'} = $tokens[$#tokens]; # can be improved
+            @tokens = grep($_ ne $question{'aux'}, @tokens );
         }else{
             
             $question{'verb'} = $tokens[1];
@@ -427,6 +607,9 @@ sub tokenize{
     }
 
     my @synonyms; 
+    # remove verb, type, aux from tokes
+    @tokens = grep(lc $_ ne $question{'type'}, @tokens );
+    @tokens = grep(lc $_ ne $question{'verb'}, @tokens );
     #get synonyms
     foreach my $token (@tokens){
         if (!exists($stopwords{lc $token})){ #if not stop word
@@ -438,7 +621,7 @@ sub tokenize{
         }
     }
 
-    push @tokens, $subject;
+    @tokens = map {$_ eq '<S>'? $subject : $_} @tokens;
     $question{'tokens'} = \@tokens;    
     $question{'synonyms'} =  \@synonyms;
     return @tokens; 
@@ -470,11 +653,12 @@ sub getSynonyms {
 
 
 findAnswer("What is the population of the Bahamas?");
-findAnswer("What did Vasco Da Gama discover?");
+# findAnswer("What did Vasco Da Gama discover?");
+# findAnswer("Who was the president of Vichy France?");
 
 # findAnswer("When was George Washington born?");
-findAnswer("Who is Barack Obama?");
-findAnswer("Who is Desmond Tutu??");
+# findAnswer("Who is Barack Obama?");
+# findAnswer("Who is Desmond Tutu??");
 
 
 

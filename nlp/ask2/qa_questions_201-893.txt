@@ -293,7 +293,7 @@ Who is the fastest swimmer in the world?
 <num> Number: 230
 
 <desc> Description:
-When did the vesuvius last erupt?
+When did the Vesuvius last erupt?
 
 </top>
 
